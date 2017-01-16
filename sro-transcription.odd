@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:s="http://purl.oclc.org/dsdl/schematron" xml:lang="en">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>ODD by Example customization</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Unpublished first draft </p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Derived from an analysis of 4 files from ./</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <schemaSpec ident="SRO-transcription" start="TEI ">
+            <moduleRef key="tei"/>
+            <classRef key="model.persNamePart"/>
+            
+            <!-- Names and Dates -->
+            <moduleRef key="namesdates" include="orgName persName surname forename placeName"/>
+            
+            <!-- SRO doesn't use measure -->
+            <classSpec ident="att.dimensions" type="atts" mode="change">
+               <attList>
+                  <attDef ident="unit" mode="delete"/>
+                  <attDef ident="quantity" mode="delete"/>
+                  <attDef ident="extent" mode="delete"/>
+                  <attDef ident="precision" mode="delete"/>
+                  <attDef ident="scope" mode="delete"/>
+               </attList>
+            </classSpec>
+            
+            <classSpec ident="att.damaged" type="atts" mode="change">
+               <attList>
+                  <attDef ident="degree" mode="delete"/>
+                  <attDef ident="group" mode="delete"/>
+               </attList>
+            </classSpec>
+            
+            <classSpec ident="att.divLike" type="atts" mode="change">
+               <attList>
+                  <attDef ident="org" mode="delete"/>
+                  <attDef ident="sample" mode="delete"/>
+               </attList>
+            </classSpec>
+            
+            <classSpec ident="att.editLike" type="atts" mode="change">
+               <attList>
+                  <attDef ident="evidence" mode="delete"/>
+                  <attDef ident="instant" mode="delete"/>
+               </attList>
+            </classSpec>
+            
+            <classSpec ident="att.naming" type="atts" mode="change">
+               <attList>
+                  <attDef ident="nymRef" mode="delete"/>
+               </attList>
+            </classSpec>
+            
+            <classSpec ident="att.pointing" type="atts" mode="change">
+               <attList>
+                  <attDef ident="targetLang" mode="delete"/>
+                  <attDef ident="evaluate" mode="delete"/>
+               </attList>
+            </classSpec>
+            
+            <classSpec ident="att.pointing.group" type="atts" mode="change">
+               <attList>
+                  <attDef ident="domains" mode="delete"/>
+                  <attDef ident="targFunc" mode="delete"/>
+               </attList>
+            </classSpec>
+            
+            <classSpec ident="att.segLike" type="atts" mode="change">
+               <attList>
+                  <attDef ident="function" mode="delete"/>
+               </attList>
+            </classSpec>
+            
+            <classSpec ident="att.timed" type="atts" mode="change">
+               <attList>
+                  <attDef ident="start" mode="delete"/>
+                  <attDef ident="end" mode="delete"/>
+               </attList>
+            </classSpec>
+            
+            <classSpec ident="att.personal" type="atts" mode="change">
+               <attList>
+                  <attDef ident="full" mode="delete"/>
+                  <attDef ident="sort" mode="delete"/>
+               </attList>
+            </classSpec>
+            
+            <!--Core-->
+            <moduleRef key="core"
+                       include="p foreign hi desc gap unclear num date list item head note pb lb respStmt resp title"/>
+            
+            <!-- provide valList for num/@type -->
+            <elementSpec ident="num" mode="change">
+               <attList>
+                  <attDef ident="type" mode="change">
+                     <valList mode="add" type="closed">
+                        <valItem ident="halfpence"><desc>The number is a half penny</desc></valItem>
+                        <valItem ident="pence"><desc>The number is pence</desc></valItem>
+                        <valItem ident="poundsAsPence"><desc>The number is pounds represented in a 'value' attribute as pence</desc></valItem>
+                        <valItem ident="shillingsAsPence"><desc>The number is shillings represented in a 'value' attribute as pence </desc></valItem>
+                        <valItem ident="totalPence"><desc>The number provides in a 'value' attribute the total number of pence of its children</desc></valItem>
+                        <valItem ident="matchedNumber"><desc>The number has been matched in conversion</desc></valItem>
+                        <valItem ident="notMatched"><desc>The number was not matched for automatic conversion</desc></valItem>
+                        <valItem ident="works"><desc>The number is a count of the number of works mentioned in an entry</desc></valItem>
+                        <valItem ident="other"><desc>The number is some other type of number</desc></valItem>
+                        
+                     </valList>
+                  </attDef>
+                </attList>
+            </elementSpec>
+            <elementSpec ident="note" mode="change">
+               <attList>
+                  <attDef ident="anchored" mode="delete"/>
+                  <attDef ident="targetEnd" mode="delete"/>
+                  <attDef ident="target" mode="delete"/>
+               </attList>
+            </elementSpec>
+            
+            
+            <!--Header-->
+            
+            <moduleRef key="header"
+                       include="teiHeader fileDesc titleStmt funder principal publicationStmt distributor availability licence sourceDesc encodingDesc projectDesc revisionDesc change idno"/>
+            
+            <!-- provide valList for num/@type -->
+            <elementSpec ident="idno" mode="change">
+               <attList>
+                  <attDef ident="type" mode="change">
+                     <valList mode="add" type="semi">
+                        <valItem ident="ArberRef"><desc>The idno is a reference to Arber</desc></valItem>
+                        <valItem ident="RegisterRef"><desc>The idno is a referene to the Register</desc></valItem>
+                        <valItem ident="other"><desc>The idno is some other type of reference</desc></valItem>
+                     </valList>
+                  </attDef>
+               </attList>
+            </elementSpec>
+            
+            
+            <!--Transcr-->
+            <moduleRef key="transcr" include="fw space"/>
+            
+            <!--Checking module linking-->
+            <moduleRef key="linking" include="ab anchor seg"/>
+            
+            <elementSpec ident="anchor" mode="change">
+               <attList>
+                  <attDef ident="resp" mode="delete"/>
+                  <attDef ident="type" mode="change">
+                     <valList mode="add" type="semi">
+                        <valItem ident="noteStart"><desc>This is the startpoint of a note marked by anchor elements</desc></valItem>
+                        <valItem ident="noteEnd"><desc>This is the endpoint of a note marked by anchor elements</desc></valItem>
+                    </valList>
+                  </attDef>
+               </attList>
+            </elementSpec>
+            
+            <elementSpec ident="seg" mode="change">
+               <attList>
+                  <attDef ident="type" mode="change">
+                     <valList mode="add" type="semi">
+                        <valItem ident="fee"><desc>This segment of text encloses a fee paid</desc></valItem>
+                        <valItem ident="notFee"><desc>This segment of text encloses something that is not a fee paid</desc></valItem>
+                        <valItem ident="other"><desc>This segment of text encloses something else</desc></valItem>
+                     </valList>
+                  </attDef>
+               </attList>
+            </elementSpec>
+            
+            
+            <elementSpec ident="ab" mode="change">
+               <constraintSpec ident="ab-in-entry" scheme="isoschematron" >
+                  <constraint>
+                     <s:report test="not(@type='metadata') and ancestor::tei:div[@type='entry']">If 'ab' appears inside an entry div it must have a type attribute of 'metadata'.</s:report>
+                  </constraint>
+                </constraintSpec>
+               <constraintSpec ident="date-in-ab" scheme="isoschematron">
+                  <constraint>
+                     <s:report test="@type='metadata' and ancestor::tei:div[@type='entry'] and not(tei:date)">Metadata block must contain a date.</s:report>
+                  </constraint>
+               </constraintSpec>
+               <constraintSpec ident="arber-in-ab" scheme="isoschematron">
+                  <constraint>
+                     <s:report test="@type='metadata' and ancestor::tei:div[@type='entry'] and not(tei:idno/@type='ArberRef')">Metadata block must contain a reference to Arber in an 'idno' of type 'ArberRef'.</s:report>
+                  </constraint>
+               </constraintSpec>
+               <constraintSpec ident="register-in-ab" scheme="isoschematron">
+                  <constraint>
+                     <s:report test="@type='metadata' and ancestor::tei:div[@type='entry'] and not(tei:idno/@type='RegisterRef')">Metadata block must contain a reference to the Register in an 'idno' of type 'RegisterRef'.</s:report>
+                  </constraint>
+               </constraintSpec>
+            </elementSpec>
+            
+            
+            <!--Textstructure-->
+            <moduleRef key="textstructure" include="TEI text body div"/>
+            <elementSpec ident="TEI" mode="change">
+               <attList>
+                  <attDef ident="version" mode="delete"/>
+                  <attDef ident="resp" mode="delete"/>
+                  <attDef ident="type" mode="delete"/>
+               </attList>
+            </elementSpec>
+            
+            <elementSpec ident="text" mode="change">
+               <attList>
+                  <attDef ident="resp" mode="delete"/>
+                  <attDef ident="type" mode="delete"/>
+               </attList>
+            </elementSpec>
+            
+            <elementSpec ident="body" mode="change">
+               <attList>
+                  <attDef ident="resp" mode="delete"/>
+               </attList>
+            </elementSpec>
+            
+            <elementSpec ident="div" mode="change">
+               <attList>
+                  <attDef ident="type" mode="change">
+                     <valList mode="add" type="closed">
+                        <valItem ident="accounts"><desc>The division contains accounts</desc></valItem>
+                        <valItem ident="apprentices"><desc>The division contains information about apprenticies</desc></valItem>
+                        <valItem ident="charges"><desc>The division contains charges</desc></valItem>
+                        <valItem ident="dinners"><desc>The division contains information about dinners</desc></valItem>
+                        <valItem ident="entries"><desc>The division contains registration entries</desc></valItem>
+                        <valItem ident="entry"><desc>The division contains a single registration entry</desc></valItem>
+                        <valItem ident="entryGrp"><desc>The division contains a group of registration entries</desc></valItem>
+                        <valItem ident="fines"><desc>The division contains a information about fines</desc></valItem>
+                        <valItem ident="freemen"><desc>The division contains information about freemen</desc></valItem>
+                        <valItem ident="notEntries"><desc>The division contains a group of material that is not an entry</desc></valItem>
+                        <valItem ident="notEntry"><desc>The division contains material that is not an entry</desc></valItem>
+                        <valItem ident="other"><desc>The division contains other material</desc></valItem>
+                        <valItem ident="payments"><desc>The division contains payments</desc></valItem>
+                        <valItem ident="receipts"><desc>The division contains receipts</desc></valItem>
+                        <valItem ident="year"><desc>The division contains entries for a year</desc></valItem>
+                     </valList>
+                  </attDef>
+               </attList>
+            </elementSpec>
+            
+            
+            
+         </schemaSpec>
+      </body>
+   </text>
+</TEI>
