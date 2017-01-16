@@ -3,96 +3,35 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>ODD by Example customization</title>
-         </titleStmt>
+            <title>SRO Transcription Schema</title>
+           </titleStmt>
          <publicationStmt>
             <p>Unpublished first draft </p>
          </publicationStmt>
          <sourceDesc>
             <p>Derived from an analysis of 4 files from ./</p>
          </sourceDesc>
-      </fileDesc>
+     </fileDesc>
+     <encodingDesc>
+       <projectDesc><p>Stationers' Register Online</p></projectDesc>
+     </encodingDesc>
    </teiHeader>
    <text>
       <body>
-         <schemaSpec ident="SRO-transcription" start="TEI ">
+        <div>
+          <head>Encoding Guidelines for SRO Transcription schema</head>
+          <p>Encoding guidelines could be placed here</p>
+        </div>
+      
+        <div>
+          <head>Formal Schema Declarations</head>
+            <schemaSpec ident="SRO-transcription" start="TEI ">
             <moduleRef key="tei"/>
             <classRef key="model.persNamePart"/>
             
             <!-- Names and Dates -->
             <moduleRef key="namesdates" include="orgName persName surname forename placeName"/>
             
-            <!-- SRO doesn't use measure -->
-            <classSpec ident="att.dimensions" type="atts" mode="change">
-               <attList>
-                  <attDef ident="unit" mode="delete"/>
-                  <attDef ident="quantity" mode="delete"/>
-                  <attDef ident="extent" mode="delete"/>
-                  <attDef ident="precision" mode="delete"/>
-                  <attDef ident="scope" mode="delete"/>
-               </attList>
-            </classSpec>
-            
-            <classSpec ident="att.damaged" type="atts" mode="change">
-               <attList>
-                  <attDef ident="degree" mode="delete"/>
-                  <attDef ident="group" mode="delete"/>
-               </attList>
-            </classSpec>
-            
-            <classSpec ident="att.divLike" type="atts" mode="change">
-               <attList>
-                  <attDef ident="org" mode="delete"/>
-                  <attDef ident="sample" mode="delete"/>
-               </attList>
-            </classSpec>
-            
-            <classSpec ident="att.editLike" type="atts" mode="change">
-               <attList>
-                  <attDef ident="evidence" mode="delete"/>
-                  <attDef ident="instant" mode="delete"/>
-               </attList>
-            </classSpec>
-            
-            <classSpec ident="att.naming" type="atts" mode="change">
-               <attList>
-                  <attDef ident="nymRef" mode="delete"/>
-               </attList>
-            </classSpec>
-            
-            <classSpec ident="att.pointing" type="atts" mode="change">
-               <attList>
-                  <attDef ident="targetLang" mode="delete"/>
-                  <attDef ident="evaluate" mode="delete"/>
-               </attList>
-            </classSpec>
-            
-            <classSpec ident="att.pointing.group" type="atts" mode="change">
-               <attList>
-                  <attDef ident="domains" mode="delete"/>
-                  <attDef ident="targFunc" mode="delete"/>
-               </attList>
-            </classSpec>
-            
-            <classSpec ident="att.segLike" type="atts" mode="change">
-               <attList>
-                  <attDef ident="function" mode="delete"/>
-               </attList>
-            </classSpec>
-            
-            <classSpec ident="att.timed" type="atts" mode="change">
-               <attList>
-                  <attDef ident="start" mode="delete"/>
-                  <attDef ident="end" mode="delete"/>
-               </attList>
-            </classSpec>
-            
-            <classSpec ident="att.personal" type="atts" mode="change">
-               <attList>
-                  <attDef ident="full" mode="delete"/>
-                  <attDef ident="sort" mode="delete"/>
-               </attList>
-            </classSpec>
             
             <!--Core-->
             <moduleRef key="core"
@@ -125,6 +64,20 @@
                </attList>
             </elementSpec>
             
+           <elementSpec ident="gap" mode="change">
+             <attList>
+               <attDef ident="hand" mode="delete"/>
+             </attList>
+           </elementSpec>
+           
+           
+           <elementSpec ident="unclear" mode="change">
+             <attList>
+               <attDef ident="hand" mode="delete"/>
+             </attList>
+           </elementSpec>
+           
+           
             
             <!--Header-->
             
@@ -153,7 +106,6 @@
             
             <elementSpec ident="anchor" mode="change">
                <attList>
-                  <attDef ident="resp" mode="delete"/>
                   <attDef ident="type" mode="change">
                      <valList mode="add" type="semi">
                         <valItem ident="noteStart"><desc>This is the startpoint of a note marked by anchor elements</desc></valItem>
@@ -182,6 +134,11 @@
                      <s:report test="not(@type='metadata') and ancestor::tei:div[@type='entry']">If 'ab' appears inside an entry div it must have a type attribute of 'metadata'.</s:report>
                   </constraint>
                 </constraintSpec>
+              <constraintSpec ident="ab-not-in-entry" scheme="isoschematron" >
+                <constraint>
+                  <s:report test="@type='metadata' and not(ancestor::tei:div[@type='entry'])">If 'ab' has a metadata type attribute value it must appear inside an entry div.</s:report>
+                </constraint>
+              </constraintSpec>
                <constraintSpec ident="date-in-ab" scheme="isoschematron">
                   <constraint>
                      <s:report test="@type='metadata' and ancestor::tei:div[@type='entry'] and not(tei:date)">Metadata block must contain a date.</s:report>
@@ -207,6 +164,10 @@
                   <attDef ident="version" mode="delete"/>
                   <attDef ident="resp" mode="delete"/>
                   <attDef ident="type" mode="delete"/>
+                 <attDef ident="subtype" mode="delete"/>
+                 <attDef ident="rend" mode="delete"/>
+                 <attDef ident="cert" mode="delete"/>
+                 <attDef ident="facs" mode="delete"/>
                </attList>
             </elementSpec>
             
@@ -225,7 +186,7 @@
             
             <elementSpec ident="div" mode="change">
                <attList>
-                  <attDef ident="type" mode="change">
+                  <attDef ident="type" mode="change" usage="req">
                      <valList mode="add" type="closed">
                         <valItem ident="accounts"><desc>The division contains accounts</desc></valItem>
                         <valItem ident="apprentices"><desc>The division contains information about apprenticies</desc></valItem>
@@ -248,8 +209,154 @@
             </elementSpec>
             
             
-            
+            <!-- Various classes -->
+           <!-- no @change -->
+           <classSpec ident="att.global.change" type="atts" mode="delete"/>
+           <!-- only @rend -->
+           <classSpec ident="att.global.rendition" type="atts" mode="change">
+             <attList>
+               <attDef ident="rendition" mode="delete"/>
+               <attDef ident="style" mode="delete"/>
+             </attList>
+           </classSpec>
+           
+           <classSpec ident="att.global.linking" type="atts" mode="change">
+             <attList>
+               <attDef ident="synch" mode="delete"/>
+               <attDef ident="sameAs" mode="delete"/>
+               <attDef ident="copyOf" mode="delete"/>
+               <attDef ident="next" mode="delete"/>
+               <attDef ident="prev" mode="delete"/>
+               <attDef ident="exclude" mode="delete"/>
+               <attDef ident="select" mode="delete"/>
+             </attList>
+           </classSpec>
+           
+           <classSpec ident="att.global.source" type="atts" mode="delete"/>
+           
+           <classSpec ident="att.global" type="atts" mode="change">
+             <attList>
+               <attDef ident="xml:base" mode="delete"/>
+               <attDef ident="xml:space" mode="delete"/>
+             </attList>
+           </classSpec>
+           
+           <classSpec ident="att.declaring" type="atts" mode="delete"/>
+           <classSpec ident="att.declarable" type="atts" mode="delete"/>
+           <classSpec ident="att.written" type="atts" mode="delete"/>
+           <classSpec ident="att.divLike" type="atts" mode="delete"/>
+           <classSpec ident="att.datable.iso" type="atts" mode="delete"/> 
+           <classSpec ident="att.datable.custom" type="atts" mode="delete"/>
+           <classSpec ident="att.editLike" type="atts" mode="delete"/>
+           <classSpec ident="att.fragmentable" type="atts" mode="delete"/>
+           
+           
+           <classSpec ident="att.datable" type="atts" mode="change">
+             <attList>
+               <attDef ident="calendar" mode="delete"/>
+               <attDef ident="period" mode="delete"/>
+             </attList>
+           </classSpec>
+           
+           <classSpec ident="att.dimensions" type="atts" mode="change">
+             <attList>
+               <attDef ident="unit" mode="delete"/>
+               <attDef ident="quantity" mode="delete"/>
+               <attDef ident="extent" mode="delete"/>
+               <attDef ident="precision" mode="delete"/>
+               <attDef ident="scope" mode="delete"/>
+             </attList>
+           </classSpec>
+           
+           <classSpec ident="att.damaged" type="atts" mode="change">
+             <attList>
+               <attDef ident="degree" mode="delete"/>
+               <attDef ident="group" mode="delete"/>
+             </attList>
+           </classSpec>
+           
+           <classSpec ident="att.divLike" type="atts" mode="change">
+             <attList>
+               <attDef ident="org" mode="delete"/>
+               <attDef ident="sample" mode="delete"/>
+             </attList>
+           </classSpec>
+           
+           <classSpec ident="att.editLike" type="atts" mode="change">
+             <attList>
+               <attDef ident="evidence" mode="delete"/>
+               <attDef ident="instant" mode="delete"/>
+             </attList>
+           </classSpec>
+           
+           <classSpec ident="att.naming" type="atts" mode="change">
+             <attList>
+               <attDef ident="nymRef" mode="delete"/>
+             </attList>
+           </classSpec>
+           
+           <classSpec ident="att.pointing" type="atts" mode="change">
+             <attList>
+               <attDef ident="targetLang" mode="delete"/>
+               <attDef ident="evaluate" mode="delete"/>
+             </attList>
+           </classSpec>
+           
+           <classSpec ident="att.pointing.group" type="atts" mode="change">
+             <attList>
+               <attDef ident="domains" mode="delete"/>
+               <attDef ident="targFunc" mode="delete"/>
+             </attList>
+           </classSpec>
+           
+           <classSpec ident="att.segLike" type="atts" mode="change">
+             <attList>
+               <attDef ident="function" mode="delete"/>
+             </attList>
+           </classSpec>
+           
+           <classSpec ident="att.timed" type="atts" mode="change">
+             <attList>
+               <attDef ident="start" mode="delete"/>
+               <attDef ident="end" mode="delete"/>
+             </attList>
+           </classSpec>
+           
+           <classSpec ident="att.personal" type="atts" mode="change">
+             <attList>
+               <attDef ident="full" mode="delete"/>
+               <attDef ident="sort" mode="delete"/>
+             </attList>
+           </classSpec>
+           
+           <classSpec ident="att.canonical" type="atts" mode="change">
+             <attList>
+               <attDef ident="key" mode="delete"/>
+             </attList>
+           </classSpec>
+           
+           <classSpec ident="att.datcat" type="atts" mode="delete"/>
+           <classSpec ident="att.segLike" type="atts" mode="delete"/>
+           
+           
+           <classSpec ident="att.ranging" type="atts" mode="change">
+             <attList>
+               <attDef ident="confidence" mode="delete"/>
+             </attList>
+           </classSpec>
+           
+           
+           <classSpec ident="att.sortable" type="atts" mode="delete"/>
+           
+           <classSpec ident="att.spanning" type="atts" mode="delete"/>
+           
+           <classSpec ident="att.timed" type="atts" mode="delete"/>
+           
+           
+           
+           
          </schemaSpec>
+        </div>
       </body>
    </text>
 </TEI>
