@@ -23,6 +23,17 @@
           <p>Encoding guidelines could be placed here</p>
         </div>
       
+      
+      <!-- 
+      
+      
+      JC: ToDo
+   
+             [done for now]
+      
+      -->
+      
+      
         <div>
           <head>Formal Schema Declarations</head>
             <schemaSpec ident="SRO-transcription" start="TEI ">
@@ -35,7 +46,7 @@
             
             <!--Core-->
             <moduleRef key="core"
-                       include="p foreign hi desc gap unclear num date list item head note pb lb respStmt resp title"/>
+                       include="p foreign hi desc gap unclear num date list item head note pb lb respStmt resp title choice abbr expan corr sic orig reg add"/>
             
             <!-- provide valList for num/@type -->
             <elementSpec ident="num" mode="change">
@@ -49,19 +60,51 @@
                         <valItem ident="totalPence"><desc>The number provides in a 'value' attribute the total number of pence of its children</desc></valItem>
                         <valItem ident="matchedNumber"><desc>The number has been matched in conversion</desc></valItem>
                         <valItem ident="notMatched"><desc>The number was not matched for automatic conversion</desc></valItem>
-                        <valItem ident="works"><desc>The number is a count of the number of works mentioned in an entry</desc></valItem>
-                        <valItem ident="other"><desc>The number is some other type of number</desc></valItem>
+                       <valItem ident="works"><desc>The number is a count of the number of works mentioned in an entry</desc></valItem>
+                       <valItem ident="enterers"><desc>The number is a count of the number people entering works in an entry</desc></valItem>
+                       <valItem ident="other"><desc>The number is some other type of number</desc></valItem>
                         
                      </valList>
                   </attDef>
                 </attList>
             </elementSpec>
             <elementSpec ident="note" mode="change">
-               <attList>
+              <constraintSpec ident="status-note-in-ab" scheme="isoschematron" >
+                <constraint>
+                  <s:report test="parent::tei:ab[@type='metadata'] and @type='status' and 
+                    not(@subtype='other' 
+                    or @subtype='annotated'
+                    or @subtype='cancelled' 
+                    or @subtype='conditional' 
+                    or @subtype='entered' 
+                    or @subtype='incomplete' 
+                    or @subtype='notPrinted'
+                    or @subtype='reassigned'
+                    or @subtype='shared'
+                    or @subtype='stock'
+                    or @subtype='unknown'
+                    )">If a status note appears inside a metadata block it must have a subtype attribute of 'annotated', 'cancelled', 'conditional', 'entered', 'incomplete', 'notPrinted', 'reassigned', 'shared', 'stock', 'unknown' or 'other'. Once edited an entry should not have an 'unknown' status.</s:report>
+                </constraint>
+              </constraintSpec>
+              
+              
+              <attList>
                   <attDef ident="anchored" mode="delete"/>
                   <attDef ident="targetEnd" mode="delete"/>
                   <attDef ident="target" mode="delete"/>
+                 
+                 <attDef ident="type" mode="change">
+                   <valList mode="add" type="semi">
+                     <valItem ident="register"><desc>The note is from the register</desc></valItem>
+                     <valItem ident="arber"><desc>The note is provided by Arber</desc></valItem>
+                     <valItem ident="editorial"><desc>The note is editorial and provided by the project</desc></valItem>
+                     <valItem ident="status"><desc>The note is about the status of an entry</desc></valItem>
+                     <valItem ident="other"><desc>The note is some other type of note</desc></valItem>
+                   </valList>
+                 </attDef>
+                 <!-- add list of @type values: register, arber, editorial, other -->
                </attList>
+              
             </elementSpec>
             
            <elementSpec ident="gap" mode="change">
@@ -89,9 +132,10 @@
                <attList>
                   <attDef ident="type" mode="change">
                      <valList mode="add" type="semi">
-                        <valItem ident="ArberRef"><desc>The idno is a reference to Arber</desc></valItem>
-                        <valItem ident="RegisterRef"><desc>The idno is a referene to the Register</desc></valItem>
-                        <valItem ident="other"><desc>The idno is some other type of reference</desc></valItem>
+                       <valItem ident="ArberRef"><desc>The idno is a reference to Arber</desc></valItem>
+                       <valItem ident="RegisterRef"><desc>The idno is a reference to the Register</desc></valItem>
+                       <valItem ident="RegisterID"><desc>The idno is an ID of the Register page</desc></valItem>
+                       <valItem ident="other"><desc>The idno is some other type of reference</desc></valItem>
                      </valList>
                   </attDef>
                </attList>
@@ -99,7 +143,7 @@
             
             
             <!--Transcr-->
-            <moduleRef key="transcr" include="fw space"/>
+            <moduleRef key="transcr" include="fw space am ex supplied"/>
             
             <!--Checking module linking-->
             <moduleRef key="linking" include="ab anchor seg"/>
@@ -154,6 +198,11 @@
                      <s:report test="@type='metadata' and ancestor::tei:div[@type='entry'] and not(tei:idno/@type='RegisterRef')">Metadata block must contain a reference to the Register in an 'idno' of type 'RegisterRef'.</s:report>
                   </constraint>
                </constraintSpec>
+              <constraintSpec ident="register-in-ab" scheme="isoschematron">
+                <constraint>
+                  <s:report test="@type='metadata' and ancestor::tei:div[@type='entry'] and not(tei:idno/@type='RegisterID')">Metadata block must contain a reference to the Register ID in an 'idno' of type 'RegisterID'.</s:report>
+                </constraint>
+              </constraintSpec>
             </elementSpec>
             
             
@@ -185,6 +234,11 @@
             </elementSpec>
             
             <elementSpec ident="div" mode="change">
+              <constraintSpec ident="entry-in-entry" scheme="isoschematron" >
+                  <constraint>
+                    <s:report test="@type='entry' and .//tei:div[@type='entry']">You may not hve an entry inside another entry</s:report>
+                  </constraint>
+                </constraintSpec>
                <attList>
                   <attDef ident="type" mode="change" usage="req">
                      <valList mode="add" type="closed">
@@ -202,7 +256,7 @@
                         <valItem ident="other"><desc>The division contains other material</desc></valItem>
                         <valItem ident="payments"><desc>The division contains payments</desc></valItem>
                         <valItem ident="receipts"><desc>The division contains receipts</desc></valItem>
-                        <valItem ident="year"><desc>The division contains entries for a year</desc></valItem>
+                        <valItem ident="folio"><desc>The division contains entries on a folio</desc></valItem>
                      </valList>
                   </attDef>
                </attList>

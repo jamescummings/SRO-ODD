@@ -5,7 +5,7 @@
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2017-01-16T16:52:19Z. .
+Schema generated from ODD source 2017-01-27T18:34:57Z. .
 TEI Edition: Version 3.1.0. Last updated on
 	15th December 2016, revision d3f5e70
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.1.0/
@@ -61,6 +61,14 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.1.0/
             <ref name="model.inter"/>
             <ref name="model.divPart"/>
             <ref name="model.global"/>
+         </choice>
+      </zeroOrMore>
+   </define>
+   <define name="macro.xtext">
+      <zeroOrMore>
+         <choice>
+            <text/>
+            <ref name="model.gLike"/>
          </choice>
       </zeroOrMore>
    </define>
@@ -542,6 +550,42 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
          </attribute>
       </optional>
    </define>
+   <define name="att.transcriptional.attributes">
+      <ref name="att.transcriptional.attribute.status"/>
+      <ref name="att.transcriptional.attribute.cause"/>
+      <ref name="att.transcriptional.attribute.seq"/>
+   </define>
+   <define name="att.transcriptional.attribute.status">
+      <optional>
+         <attribute xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+                    name="status"
+                    a:defaultValue="unremarkable">
+            <a:documentation>indicates the effect of the intervention, for example in the case of a deletion, strikeouts which include too much or too little text, or in the case of an addition, an insertion which duplicates some of the text already present.
+Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] excessEnd; 5] shortStart; 6] shortEnd; 7] partial; 8] unremarkable</a:documentation>
+            <data type="token">
+               <param name="pattern">(\p{L}|\p{N}|\p{P}|\p{S})+</param>
+            </data>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.transcriptional.attribute.cause">
+      <optional>
+         <attribute name="cause">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">documents the presumed cause for the intervention.</a:documentation>
+            <data type="token">
+               <param name="pattern">(\p{L}|\p{N}|\p{P}|\p{S})+</param>
+            </data>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.transcriptional.attribute.seq">
+      <optional>
+         <attribute name="seq">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(sequence) assigns a sequence number related to the order in which the encoded features carrying this attribute are believed to have occurred.</a:documentation>
+            <data type="nonNegativeInteger"/>
+         </attribute>
+      </optional>
+   </define>
    <define name="att.translatable.attributes">
       <ref name="att.translatable.attribute.versionDate"/>
    </define>
@@ -780,49 +824,179 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
       <notAllowed/>
    </define>
    <define name="model.pPart.editorial">
-      <notAllowed/>
+      <choice>
+         <ref name="choice"/>
+         <ref name="abbr"/>
+         <ref name="expan"/>
+         <ref name="ex"/>
+         <ref name="am"/>
+      </choice>
    </define>
    <define name="model.pPart.editorial_alternation">
-      <notAllowed/>
+      <choice>
+         <ref name="choice"/>
+         <ref name="abbr"/>
+         <ref name="expan"/>
+         <ref name="ex"/>
+         <ref name="am"/>
+      </choice>
    </define>
    <define name="model.pPart.editorial_sequence">
-      <empty/>
+      <ref name="choice"/>
+      <ref name="abbr"/>
+      <ref name="expan"/>
+      <ref name="ex"/>
+      <ref name="am"/>
    </define>
    <define name="model.pPart.editorial_sequenceOptional">
-      <empty/>
+      <optional>
+         <ref name="choice"/>
+      </optional>
+      <optional>
+         <ref name="abbr"/>
+      </optional>
+      <optional>
+         <ref name="expan"/>
+      </optional>
+      <optional>
+         <ref name="ex"/>
+      </optional>
+      <optional>
+         <ref name="am"/>
+      </optional>
    </define>
    <define name="model.pPart.editorial_sequenceOptionalRepeatable">
-      <empty/>
+      <zeroOrMore>
+         <ref name="choice"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="abbr"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="expan"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="ex"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="am"/>
+      </zeroOrMore>
    </define>
    <define name="model.pPart.editorial_sequenceRepeatable">
-      <notAllowed/>
+      <oneOrMore>
+         <ref name="choice"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="abbr"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="expan"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="ex"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="am"/>
+      </oneOrMore>
    </define>
    <define name="model.pPart.transcriptional">
       <choice>
+         <ref name="sic"/>
+         <ref name="corr"/>
+         <ref name="reg"/>
+         <ref name="orig"/>
+         <ref name="add"/>
          <ref name="unclear"/>
+         <ref name="supplied"/>
       </choice>
    </define>
    <define name="model.pPart.transcriptional_alternation">
       <choice>
+         <ref name="sic"/>
+         <ref name="corr"/>
+         <ref name="reg"/>
+         <ref name="orig"/>
+         <ref name="add"/>
          <ref name="unclear"/>
+         <ref name="supplied"/>
       </choice>
    </define>
    <define name="model.pPart.transcriptional_sequence">
+      <ref name="sic"/>
+      <ref name="corr"/>
+      <ref name="reg"/>
+      <ref name="orig"/>
+      <ref name="add"/>
       <ref name="unclear"/>
+      <ref name="supplied"/>
    </define>
    <define name="model.pPart.transcriptional_sequenceOptional">
       <optional>
+         <ref name="sic"/>
+      </optional>
+      <optional>
+         <ref name="corr"/>
+      </optional>
+      <optional>
+         <ref name="reg"/>
+      </optional>
+      <optional>
+         <ref name="orig"/>
+      </optional>
+      <optional>
+         <ref name="add"/>
+      </optional>
+      <optional>
          <ref name="unclear"/>
+      </optional>
+      <optional>
+         <ref name="supplied"/>
       </optional>
    </define>
    <define name="model.pPart.transcriptional_sequenceOptionalRepeatable">
       <zeroOrMore>
+         <ref name="sic"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="corr"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="reg"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="orig"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="add"/>
+      </zeroOrMore>
+      <zeroOrMore>
          <ref name="unclear"/>
+      </zeroOrMore>
+      <zeroOrMore>
+         <ref name="supplied"/>
       </zeroOrMore>
    </define>
    <define name="model.pPart.transcriptional_sequenceRepeatable">
       <oneOrMore>
+         <ref name="sic"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="corr"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="reg"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="orig"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="add"/>
+      </oneOrMore>
+      <oneOrMore>
          <ref name="unclear"/>
+      </oneOrMore>
+      <oneOrMore>
+         <ref name="supplied"/>
       </oneOrMore>
    </define>
    <define name="model.pPart.edit">
@@ -1227,6 +1401,21 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
          <ref name="model.divBottomPart"/>
       </choice>
    </define>
+   <define name="model.choicePart">
+      <choice>
+         <ref name="sic"/>
+         <ref name="corr"/>
+         <ref name="reg"/>
+         <ref name="orig"/>
+         <ref name="unclear"/>
+         <ref name="abbr"/>
+         <ref name="expan"/>
+         <ref name="ex"/>
+         <ref name="am"/>
+         <ref name="supplied"/>
+         <ref name="seg"/>
+      </choice>
+   </define>
    <define name="model.addressLike">
       <notAllowed/>
    </define>
@@ -1465,6 +1654,55 @@ Suggested values include: 1] below; 2] bottom; 3] margin; 4] top; 5] opposite; 6
          <empty/>
       </element>
    </define>
+   <define name="sic">
+      <element name="sic">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Latin for thus or so) contains text reproduced although apparently incorrect or inaccurate. [3.4.1. Apparent Errors]</a:documentation>
+         <ref name="macro.paraContent"/>
+         <ref name="att.global.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="corr">
+      <element name="corr">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(correction) contains the correct form of a passage apparently erroneous in the copy text. [3.4.1. Apparent Errors]</a:documentation>
+         <ref name="macro.paraContent"/>
+         <ref name="att.global.attributes"/>
+         <ref name="att.typed.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="choice">
+      <element name="choice">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">groups a number of alternative encodings for the same point in a text. [3.4. Simple Editorial Changes]</a:documentation>
+         <zeroOrMore>
+            <choice>
+               <ref name="model.choicePart"/>
+               <ref name="choice"/>
+            </choice>
+         </zeroOrMore>
+         <ref name="att.global.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="reg">
+      <element name="reg">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(regularization) contains a reading which has been regularized or normalized in some sense. [3.4.2. Regularization and
+Normalization 12. Critical Apparatus]</a:documentation>
+         <ref name="macro.paraContent"/>
+         <ref name="att.global.attributes"/>
+         <ref name="att.typed.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="orig">
+      <element name="orig">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(original form) contains a reading which is marked as following the original, rather than being normalized or corrected. [3.4.2. Regularization and
+Normalization 12. Critical Apparatus]</a:documentation>
+         <ref name="macro.paraContent"/>
+         <ref name="att.global.attributes"/>
+         <empty/>
+      </element>
+   </define>
    <define name="gap">
       <element name="gap">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates a point where material has been omitted in a transcription, whether for editorial reasons described in the TEI header, as part of sampling practice, or because the material is illegible, invisible, or inaudible. [3.4.3. Additions, Deletions, and Omissions]</a:documentation>
@@ -1496,6 +1734,17 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
                </data>
             </attribute>
          </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="add">
+      <element name="add">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(addition) contains letters, words, or phrases inserted in the source text by an author, scribe, or a previous annotator or corrector. [3.4.3. Additions, Deletions, and Omissions]</a:documentation>
+         <ref name="macro.paraContent"/>
+         <ref name="att.global.attributes"/>
+         <ref name="att.transcriptional.attributes"/>
+         <ref name="att.placement.attributes"/>
+         <ref name="att.typed.attributes"/>
          <empty/>
       </element>
    </define>
@@ -1555,6 +1804,8 @@ Measures]</a:documentation>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The number was not matched for automatic conversion</a:documentation>
                   <value>works</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The number is a count of the number of works mentioned in an entry</a:documentation>
+                  <value>enterers</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The number is a count of the number people entering works in an entry</a:documentation>
                   <value>other</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The number is some other type of number</a:documentation>
                </choice>
@@ -1589,6 +1840,32 @@ Measures]</a:documentation>
          <ref name="att.global.attributes"/>
          <ref name="att.datable.attributes"/>
          <ref name="att.typed.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="abbr">
+      <element name="abbr">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(abbreviation) contains an abbreviation of any sort. [3.5.5. Abbreviations and Their Expansions]</a:documentation>
+         <ref name="macro.phraseSeq"/>
+         <ref name="att.global.attributes"/>
+         <ref name="att.typed.attribute.subtype"/>
+         <optional>
+            <attribute name="type">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">allows the encoder to classify the abbreviation according to some convenient typology.
+Sample values include: 1] suspension; 2] contraction; 3] brevigraph; 4] superscription; 5] acronym; 6] title; 7] organization; 8] geographic</a:documentation>
+               <data type="token">
+                  <param name="pattern">(\p{L}|\p{N}|\p{P}|\p{S})+</param>
+               </data>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="expan">
+      <element name="expan">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(expansion) contains the expansion of an abbreviation. [3.5.5. Abbreviations and Their Expansions]</a:documentation>
+         <ref name="macro.phraseSeq"/>
+         <ref name="att.global.attributes"/>
          <empty/>
       </element>
    </define>
@@ -1726,9 +2003,39 @@ Suggested values include: 1] gloss; 2] index; 3] instructions; 4] litany; 5] syl
       <element name="note">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a note or annotation. [3.8.1. Notes and Simple Annotation 2.2.6. The Notes Statement 3.11.2.8. Notes and Statement of Language 9.3.5.4. Notes within Entries]</a:documentation>
          <ref name="macro.specialPara"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="SRO-transcription-note-status-note-in-ab-constraint-report-6">
+            <rule context="tei:note">
+               <s:report xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                         xmlns="http://www.tei-c.org/ns/1.0"
+                         xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                         test="parent::tei:ab[@type='metadata'] and @type='status' and                      not(@subtype='other'                      or @subtype='annotated'                     or @subtype='cancelled'                      or @subtype='conditional'                      or @subtype='entered'                      or @subtype='incomplete'                      or @subtype='notPrinted'                     or @subtype='reassigned'                     or @subtype='shared'                     or @subtype='stock'                     or @subtype='unknown'                     )">If a status note appears inside a metadata block it must have a subtype attribute of 'annotated', 'cancelled', 'conditional', 'entered', 'incomplete', 'notPrinted', 'reassigned', 'shared', 'stock', 'unknown' or 'other'. Once edited an entry should not have an 'unknown' status.</s:report>
+            </rule>
+         </pattern>
          <ref name="att.global.attributes"/>
          <ref name="att.placement.attributes"/>
-         <ref name="att.typed.attributes"/>
+         <ref name="att.typed.attribute.subtype"/>
+         <optional>
+            <attribute name="type">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the element in some sense, using any convenient classification scheme or typology.
+Suggested values include: 1] register; 2] arber; 3] editorial; 4] status; 5] other</a:documentation>
+               <choice>
+                  <value>register</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The note is from the register</a:documentation>
+                  <value>arber</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The note is provided by Arber</a:documentation>
+                  <value>editorial</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The note is editorial and provided by the project</a:documentation>
+                  <value>status</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The note is about the status of an entry</a:documentation>
+                  <value>other</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The note is some other type of note</a:documentation>
+                  <data type="token">
+                     <param name="pattern">(\p{L}|\p{N}|\p{P}|\p{S})+</param>
+                  </data>
+               </choice>
+            </attribute>
+         </optional>
          <empty/>
       </element>
    </define>
@@ -2029,12 +2336,14 @@ Sample values include: 1] main; 2] sub(subordinate) ; 3] alt(alternate) ; 4] sho
          <optional>
             <attribute name="type">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">categorizes the identifier, for example as an ISBN, Social Security number, etc.
-Suggested values include: 1] ArberRef; 2] RegisterRef; 3] other</a:documentation>
+Suggested values include: 1] ArberRef; 2] RegisterRef; 3] RegisterID; 4] other</a:documentation>
                <choice>
                   <value>ArberRef</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The idno is a reference to Arber</a:documentation>
                   <value>RegisterRef</value>
-                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The idno is a referene to the Register</a:documentation>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The idno is a reference to the Register</a:documentation>
+                  <value>RegisterID</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The idno is an ID of the Register page</a:documentation>
                   <value>other</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The idno is some other type of reference</a:documentation>
                   <data type="token">
@@ -2184,6 +2493,14 @@ Suggested values include: 1] ArberRef; 2] RegisterRef; 3] other</a:documentation
          </attribute>
       </optional>
    </define>
+   <define name="ex">
+      <element name="ex">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(editorial expansion) contains a sequence of letters added by an editor or transcriber when expanding an abbreviation. [11.3.1.2. Abbreviation and Expansion]</a:documentation>
+         <ref name="macro.xtext"/>
+         <ref name="att.global.attributes"/>
+         <empty/>
+      </element>
+   </define>
    <define name="fw">
       <element name="fw">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(forme work) contains a running head (e.g. a header, footer), catchword, or similar material appearing on the current page. [11.6. Headers, Footers, and Similar Matter]</a:documentation>
@@ -2199,6 +2516,21 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
                </data>
             </attribute>
          </optional>
+         <empty/>
+      </element>
+   </define>
+   <define name="am">
+      <element name="am">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(abbreviation marker) contains a sequence of letters or signs present in an abbreviation which are omitted or replaced in the expanded form of the abbreviation. [11.3.1.2. Abbreviation and Expansion]</a:documentation>
+         <zeroOrMore>
+            <choice>
+               <text/>
+               <ref name="model.gLike"/>
+               <ref name="model.pPart.transcriptional"/>
+            </choice>
+         </zeroOrMore>
+         <ref name="att.global.attributes"/>
+         <ref name="att.typed.attributes"/>
          <empty/>
       </element>
    </define>
@@ -2244,6 +2576,26 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
          <empty/>
       </element>
    </define>
+   <define name="supplied">
+      <element name="supplied">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">signifies text supplied by the transcriber or editor for any reason; for example because the original cannot be read due to physical damage, or because of an obvious omission by the author or scribe. [11.3.3.1. Damage, Illegibility, and Supplied Text]</a:documentation>
+         <ref name="macro.paraContent"/>
+         <ref name="att.global.attributes"/>
+         <optional>
+            <attribute name="reason">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">one or more words indicating why the text has had to be supplied, e.g. overbinding, faded-ink, lost-folio, omitted-in-original.</a:documentation>
+               <list>
+                  <oneOrMore>
+                     <data type="token">
+                        <param name="pattern">(\p{L}|\p{N}|\p{P}|\p{S})+</param>
+                     </data>
+                  </oneOrMore>
+               </list>
+            </attribute>
+         </optional>
+         <empty/>
+      </element>
+   </define>
    <define name="att.global.linking.attributes">
       <ref name="att.global.linking.attribute.corresp"/>
    </define>
@@ -2264,7 +2616,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(anonymous block) contains any arbitrary component-level unit of text, acting as an anonymous container for phrase or inter level elements analogous to, but without the semantic baggage of, a paragraph. [16.3. Blocks, Segments, and Anchors]</a:documentation>
          <ref name="macro.paraContent"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SRO-transcription-ab-ab-in-entry-constraint-report-6">
+                  id="SRO-transcription-ab-ab-in-entry-constraint-report-7">
             <rule context="tei:ab">
                <s:report xmlns:rng="http://relaxng.org/ns/structure/1.0"
                          xmlns="http://www.tei-c.org/ns/1.0"
@@ -2273,7 +2625,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SRO-transcription-ab-ab-not-in-entry-constraint-report-7">
+                  id="SRO-transcription-ab-ab-not-in-entry-constraint-report-8">
             <rule context="tei:ab">
                <s:report xmlns:rng="http://relaxng.org/ns/structure/1.0"
                          xmlns="http://www.tei-c.org/ns/1.0"
@@ -2282,7 +2634,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SRO-transcription-ab-date-in-ab-constraint-report-8">
+                  id="SRO-transcription-ab-date-in-ab-constraint-report-9">
             <rule context="tei:ab">
                <s:report xmlns:rng="http://relaxng.org/ns/structure/1.0"
                          xmlns="http://www.tei-c.org/ns/1.0"
@@ -2291,7 +2643,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SRO-transcription-ab-arber-in-ab-constraint-report-9">
+                  id="SRO-transcription-ab-arber-in-ab-constraint-report-10">
             <rule context="tei:ab">
                <s:report xmlns:rng="http://relaxng.org/ns/structure/1.0"
                          xmlns="http://www.tei-c.org/ns/1.0"
@@ -2300,7 +2652,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SRO-transcription-ab-register-in-ab-constraint-report-10">
+                  id="SRO-transcription-ab-register-in-ab-constraint-report-11">
             <rule context="tei:ab">
                <s:report xmlns:rng="http://relaxng.org/ns/structure/1.0"
                          xmlns="http://www.tei-c.org/ns/1.0"
@@ -2309,7 +2661,16 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SRO-transcription-ab-abstractModel-structure-p-constraint-report-11">
+                  id="SRO-transcription-ab-register-in-ab-constraint-report-12">
+            <rule context="tei:ab">
+               <s:report xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                         xmlns="http://www.tei-c.org/ns/1.0"
+                         xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                         test="@type='metadata' and ancestor::tei:div[@type='entry'] and not(tei:idno/@type='RegisterID')">Metadata block must contain a reference to the Register ID in an 'idno' of type 'RegisterID'.</s:report>
+            </rule>
+         </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="SRO-transcription-ab-abstractModel-structure-p-constraint-report-13">
             <rule context="tei:ab">
                <report xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        xmlns:s="http://purl.oclc.org/dsdl/schematron"
@@ -2319,7 +2680,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SRO-transcription-ab-abstractModel-structure-l-constraint-report-12">
+                  id="SRO-transcription-ab-abstractModel-structure-l-constraint-report-14">
             <rule context="tei:ab">
                <report xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        xmlns:s="http://purl.oclc.org/dsdl/schematron"
@@ -2599,7 +2960,16 @@ Suggested values include: 1] fee; 2] notFee; 3] other</a:documentation>
             </optional>
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SRO-transcription-div-abstractModel-structure-l-constraint-report-13">
+                  id="SRO-transcription-div-entry-in-entry-constraint-report-15">
+            <rule context="tei:div">
+               <s:report xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                         xmlns="http://www.tei-c.org/ns/1.0"
+                         xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                         test="@type='entry' and .//tei:div[@type='entry']">You may not hve an entry inside another entry</s:report>
+            </rule>
+         </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="SRO-transcription-div-abstractModel-structure-l-constraint-report-16">
             <rule context="tei:div">
                <report xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        xmlns:s="http://purl.oclc.org/dsdl/schematron"
@@ -2609,7 +2979,7 @@ Suggested values include: 1] fee; 2] notFee; 3] other</a:documentation>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SRO-transcription-div-abstractModel-structure-p-constraint-report-14">
+                  id="SRO-transcription-div-abstractModel-structure-p-constraint-report-17">
             <rule context="tei:div">
                <report xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        xmlns:s="http://purl.oclc.org/dsdl/schematron"
@@ -2651,8 +3021,8 @@ Suggested values include: 1] fee; 2] notFee; 3] other</a:documentation>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The division contains payments</a:documentation>
                <value>receipts</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The division contains receipts</a:documentation>
-               <value>year</value>
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The division contains entries for a year</a:documentation>
+               <value>folio</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The division contains entries on a folio</a:documentation>
             </choice>
          </attribute>
          <empty/>
