@@ -25,11 +25,19 @@
       
       
       <!-- 
-      
-      
-      JC: ToDo
+    JC: ToDo
    
-             [done for now]
+   - add <ref> elementdone
+   - constrained values for all editors etc.done
+   - persname @role schematron 
+   - orgName @role = enterer
+   - add <del>done
+   - all entries to have an iddone
+   - all entries to have an ab/@type='metadata'done
+   
+   
+   
+   
       
       -->
       
@@ -44,9 +52,27 @@
             <moduleRef key="namesdates" include="orgName persName surname forename placeName"/>
             
             
+              <elementSpec ident="persName" mode="change">
+                <constraintSpec ident="pesrName-role" scheme="isoschematron" >
+                  <constraint>
+                    <s:report test="@role and not(@role='stationer' or @role='non-stationer')">If @role attribute appears on a persName it must be one of: stationer, non-stationer, enterer, licenser, authoriser.</s:report>
+                  </constraint>
+                </constraintSpec>
+             </elementSpec>
+              
+              <elementSpec ident="orgName" mode="change">
+                <constraintSpec ident="pesrName-role" scheme="isoschematron" >
+                  <constraint>
+                    <s:report test="@role and not(@role='enterer')">If @role attribute appears on a orgName it must be 'enterer'.</s:report>
+                  </constraint>
+                </constraintSpec>
+              </elementSpec>
+              
+            
+            
             <!--Core-->
             <moduleRef key="core"
-                       include="p foreign hi desc gap unclear num date list item head note pb lb respStmt resp title choice abbr expan corr sic orig reg add"/>
+                       include="p foreign hi desc gap unclear num date list item head note pb lb respStmt resp title choice abbr expan corr sic orig reg add ref del"/>
             
             <!-- provide valList for num/@type -->
             <elementSpec ident="num" mode="change">
@@ -68,6 +94,7 @@
                   </attDef>
                 </attList>
             </elementSpec>
+              
             <elementSpec ident="note" mode="change">
               <constraintSpec ident="status-note-in-ab" scheme="isoschematron" >
                 <constraint>
@@ -75,7 +102,6 @@
                     not(@subtype='other' 
                     or @subtype='annotated'
                     or @subtype='cancelled' 
-                    or @subtype='conditional' 
                     or @subtype='entered' 
                     or @subtype='incomplete' 
                     or @subtype='notPrinted'
@@ -83,7 +109,7 @@
                     or @subtype='shared'
                     or @subtype='stock'
                     or @subtype='unknown'
-                    )">If a status note appears inside a metadata block it must have a subtype attribute of 'annotated', 'cancelled', 'conditional', 'entered', 'incomplete', 'notPrinted', 'reassigned', 'shared', 'stock', 'unknown' or 'other'. Once edited an entry should not have an 'unknown' status.</s:report>
+                    )">If a status note appears inside a metadata block it must have a subtype attribute of 'annotated', 'cancelled', 'entered', 'incomplete', 'notPrinted', 'reassigned', 'shared', 'stock', 'unknown' or 'other'. Once edited an entry should not have an 'unknown' status.</s:report>
                 </constraint>
               </constraintSpec>
               
@@ -112,6 +138,7 @@
                <attDef ident="hand" mode="delete"/>
              </attList>
            </elementSpec>
+           
            
            
            <elementSpec ident="unclear" mode="change">
@@ -239,6 +266,16 @@
                     <s:report test="@type='entry' and .//tei:div[@type='entry']">You may not hve an entry inside another entry</s:report>
                   </constraint>
                 </constraintSpec>
+              <constraintSpec ident="entry-needs-ID" scheme="isoschematron" >
+                <constraint>
+                  <s:report test="@type='entry' and not(@xml:id)]">You must have an xml:id attribute on an entry</s:report>
+                </constraint>
+              </constraintSpec>
+              <constraintSpec ident="entry-needs-ab" scheme="isoschematron" >
+                <constraint>
+                  <s:report test="@type='entry' and not(ab[@type='metadata'])]">You must have an ab element with a type attribute of 'metadata' in any entry</s:report>
+                </constraint>
+              </constraintSpec>
                <attList>
                   <attDef ident="type" mode="change" usage="req">
                      <valList mode="add" type="closed">
@@ -405,7 +442,26 @@
            <classSpec ident="att.spanning" type="atts" mode="delete"/>
            
            <classSpec ident="att.timed" type="atts" mode="delete"/>
-           
+
+              <classSpec ident="att.global.responsibilty" type="atts" mode="change">
+                <attList>
+                  <attDef ident="synch" mode="change">
+                    <valList mode="add" type="closed">
+                      <valItem ident="#arber"><desc>The person responsible for this was Arber</desc></valItem>
+                      <valItem ident="#editor"><desc>The person responsible for this was an SRO editor</desc></valItem>
+                      <valItem ident="#register"><desc>The register was the source for this</desc></valItem>
+                      <valItem ident="#JC"><desc>The person responsible for this was James Cummings</desc></valItem>
+                      <valItem ident="#GB"><desc>The person responsible for this was Giles Bergel</desc></valItem>
+                      <valItem ident="#IG"><desc>The person responsible for this was Ian Gadd</desc></valItem>
+                      <valItem ident="#JC"><desc>The person responsible for this was James Cummings</desc></valItem>
+                      <valItem ident="#BH"><desc>The person responsible for this was Ben Higgins</desc></valItem>
+                      <valItem ident="#JC"><desc>The person responsible for this was James Cummings</desc></valItem>
+                      <valItem ident="#EM"><desc>The person responsible for this was Eleanor Warmington</desc></valItem>
+                      <valItem ident="#EM"><desc>The person responsible for this was Emma Bashforth</desc></valItem>
+                    </valList>
+                  </attDef>
+                </attList>
+              </classSpec>
            
            
            
