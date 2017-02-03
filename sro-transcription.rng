@@ -5,7 +5,7 @@
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2017-01-28T23:17:25Z. .
+Schema generated from ODD source 2017-02-03T23:54:24Z. .
 TEI Edition: Version 3.1.0. Last updated on
 	15th December 2016, revision d3f5e70
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.1.0/
@@ -180,6 +180,17 @@ TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.1.0/
          </attribute>
       </optional>
    </define>
+   <define name="att.cReferencing.attributes">
+      <ref name="att.cReferencing.attribute.cRef"/>
+   </define>
+   <define name="att.cReferencing.attribute.cRef">
+      <optional>
+         <attribute name="cRef">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(canonical reference) specifies the destination of the pointer by supplying a canonical reference expressed using the scheme defined in a refsDecl element in the TEI header</a:documentation>
+            <data type="string"/>
+         </attribute>
+      </optional>
+   </define>
    <define name="att.datable.w3c.attributes">
       <ref name="att.datable.w3c.attribute.when"/>
       <ref name="att.datable.w3c.attribute.notBefore"/>
@@ -322,8 +333,35 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
       </optional>
    </define>
    <define name="att.global.responsibility.attributes">
-      <ref name="att.global.responsibility.attribute.cert"/>
       <ref name="att.global.responsibility.attribute.resp"/>
+      <ref name="att.global.responsibility.attribute.cert"/>
+   </define>
+   <define name="att.global.responsibility.attribute.resp">
+      <optional>
+         <attribute name="resp">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+            <choice>
+               <value>#arber</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The person responsible for this was Arber</a:documentation>
+               <value>#editor</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The person responsible for this was an SRO editor</a:documentation>
+               <value>#register</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The register was the source for this</a:documentation>
+               <value>#JC</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The person responsible for this was James Cummings</a:documentation>
+               <value>#GB</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The person responsible for this was Giles Bergel</a:documentation>
+               <value>#IG</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The person responsible for this was Ian Gadd</a:documentation>
+               <value>#BH</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The person responsible for this was Ben Higgins</a:documentation>
+               <value>#EW</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The person responsible for this was Eleanor Warmington</a:documentation>
+               <value>#EB</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The person responsible for this was Emma Bashforth</a:documentation>
+            </choice>
+         </attribute>
+      </optional>
    </define>
    <define name="att.global.responsibility.attribute.cert">
       <optional>
@@ -342,18 +380,6 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                </choice>
             </choice>
-         </attribute>
-      </optional>
-   </define>
-   <define name="att.global.responsibility.attribute.resp">
-      <optional>
-         <attribute name="resp">
-            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(responsible party) indicates the agency responsible for the intervention or interpretation, for example an editor or transcriber.</a:documentation>
-            <list>
-               <oneOrMore>
-                  <data type="anyURI"/>
-               </oneOrMore>
-            </list>
          </attribute>
       </optional>
    </define>
@@ -410,6 +436,23 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                </choice>
             </choice>
+         </attribute>
+      </optional>
+   </define>
+   <define name="att.internetMedia.attributes">
+      <ref name="att.internetMedia.attribute.mimeType"/>
+   </define>
+   <define name="att.internetMedia.attribute.mimeType">
+      <optional>
+         <attribute name="mimeType">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(MIME media type) specifies the applicable multimedia internet mail extension (MIME) media type</a:documentation>
+            <list>
+               <oneOrMore>
+                  <data type="token">
+                     <param name="pattern">(\p{L}|\p{N}|\p{P}|\p{S})+</param>
+                  </data>
+               </oneOrMore>
+            </list>
          </attribute>
       </optional>
    </define>
@@ -906,6 +949,7 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
          <ref name="reg"/>
          <ref name="orig"/>
          <ref name="add"/>
+         <ref name="del"/>
          <ref name="unclear"/>
          <ref name="supplied"/>
       </choice>
@@ -917,6 +961,7 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
          <ref name="reg"/>
          <ref name="orig"/>
          <ref name="add"/>
+         <ref name="del"/>
          <ref name="unclear"/>
          <ref name="supplied"/>
       </choice>
@@ -927,6 +972,7 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
       <ref name="reg"/>
       <ref name="orig"/>
       <ref name="add"/>
+      <ref name="del"/>
       <ref name="unclear"/>
       <ref name="supplied"/>
    </define>
@@ -945,6 +991,9 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
       </optional>
       <optional>
          <ref name="add"/>
+      </optional>
+      <optional>
+         <ref name="del"/>
       </optional>
       <optional>
          <ref name="unclear"/>
@@ -970,6 +1019,9 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
          <ref name="add"/>
       </zeroOrMore>
       <zeroOrMore>
+         <ref name="del"/>
+      </zeroOrMore>
+      <zeroOrMore>
          <ref name="unclear"/>
       </zeroOrMore>
       <zeroOrMore>
@@ -993,6 +1045,9 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
          <ref name="add"/>
       </oneOrMore>
       <oneOrMore>
+         <ref name="del"/>
+      </oneOrMore>
+      <oneOrMore>
          <ref name="unclear"/>
       </oneOrMore>
       <oneOrMore>
@@ -1006,7 +1061,9 @@ Sample values include: 1] duplicate; 2] duplicate-partial; 3] excessStart; 4] ex
       </choice>
    </define>
    <define name="model.ptrLike">
-      <notAllowed/>
+      <choice>
+         <ref name="ref"/>
+      </choice>
    </define>
    <define name="model.lPart">
       <notAllowed/>
@@ -1748,6 +1805,16 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
          <empty/>
       </element>
    </define>
+   <define name="del">
+      <element name="del">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(deletion) contains a letter, word, or passage deleted, marked as deleted, or otherwise indicated as superfluous or spurious in the copy text by an author, scribe, or a previous annotator or corrector. [3.4.3. Additions, Deletions, and Omissions]</a:documentation>
+         <ref name="macro.paraContent"/>
+         <ref name="att.global.attributes"/>
+         <ref name="att.transcriptional.attributes"/>
+         <ref name="att.typed.attributes"/>
+         <empty/>
+      </element>
+   </define>
    <define name="unclear">
       <element name="unclear">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a word, phrase, or passage which cannot be transcribed with certainty because it is illegible or inaudible in the source. [11.3.3.1. Damage, Illegibility, and Supplied Text 3.4.3. Additions, Deletions, and Omissions]</a:documentation>
@@ -1866,6 +1933,28 @@ Sample values include: 1] suspension; 2] contraction; 3] brevigraph; 4] superscr
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(expansion) contains the expansion of an abbreviation. [3.5.5. Abbreviations and Their Expansions]</a:documentation>
          <ref name="macro.phraseSeq"/>
          <ref name="att.global.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="ref">
+      <element name="ref">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(reference) defines a reference to another location, possibly modified by additional text or comment. [3.6. Simple Links and Cross-References 16.1. Links]</a:documentation>
+         <ref name="macro.paraContent"/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="SRO-transcription-ref-refAtts-constraint-report-6">
+            <rule context="tei:ref">
+               <report xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                       xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                       test="@target and @cRef">Only one of the
+	attributes @target' and @cRef' may be supplied on <name/>
+               </report>
+            </rule>
+         </pattern>
+         <ref name="att.global.attributes"/>
+         <ref name="att.pointing.attributes"/>
+         <ref name="att.internetMedia.attributes"/>
+         <ref name="att.typed.attributes"/>
+         <ref name="att.cReferencing.attributes"/>
          <empty/>
       </element>
    </define>
@@ -2004,12 +2093,12 @@ Suggested values include: 1] gloss; 2] index; 3] instructions; 4] litany; 5] syl
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">contains a note or annotation. [3.8.1. Notes and Simple Annotation 2.2.6. The Notes Statement 3.11.2.8. Notes and Statement of Language 9.3.5.4. Notes within Entries]</a:documentation>
          <ref name="macro.specialPara"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SRO-transcription-note-status-note-in-ab-constraint-report-6">
+                  id="SRO-transcription-note-status-note-in-ab-constraint-report-7">
             <rule context="tei:note">
                <s:report xmlns:rng="http://relaxng.org/ns/structure/1.0"
                          xmlns="http://www.tei-c.org/ns/1.0"
                          xmlns:s="http://purl.oclc.org/dsdl/schematron"
-                         test="parent::tei:ab[@type='metadata'] and @type='status' and                      not(@subtype='other'                      or @subtype='annotated'                     or @subtype='cancelled'                      or @subtype='conditional'                      or @subtype='entered'                      or @subtype='incomplete'                      or @subtype='notPrinted'                     or @subtype='reassigned'                     or @subtype='shared'                     or @subtype='stock'                     or @subtype='unknown'                     )">If a status note appears inside a metadata block it must have a subtype attribute of 'annotated', 'cancelled', 'conditional', 'entered', 'incomplete', 'notPrinted', 'reassigned', 'shared', 'stock', 'unknown' or 'other'. Once edited an entry should not have an 'unknown' status.</s:report>
+                         test="parent::tei:ab[@type='metadata'] and @type='status' and                      not(@subtype='other'                      or @subtype='annotated'                     or @subtype='cancelled'                      or @subtype='entered'                      or @subtype='incomplete'                      or @subtype='notPrinted'                     or @subtype='reassigned'                     or @subtype='shared'                     or @subtype='stock'                     or @subtype='unknown'                     )">If a status note appears inside a metadata block it must have a subtype attribute of 'annotated', 'cancelled', 'entered', 'incomplete', 'notPrinted', 'reassigned', 'shared', 'stock', 'unknown' or 'other'. Once edited an entry should not have an 'unknown' status.</s:report>
             </rule>
          </pattern>
          <ref name="att.global.attributes"/>
@@ -2150,8 +2239,45 @@ Sample values include: 1] main; 2] sub(subordinate) ; 3] alt(alternate) ; 4] sho
          <ref name="macro.phraseSeq"/>
          <ref name="att.global.attributes"/>
          <ref name="att.datable.attributes"/>
-         <ref name="att.personal.attributes"/>
+         <ref name="att.canonical.attribute.ref"/>
          <ref name="att.typed.attributes"/>
+         <optional>
+            <attribute name="role">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">may be used to specify further information about the entity referenced by this name in the form of a set of whitespace-separated values, for example the occupation of a person, or the status of a place.</a:documentation>
+               <list>
+                  <optional>
+                     <choice>
+                        <value>enterer</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The organisational name is the person entering a copy</a:documentation>
+                     </choice>
+                  </optional>
+                  <optional>
+                     <choice>
+                        <value>enterer</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The organisational name is the person entering a copy</a:documentation>
+                     </choice>
+                  </optional>
+                  <optional>
+                     <choice>
+                        <value>enterer</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The organisational name is the person entering a copy</a:documentation>
+                     </choice>
+                  </optional>
+                  <optional>
+                     <choice>
+                        <value>enterer</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The organisational name is the person entering a copy</a:documentation>
+                     </choice>
+                  </optional>
+                  <optional>
+                     <choice>
+                        <value>enterer</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The organisational name is the person entering a copy</a:documentation>
+                     </choice>
+                  </optional>
+               </list>
+            </attribute>
+         </optional>
          <empty/>
       </element>
    </define>
@@ -2161,8 +2287,115 @@ Sample values include: 1] main; 2] sub(subordinate) ; 3] alt(alternate) ; 4] sho
          <ref name="macro.phraseSeq"/>
          <ref name="att.global.attributes"/>
          <ref name="att.datable.attributes"/>
-         <ref name="att.personal.attributes"/>
+         <ref name="att.canonical.attribute.ref"/>
          <ref name="att.typed.attributes"/>
+         <optional>
+            <attribute name="role">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">may be used to specify further information about the entity referenced by this name in the form of a set of whitespace-separated values, for example the occupation of a person, or the status of a place.</a:documentation>
+               <list>
+                  <optional>
+                     <choice>
+                        <value>enterer</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is the person entering a copy</a:documentation>
+                        <value>licenser</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is the person licensing the entering a copy</a:documentation>
+                        <value>stationer</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is a stationer</a:documentation>
+                        <value>non-stationer</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is a non-stationer</a:documentation>
+                        <value>authoriser</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is the person authorising the entering a copy</a:documentation>
+                        <value>warden</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is a non-stationer</a:documentation>
+                        <value>master</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is a master</a:documentation>
+                        <value>other</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is a role you wish to record but not catered for</a:documentation>
+                     </choice>
+                  </optional>
+                  <optional>
+                     <choice>
+                        <value>enterer</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is the person entering a copy</a:documentation>
+                        <value>licenser</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is the person licensing the entering a copy</a:documentation>
+                        <value>stationer</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is a stationer</a:documentation>
+                        <value>non-stationer</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is a non-stationer</a:documentation>
+                        <value>authoriser</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is the person authorising the entering a copy</a:documentation>
+                        <value>warden</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is a non-stationer</a:documentation>
+                        <value>master</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is a master</a:documentation>
+                        <value>other</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is a role you wish to record but not catered for</a:documentation>
+                     </choice>
+                  </optional>
+                  <optional>
+                     <choice>
+                        <value>enterer</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is the person entering a copy</a:documentation>
+                        <value>licenser</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is the person licensing the entering a copy</a:documentation>
+                        <value>stationer</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is a stationer</a:documentation>
+                        <value>non-stationer</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is a non-stationer</a:documentation>
+                        <value>authoriser</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is the person authorising the entering a copy</a:documentation>
+                        <value>warden</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is a non-stationer</a:documentation>
+                        <value>master</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is a master</a:documentation>
+                        <value>other</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is a role you wish to record but not catered for</a:documentation>
+                     </choice>
+                  </optional>
+                  <optional>
+                     <choice>
+                        <value>enterer</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is the person entering a copy</a:documentation>
+                        <value>licenser</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is the person licensing the entering a copy</a:documentation>
+                        <value>stationer</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is a stationer</a:documentation>
+                        <value>non-stationer</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is a non-stationer</a:documentation>
+                        <value>authoriser</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is the person authorising the entering a copy</a:documentation>
+                        <value>warden</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is a non-stationer</a:documentation>
+                        <value>master</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is a master</a:documentation>
+                        <value>other</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is a role you wish to record but not catered for</a:documentation>
+                     </choice>
+                  </optional>
+                  <optional>
+                     <choice>
+                        <value>enterer</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is the person entering a copy</a:documentation>
+                        <value>licenser</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is the person licensing the entering a copy</a:documentation>
+                        <value>stationer</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is a stationer</a:documentation>
+                        <value>non-stationer</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is a non-stationer</a:documentation>
+                        <value>authoriser</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is the person authorising the entering a copy</a:documentation>
+                        <value>warden</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is a non-stationer</a:documentation>
+                        <value>master</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is a master</a:documentation>
+                        <value>other</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is a role you wish to record but not catered for</a:documentation>
+                     </choice>
+                  </optional>
+               </list>
+            </attribute>
+         </optional>
          <empty/>
       </element>
    </define>
@@ -2554,12 +2787,27 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
          <ref name="att.dimensions.attributes"/>
          <optional>
             <attribute name="resp">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(responsible party) (responsible party) indicates the individual responsible for identifying and measuring the space</a:documentation>
-               <list>
-                  <oneOrMore>
-                     <data type="anyURI"/>
-                  </oneOrMore>
-               </list>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(responsible party) indicates the individual responsible for identifying and measuring the space</a:documentation>
+               <choice>
+                  <value>#arber</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The person responsible for this was Arber</a:documentation>
+                  <value>#editor</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The person responsible for this was an SRO editor</a:documentation>
+                  <value>#register</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The register was the source for this</a:documentation>
+                  <value>#JC</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The person responsible for this was James Cummings</a:documentation>
+                  <value>#GB</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The person responsible for this was Giles Bergel</a:documentation>
+                  <value>#IG</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The person responsible for this was Ian Gadd</a:documentation>
+                  <value>#BH</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The person responsible for this was Ben Higgins</a:documentation>
+                  <value>#EW</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The person responsible for this was Eleanor Warmington</a:documentation>
+                  <value>#EB</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The person responsible for this was Emma Bashforth</a:documentation>
+               </choice>
             </attribute>
          </optional>
          <optional>
@@ -2616,7 +2864,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(anonymous block) contains any arbitrary component-level unit of text, acting as an anonymous container for phrase or inter level elements analogous to, but without the semantic baggage of, a paragraph. [16.3. Blocks, Segments, and Anchors]</a:documentation>
          <ref name="macro.paraContent"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SRO-transcription-ab-ab-in-entry-constraint-report-7">
+                  id="SRO-transcription-ab-ab-in-entry-constraint-report-8">
             <rule context="tei:ab">
                <s:report xmlns:rng="http://relaxng.org/ns/structure/1.0"
                          xmlns="http://www.tei-c.org/ns/1.0"
@@ -2625,7 +2873,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SRO-transcription-ab-ab-not-in-entry-constraint-report-8">
+                  id="SRO-transcription-ab-ab-not-in-entry-constraint-report-9">
             <rule context="tei:ab">
                <s:report xmlns:rng="http://relaxng.org/ns/structure/1.0"
                          xmlns="http://www.tei-c.org/ns/1.0"
@@ -2634,7 +2882,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SRO-transcription-ab-date-in-ab-constraint-report-9">
+                  id="SRO-transcription-ab-date-in-ab-constraint-report-10">
             <rule context="tei:ab">
                <s:report xmlns:rng="http://relaxng.org/ns/structure/1.0"
                          xmlns="http://www.tei-c.org/ns/1.0"
@@ -2643,7 +2891,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SRO-transcription-ab-arber-in-ab-constraint-report-10">
+                  id="SRO-transcription-ab-arber-in-ab-constraint-report-11">
             <rule context="tei:ab">
                <s:report xmlns:rng="http://relaxng.org/ns/structure/1.0"
                          xmlns="http://www.tei-c.org/ns/1.0"
@@ -2652,7 +2900,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SRO-transcription-ab-register-in-ab-constraint-report-11">
+                  id="SRO-transcription-ab-register-in-ab-constraint-report-12">
             <rule context="tei:ab">
                <s:report xmlns:rng="http://relaxng.org/ns/structure/1.0"
                          xmlns="http://www.tei-c.org/ns/1.0"
@@ -2661,7 +2909,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SRO-transcription-ab-register-in-ab-constraint-report-12">
+                  id="SRO-transcription-ab-register-in-ab-constraint-report-13">
             <rule context="tei:ab">
                <s:report xmlns:rng="http://relaxng.org/ns/structure/1.0"
                          xmlns="http://www.tei-c.org/ns/1.0"
@@ -2670,7 +2918,25 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SRO-transcription-ab-abstractModel-structure-p-constraint-report-13">
+                  id="SRO-transcription-ab-status-in-ab-constraint-report-14">
+            <rule context="tei:ab">
+               <s:report xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                         xmlns="http://www.tei-c.org/ns/1.0"
+                         xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                         test="@type='metadata' and ancestor::tei:div[@type='entry'] and not(tei:note/@type='status')">Metadata block must contain a note of type 'status'.</s:report>
+            </rule>
+         </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="SRO-transcription-ab-status-in-ab-constraint-report-15">
+            <rule context="tei:ab">
+               <s:report xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                         xmlns="http://www.tei-c.org/ns/1.0"
+                         xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                         test="@type='metadata' and ancestor::tei:div[@type='entry'] and tei:note/@type='status' and not(tei:note/@subtype) ">Metadata block must contain a note with a subtype.</s:report>
+            </rule>
+         </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="SRO-transcription-ab-abstractModel-structure-p-constraint-report-16">
             <rule context="tei:ab">
                <report xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        xmlns:s="http://purl.oclc.org/dsdl/schematron"
@@ -2680,7 +2946,7 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SRO-transcription-ab-abstractModel-structure-l-constraint-report-14">
+                  id="SRO-transcription-ab-abstractModel-structure-l-constraint-report-17">
             <rule context="tei:ab">
                <report xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        xmlns:s="http://purl.oclc.org/dsdl/schematron"
@@ -2690,7 +2956,20 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
             </rule>
          </pattern>
          <ref name="att.global.attributes"/>
-         <ref name="att.typed.attributes"/>
+         <ref name="att.typed.attribute.subtype"/>
+         <optional>
+            <attribute name="type">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the element in some sense, using any convenient classification scheme or typology.
+Suggested values include: 1] metadata</a:documentation>
+               <choice>
+                  <value>metadata</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The ab is a metadata block containing information about the entry</a:documentation>
+                  <data type="token">
+                     <param name="pattern">(\p{L}|\p{N}|\p{P}|\p{S})+</param>
+                  </data>
+               </choice>
+            </attribute>
+         </optional>
          <empty/>
       </element>
    </define>
@@ -2960,7 +3239,7 @@ Suggested values include: 1] fee; 2] notFee; 3] other</a:documentation>
             </optional>
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SRO-transcription-div-entry-in-entry-constraint-report-15">
+                  id="SRO-transcription-div-entry-in-entry-constraint-report-18">
             <rule context="tei:div">
                <s:report xmlns:rng="http://relaxng.org/ns/structure/1.0"
                          xmlns="http://www.tei-c.org/ns/1.0"
@@ -2969,7 +3248,25 @@ Suggested values include: 1] fee; 2] notFee; 3] other</a:documentation>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SRO-transcription-div-abstractModel-structure-l-constraint-report-16">
+                  id="SRO-transcription-div-entry-needs-ID-constraint-report-19">
+            <rule context="tei:div">
+               <s:report xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                         xmlns="http://www.tei-c.org/ns/1.0"
+                         xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                         test="@type='entry' and not(@xml:id)">You must have an xml:id attribute on an entry</s:report>
+            </rule>
+         </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="SRO-transcription-div-entry-needs-ab-constraint-report-20">
+            <rule context="tei:div">
+               <s:report xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                         xmlns="http://www.tei-c.org/ns/1.0"
+                         xmlns:s="http://purl.oclc.org/dsdl/schematron"
+                         test="@type='entry' and not(tei:ab[@type='metadata'])">You must have an ab element with a type attribute of 'metadata' in any entry</s:report>
+            </rule>
+         </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  id="SRO-transcription-div-abstractModel-structure-l-constraint-report-21">
             <rule context="tei:div">
                <report xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        xmlns:s="http://purl.oclc.org/dsdl/schematron"
@@ -2979,7 +3276,7 @@ Suggested values include: 1] fee; 2] notFee; 3] other</a:documentation>
             </rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="SRO-transcription-div-abstractModel-structure-p-constraint-report-17">
+                  id="SRO-transcription-div-abstractModel-structure-p-constraint-report-22">
             <rule context="tei:div">
                <report xmlns:rng="http://relaxng.org/ns/structure/1.0"
                        xmlns:s="http://purl.oclc.org/dsdl/schematron"

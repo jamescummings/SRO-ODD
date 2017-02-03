@@ -34,11 +34,7 @@
    - add <del>done
    - all entries to have an iddone
    - all entries to have an ab/@type='metadata'done
-   
-   
-   
-   
-      
+  
       -->
       
       
@@ -52,20 +48,50 @@
             <moduleRef key="namesdates" include="orgName persName surname forename placeName"/>
             
             
+            <dataSpec ident="persName-Role">
+                  <desc>A datatype for persName/@role</desc>
+                  <content>
+                    <valList type="closed">
+                      <valItem ident="enterer"><desc>The name is the person entering a copy</desc></valItem>
+                      <valItem ident="licenser"><desc>The name is the person licensing the entering a copy</desc></valItem>
+                      <valItem ident="stationer"><desc>The name is a stationer</desc></valItem>
+                      <valItem ident="non-stationer"><desc>The name is a non-stationer</desc></valItem>
+                      <valItem ident="authoriser"><desc>The name is the person authorising the entering a copy</desc></valItem>
+                      <valItem ident="warden"><desc>The name is a non-stationer</desc></valItem>
+                      <valItem ident="master"><desc>The name is a master</desc></valItem>
+                      <valItem ident="other"><desc>The name is a role you wish to record but not catered for</desc></valItem> 
+                    </valList>
+                  </content>
+                </dataSpec>
+                
+                
+              <dataSpec ident="orgName-Role">
+                <desc>A datatype for orgName/@role</desc>
+                <content>
+                  <valList type="closed">
+                    <valItem ident="enterer"><desc>The organisational name is the person entering a copy</desc></valItem>
+                    </valList>
+                </content>
+              </dataSpec>
+              
               <elementSpec ident="persName" mode="change">
-                <constraintSpec ident="pesrName-role" scheme="isoschematron" >
-                  <constraint>
-                    <s:report test="@role and not(@role='stationer' or @role='non-stationer')">If @role attribute appears on a persName it must be one of: stationer, non-stationer, enterer, licenser, authoriser.</s:report>
-                  </constraint>
-                </constraintSpec>
-             </elementSpec>
+                <attList>
+                  <attDef  ident="role" mode="change">
+                    <datatype minOccurs="0" maxOccurs="5">
+                      <dataRef key="persName-Role"/>
+                    </datatype>
+                  </attDef>
+                </attList>
+                </elementSpec>
               
               <elementSpec ident="orgName" mode="change">
-                <constraintSpec ident="pesrName-role" scheme="isoschematron" >
-                  <constraint>
-                    <s:report test="@role and not(@role='enterer')">If @role attribute appears on a orgName it must be 'enterer'.</s:report>
-                  </constraint>
-                </constraintSpec>
+                <attList>
+                  <attDef  ident="role" mode="change">
+                    <datatype minOccurs="0" maxOccurs="5">
+                      <dataRef key="orgName-Role"/>
+                    </datatype>
+                  </attDef>
+                </attList>
               </elementSpec>
               
             
@@ -200,7 +226,9 @@
             
             
             <elementSpec ident="ab" mode="change">
-               <constraintSpec ident="ab-in-entry" scheme="isoschematron" >
+              
+              
+              <constraintSpec ident="ab-in-entry" scheme="isoschematron" >
                   <constraint>
                      <s:report test="not(@type='metadata') and ancestor::tei:div[@type='entry']">If 'ab' appears inside an entry div it must have a type attribute of 'metadata'.</s:report>
                   </constraint>
@@ -230,6 +258,26 @@
                   <s:report test="@type='metadata' and ancestor::tei:div[@type='entry'] and not(tei:idno/@type='RegisterID')">Metadata block must contain a reference to the Register ID in an 'idno' of type 'RegisterID'.</s:report>
                 </constraint>
               </constraintSpec>
+              <constraintSpec ident="status-in-ab" scheme="isoschematron">
+                <constraint>
+                  <s:report test="@type='metadata' and ancestor::tei:div[@type='entry'] and not(tei:note/@type='status')">Metadata block must contain a note of type 'status'.</s:report>
+                </constraint>
+              </constraintSpec>
+              <constraintSpec ident="status-in-ab" scheme="isoschematron">
+                <constraint>
+                  <s:report test="@type='metadata' and ancestor::tei:div[@type='entry'] and tei:note/@type='status' and not(tei:note/@subtype) ">Metadata block must contain a note with a subtype.</s:report>
+                </constraint>
+              </constraintSpec>
+              
+              
+              <attList>
+                <attDef ident="type" mode="change">
+                  <valList mode="change" type="semi">
+                    <valItem ident="metadata"><desc>The ab is a metadata block containing information about the entry</desc></valItem>
+                  </valList>
+                </attDef>
+              </attList>
+              
             </elementSpec>
             
             
@@ -268,12 +316,12 @@
                 </constraintSpec>
               <constraintSpec ident="entry-needs-ID" scheme="isoschematron" >
                 <constraint>
-                  <s:report test="@type='entry' and not(@xml:id)]">You must have an xml:id attribute on an entry</s:report>
+                  <s:report test="@type='entry' and not(@xml:id)">You must have an xml:id attribute on an entry</s:report>
                 </constraint>
               </constraintSpec>
               <constraintSpec ident="entry-needs-ab" scheme="isoschematron" >
                 <constraint>
-                  <s:report test="@type='entry' and not(ab[@type='metadata'])]">You must have an ab element with a type attribute of 'metadata' in any entry</s:report>
+                  <s:report test="@type='entry' and not(tei:ab[@type='metadata'])">You must have an ab element with a type attribute of 'metadata' in any entry</s:report>
                 </constraint>
               </constraintSpec>
                <attList>
@@ -443,27 +491,36 @@
            
            <classSpec ident="att.timed" type="atts" mode="delete"/>
 
-              <classSpec ident="att.global.responsibilty" type="atts" mode="change">
+              <classSpec ident="att.global.responsibility" type="atts" mode="change">
                 <attList>
-                  <attDef ident="synch" mode="change">
-                    <valList mode="add" type="closed">
-                      <valItem ident="#arber"><desc>The person responsible for this was Arber</desc></valItem>
-                      <valItem ident="#editor"><desc>The person responsible for this was an SRO editor</desc></valItem>
-                      <valItem ident="#register"><desc>The register was the source for this</desc></valItem>
-                      <valItem ident="#JC"><desc>The person responsible for this was James Cummings</desc></valItem>
-                      <valItem ident="#GB"><desc>The person responsible for this was Giles Bergel</desc></valItem>
-                      <valItem ident="#IG"><desc>The person responsible for this was Ian Gadd</desc></valItem>
-                      <valItem ident="#JC"><desc>The person responsible for this was James Cummings</desc></valItem>
-                      <valItem ident="#BH"><desc>The person responsible for this was Ben Higgins</desc></valItem>
-                      <valItem ident="#JC"><desc>The person responsible for this was James Cummings</desc></valItem>
-                      <valItem ident="#EM"><desc>The person responsible for this was Eleanor Warmington</desc></valItem>
-                      <valItem ident="#EM"><desc>The person responsible for this was Emma Bashforth</desc></valItem>
-                    </valList>
-                  </attDef>
+                  <attDef ident="resp" mode="delete"/>
+                  <attDef ident="resp" mode="add">
+                    <datatype minOccurs="0" maxOccurs="1">
+                     <dataRef key="global-resp" />
+                   </datatype>
+                    </attDef>
                 </attList>
               </classSpec>
            
            
+           
+              <dataSpec ident="global-resp">
+                <desc>A datatype for @resp</desc>
+                <content>
+                  <valList type="closed">
+                    <valItem ident="#arber"><desc>The person responsible for this was Arber</desc></valItem>
+                    <valItem ident="#editor"><desc>The person responsible for this was an SRO editor</desc></valItem>
+                    <valItem ident="#register"><desc>The register was the source for this</desc></valItem>
+                    <valItem ident="#JC"><desc>The person responsible for this was James Cummings</desc></valItem>
+                    <valItem ident="#GB"><desc>The person responsible for this was Giles Bergel</desc></valItem>
+                    <valItem ident="#IG"><desc>The person responsible for this was Ian Gadd</desc></valItem>
+                    <valItem ident="#BH"><desc>The person responsible for this was Ben Higgins</desc></valItem>
+                    <valItem ident="#EW"><desc>The person responsible for this was Eleanor Warmington</desc></valItem>
+                    <valItem ident="#EB"><desc>The person responsible for this was Emma Bashforth</desc></valItem>
+                  </valList>
+                </content>
+              </dataSpec>
+              
            
          </schemaSpec>
         </div>
