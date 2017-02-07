@@ -19,19 +19,28 @@
                 
                 div.entryList{font-size:75%;}
                 div.entry{margin:2%; padding:1%; border:1px black solid;}
-                ul.ab-metadata{margin-left:auto; margin-right:auto; width:50%; background-color:#EFEFEF; padding:2%;}
+                ul.ab-metadata{margin-left:auto; margin-right:auto; width:50%; background-color:#EFEFEF; padding:2%;margin-top:10%;margin-bottom:2%;}
                 span.label{font-weight:bold;}
+                span.bold{font-weight:bold;}
+                span.italics{font-style:italics;}
+                span.smallcaps{font-variant:smallcaps;}
                 span.divType{font-weight:bold; font-size:110%;}
                 span.persName{background-color:FFDDDD;}
-                span.title{font-weight:bold; font-variant:italic; font-size:110%;}
+                span.title{font-weight:bold; font-style:italic; font-size:120%;}
+                span.fee{font-weight:bold; font-size:120%;color:#191;}
+                span.pb{font-weight:bold; color:#911; font-size:120%;}
+                a.top{color:#EEE; text-decoration:none; text-align:right; float:right; margin-right:5%; clear:both;}
+                a.entryLink{color:blue;text-decoration:none;margin-right:1em;}
+                .aligned-right{float:right; margin-right:10%; margin-left:1%;}
                 </style>
 
             </head>
             <body>
+                <a name="top" id="top"/>
                 <h1>SRO Proofing View: <xsl:value-of
                         select="/TEI/teiHeader/fileDesc/titleStmt/title[1]"/></h1>
-                <div class="entryList"><xsl:for-each select="//div[@type='entry'][@xml:id]">
-                    <a href="{concat('#', @xml:id)}"><xsl:value-of select="@xml:id"/></a><xsl:text> </xsl:text>
+                <div class="entryList"><h3>Entry List</h3><xsl:for-each select="//div[@type='entry'][@xml:id]">
+                    <a href="{concat('#', @xml:id)}" class="entryLink"><xsl:value-of select="@xml:id"/></a><xsl:text> </xsl:text>
                 </xsl:for-each></div>
                 <xsl:apply-templates select="text/body"/>
             </body>
@@ -207,6 +216,7 @@
        <div class="{concat(@type, ' ', @rend)}">
            <xsl:if test="@xml:id"><xsl:attribute name="id"><xsl:value-of select="@xml:id"/></xsl:attribute></xsl:if>
            <xsl:if test="@type"><span class="divType">[<xsl:value-of select="@type"/><xsl:if test="@xml:id"><xsl:value-of select="concat(': ', @xml:id)"/></xsl:if>]</span></xsl:if>
+           <xsl:if test="@type='entry'"><a class="top" href="#top">&#x25b2;</a></xsl:if>
            <xsl:apply-templates/>
        </div> 
     </xsl:template>
