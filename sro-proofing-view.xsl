@@ -11,6 +11,8 @@
             <head>
                 <title>SRO Proofing View: <xsl:value-of
                         select="/TEI/teiHeader/fileDesc/titleStmt/title[1]"/></title>
+                <meta charset="utf-8"/>
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
                 <style type="text/css">
                     body{
                         margin-left: 5%;
@@ -25,11 +27,14 @@
                 span.italics{font-style:italics;}
                 span.smallcaps{font-variant:smallcaps;}
                 span.divType{font-weight:bold; font-size:110%;}
+                span.del{text-decoration:line-through;font-weight:bold; color:#999;}
                 span.persName{background-color:FFDDDD;}
+                span.editorialNote{background-color:#CCC; font-weight:bold; font-style:italics; color:#0A0; padding:3px; }
+                span.arberNote{background-color:#BBB; font-weight:bold; font-style:italics; color:#A00; padding:3px; }
                 span.title{font-weight:bold; font-style:italic; font-size:120%;}
                 span.fee{font-weight:bold; font-size:120%;color:#191;}
                 span.pb{font-weight:bold; color:#911; font-size:120%;}
-                a.top{color:#EEE; text-decoration:none; text-align:right; float:right; margin-right:5%; clear:both;}
+                a.top{color:#AAA; text-decoration:none; text-align:right; float:right; margin-right:5%; clear:both;}
                 a.entryLink{color:blue;text-decoration:none;margin-right:1em;}
                 .aligned-right{float:right; margin-right:10%; margin-left:1%;}
                 </style>
@@ -40,6 +45,7 @@
                 <h1>SRO Proofing View: <xsl:value-of
                         select="/TEI/teiHeader/fileDesc/titleStmt/title[1]"/></h1>
                 <div class="entryList"><h3>Entry List</h3><xsl:for-each select="//div[@type='entry'][@xml:id]">
+                    <xsl:if test="ends-with(@xml:id, '00')"><br style="margin-top:5px;"/><span class="bold" style="font-size:1.2em"><xsl:value-of select="replace(@xml:id, 'SRO', '')"/>:  </span></xsl:if>
                     <a href="{concat('#', @xml:id)}" class="entryLink"><xsl:value-of select="@xml:id"/></a><xsl:text> </xsl:text>
                 </xsl:for-each></div>
                 <xsl:apply-templates select="text/body"/>
@@ -95,6 +101,13 @@
             <xsl:apply-templates/>
         </span>
     </xsl:template>
+    
+    <xsl:template match="del">
+        <span class="{normalize-space(concat(name(), ' ', @rend, ' ', @type))}">
+            <xsl:apply-templates/>
+        </span>
+    </xsl:template>
+    
     <xsl:template match="choice">
         <span class="{name()}">
             <xsl:apply-templates/>
@@ -171,8 +184,20 @@
     </xsl:template>
     
     
+    
+    
     <xsl:template match="note">
         <span class="{name()}"><xsl:if test="@*"><xsl:attribute name="title"><xsl:for-each select="@*"><xsl:value-of select="concat(name(),': ', ., '; ')"/></xsl:for-each></xsl:attribute></xsl:if><xsl:apply-templates/><xsl:text> </xsl:text></span>
+    </xsl:template>
+    
+    
+    <xsl:template match="note[@type='editorial']">
+        <span class="{concat(name(), ' editorialNote')}"><xsl:if test="@*"><xsl:attribute name="title"><xsl:for-each select="@*"><xsl:value-of select="concat(name(),': ', ., '; ')"/></xsl:for-each></xsl:attribute></xsl:if>[<xsl:apply-templates/><xsl:text>] </xsl:text></span><xsl:text>  </xsl:text>
+    </xsl:template>
+    
+    
+    <xsl:template match="note[@resp='#arber']">
+        <span class="{concat(name(), ' arberNote')}"><xsl:if test="@*"><xsl:attribute name="title"><xsl:for-each select="@*"><xsl:value-of select="concat(name(),': ', ., '; ')"/></xsl:for-each></xsl:attribute></xsl:if>[<xsl:apply-templates/><xsl:text>] </xsl:text></span><xsl:text>  </xsl:text>
     </xsl:template>
     
     

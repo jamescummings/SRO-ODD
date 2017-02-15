@@ -5,7 +5,7 @@
          xmlns:teix="http://www.tei-c.org/ns/Examples"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2017-02-03T23:54:24Z. .
+Schema generated from ODD source 2017-02-03T23:48:33Z. .
 TEI Edition: Version 3.1.0. Last updated on
 	15th December 2016, revision d3f5e70
 TEI Edition Location: http://www.tei-c.org/Vault/P5/Version 3.1.0/
@@ -353,8 +353,12 @@ Sample values include: 1] approved; 2] candidate; 3] cleared; 4] deprecated; 5] 
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The person responsible for this was Giles Bergel</a:documentation>
                <value>#IG</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The person responsible for this was Ian Gadd</a:documentation>
+               <value>#JC</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The person responsible for this was James Cummings</a:documentation>
                <value>#BH</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The person responsible for this was Ben Higgins</a:documentation>
+               <value>#JC</value>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The person responsible for this was James Cummings</a:documentation>
                <value>#EW</value>
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The person responsible for this was Eleanor Warmington</a:documentation>
                <value>#EB</value>
@@ -2311,6 +2315,8 @@ Sample values include: 1] main; 2] sub(subordinate) ; 3] alt(alternate) ; 4] sho
                         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is a master</a:documentation>
                         <value>other</value>
                         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is a role you wish to record but not catered for</a:documentation>
+                        <value>unknown</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The name is the person licensing the entering a copy</a:documentation>
                      </choice>
                   </optional>
                   <optional>
@@ -2801,8 +2807,12 @@ Sample values include: 1] header; 2] footer; 3] pageNum(page number) ; 4] lineNu
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The person responsible for this was Giles Bergel</a:documentation>
                   <value>#IG</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The person responsible for this was Ian Gadd</a:documentation>
+                  <value>#JC</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The person responsible for this was James Cummings</a:documentation>
                   <value>#BH</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The person responsible for this was Ben Higgins</a:documentation>
+                  <value>#JC</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The person responsible for this was James Cummings</a:documentation>
                   <value>#EW</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">The person responsible for this was Eleanor Warmington</a:documentation>
                   <value>#EB</value>
