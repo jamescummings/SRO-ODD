@@ -34,6 +34,8 @@
                 span.title{font-weight:bold; font-style:italic; font-size:120%;}
                 span.fee{font-weight:bold; font-size:120%;color:#191;}
                 span.pb{font-weight:bold; color:#911; font-size:120%;}
+                span.underline{text-decoration:underline;}
+                span.hi{font-weight:bold;}
                 a.top{color:#AAA; text-decoration:none; text-align:right; float:right; margin-right:5%; clear:both;}
                 a.entryLink{color:blue;text-decoration:none;margin-right:1em;}
                 .aligned-right{float:right; margin-right:10%; margin-left:1%;}
