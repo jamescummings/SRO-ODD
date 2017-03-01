@@ -36,6 +36,8 @@
                 span.pb{font-weight:bold; color:#911; font-size:120%;}
                 span.sic{color:red;}
                 span.corr{color:green}
+                span.underline{text-decoration:underline;}
+                span.hi{font-weight:bold;}
                 a.top{color:#AAA; text-decoration:none; text-align:right; float:right; margin-right:5%; clear:both;}
                 a.entryLink{color:blue;text-decoration:none;margin-right:1em;}
                 .aligned-right{float:right; margin-right:10%; margin-left:1%;}
