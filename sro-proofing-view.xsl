@@ -34,6 +34,8 @@
                 span.title{font-weight:bold; font-style:italic; font-size:120%;}
                 span.fee{font-weight:bold; font-size:120%;color:#191;}
                 span.pb{font-weight:bold; color:#911; font-size:120%;}
+                span.sic{color:red;}
+                span.corr{color:green}
                 a.top{color:#AAA; text-decoration:none; text-align:right; float:right; margin-right:5%; clear:both;}
                 a.entryLink{color:blue;text-decoration:none;margin-right:1em;}
                 .aligned-right{float:right; margin-right:10%; margin-left:1%;}
@@ -114,12 +116,12 @@
         </span>
     </xsl:template>
     <xsl:template match="abbr | orig | sic">
-        <span class="{name()}">
+        <span class="{name()}" title="{name()}">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
     <xsl:template match="expan | reg | corr">
-        <span class="{name()}">
+        <span class="{name()}" title="{name()}">
             <xsl:text> [</xsl:text>
             <xsl:apply-templates/>
             <xsl:text>] </xsl:text>
@@ -191,12 +193,12 @@
     </xsl:template>
     
     
-    <xsl:template match="note[@type='editorial']">
+    <xsl:template match="note[@type='editorial']" priority="3">
         <span class="{concat(name(), ' editorialNote')}"><xsl:if test="@*"><xsl:attribute name="title"><xsl:for-each select="@*"><xsl:value-of select="concat(name(),': ', ., '; ')"/></xsl:for-each></xsl:attribute></xsl:if>[<xsl:apply-templates/><xsl:text>] </xsl:text></span><xsl:text>  </xsl:text>
     </xsl:template>
     
     
-    <xsl:template match="note[@resp='#arber']">
+    <xsl:template match="note[@resp='#arber']"  priority="5">
         <span class="{concat(name(), ' arberNote')}"><xsl:if test="@*"><xsl:attribute name="title"><xsl:for-each select="@*"><xsl:value-of select="concat(name(),': ', ., '; ')"/></xsl:for-each></xsl:attribute></xsl:if>[<xsl:apply-templates/><xsl:text>] </xsl:text></span><xsl:text>  </xsl:text>
     </xsl:template>
     
@@ -262,8 +264,12 @@
         <li class="{name()}"><xsl:if test="@*"><xsl:attribute name="title"><xsl:for-each select="@*"><xsl:value-of select="concat(name(),': ', ., '; ')"/></xsl:for-each></xsl:attribute></xsl:if><span class="label"><xsl:value-of select="@type"/>: <xsl:value-of select="@value"/> </span><xsl:apply-templates/></li>
     </xsl:template>
     
-    <xsl:template match="ab[@type='metadata']/note">
-        <li class="{name()}"><xsl:if test="@*"><xsl:attribute name="title"><xsl:for-each select="@*"><xsl:value-of select="concat(name(),': ', ., '; ')"/></xsl:for-each></xsl:attribute></xsl:if><span class="label"><xsl:value-of select="@type"/>: <xsl:value-of select="@subtype"/> </span><xsl:apply-templates/><xsl:text> </xsl:text></li>
+    <xsl:template match="ab[@type='metadata']/note" priority="10">
+        <li><xsl:attribute name="class"><xsl:choose>
+          <xsl:when test="@type='editorial'">note editorialNote</xsl:when>
+          <xsl:when test="@resp='#arber'">note arberNote</xsl:when>
+          <xsl:otherwise>note</xsl:otherwise>
+        </xsl:choose></xsl:attribute><xsl:if test="@*"><xsl:attribute name="title"><xsl:for-each select="@*"><xsl:value-of select="concat(name(),': ', ., '; ')"/></xsl:for-each></xsl:attribute></xsl:if><span class="label"><xsl:value-of select="@type"/>: <xsl:value-of select="@subtype"/> </span><xsl:apply-templates/><xsl:text> </xsl:text></li>
     </xsl:template>
     
     
