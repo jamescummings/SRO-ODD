@@ -1,0 +1,2698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns="http://www.tei-c.org/ns/1.0"
+      xmlns:jc="http://james.blushingbunny.net/ns.html">
+   <item xml:id="arber4-1">
+      <date from="1620-07-10" to="1620-08-14">10 July–14 August 1620</date>
+      <persName role="warden">
+         <forename>G.</forename>
+         <surname>Cole</surname>
+      </persName>
+      <persName role="warden">
+         <forename>M.</forename>
+         <surname>Lownes</surname>
+      </persName>
+      <persName role="master">
+         <forename>H.</forename>
+         <surname>Lownes</surname>
+      </persName>
+   </item>
+   <item xml:id="arber4-2">
+      <date from="1620-08-22" to="1620-10-09">22 August–9 October 1620</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-3">
+      <date from="1620-10-10" to="1620-11-07">10 October–7 November 1620</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-4">
+      <date from="1620-11-07" to="1620-11-20">7–20 November 1620</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-5">
+      <date from="1620-11-24" to="1620-12-11">24 November–11 December 1620</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-6">
+      <date from="1620-12-12" to="1620-12-14">12–14 December 1620</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-7">
+      <date from="1620-12-15" to="1621-01-02">15 December 1620–2 January 1621</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-8">
+      <date from="1621-01-02" to="1621-01-03">2–3 January 1621</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-9">
+      <date from="1621-01-06" to="1621-01-16">6–16 January 1621</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-10">
+      <date from="1621-01-16" to="1621-02-14">16 January–14 February 1621</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-11">
+      <date from="1621-02-16" to="1621-02-26">16–26 February 1621</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-12">
+      <date from="1621-02-28" to="1621-03-15">28 February–15 March 1621</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-13">
+      <date from="1621-03-20" to="1621-03-30">20–30 March 1621</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-14">
+      <date from="1621-03-31" to="1621-04-26">31 March–26 April 1621</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-15">
+      <date from="1621-04-27" to="1621-05-16">27 April–16 May 1621</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-16">
+      <date from="1621-05-17" to="1621-06-04">17 May–4 June 1621</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-17">
+      <date from="1621-06-06" to="1621-06-09">6–9 June 1621</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-18">
+      <date from="1621-06-12" to="1621-06-26">12–26 June 1621</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-19">
+      <date from="1621-07-10" to="1621-07-28">10–28 July 1621</date>
+      <persName role="warden">
+         <forename>C.</forename>
+         <surname>Knight</surname>
+      </persName>
+      <persName role="warden">
+         <forename>G.</forename>
+         <surname>Swinhowe</surname>
+      </persName>
+      <persName role="master">
+         <forename>S.</forename>
+         <surname>Waterson</surname>
+      </persName>
+   </item>
+   <item xml:id="arber4-20">
+      <date from="1621-08-06" to="1621-09-07">6 August–7 September 1621</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-21">
+      <date from="1621-09-10" to="1621-10-06">10 September–6 October 1621</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-22">
+      <date from="1621-10-08" to="1621-10-29">8–29 October 1621</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-23">
+      <date from="1621-10-30" to="1621-11-16">30 October–16 November 1621</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-24">
+      <date from="1621-11-16" to="1621-12-12">16 November–12 December 1621</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-25">
+      <date from="1621-12-14" to="1622-01-19">14 December 1621–19 January 1622</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-26">
+      <date from="1622-01-20" to="1622-02-16">20 January–16 February 1622</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-27">
+      <date from="1622-02-21" to="1622-03-14">21 February–14 March 1622</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-28">
+      <date from="1622-03-15" to="1622-03-30">15–30 March 1622</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-29">
+      <date from="1622-04-04" to="1622-05-11">4 April–11 May 1622</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-30">
+      <date from="1622-05-09" to="1622-05-25">9–25 May 1622</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-31">
+      <date from="1622-05-24" to="1622-06-03">24 May–3 June 1622</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-32">
+      <date from="1622-06-03" to="1622-06-15">3–15 June 1622</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-33">
+      <date from="1622-06-16" to="1622-06-21">16–21 June 1622</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-34">
+      <date from="1622-06-24" to="1622-07-01">24 June–1 July 1622</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-35">
+      <date from="1622-07-02" to="1622-07-06">2–6 July 1622</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-36">
+      <date when="1622-07-10">10 July 1622</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-37">
+      <date from="1622-07-09" to="1622-07-17">9–17 July 1622</date>
+      <persName role="warden">
+         <forename>A.</forename>
+         <surname>Gilmyn</surname>
+      </persName>
+      <persName role="warden">
+         <forename>T.</forename>
+         <surname>Pavier</surname>
+      </persName>
+      <persName role="master">
+         <forename>R.</forename>
+         <surname>Field</surname>
+      </persName>
+   </item>
+   <item xml:id="arber4-38">
+      <date from="1622-07-18" to="1622-07-31">18–31 July 1622</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-39">
+      <date from="1622-08-01" to="1622-08-13">1–13 August 1622</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-40">
+      <date from="1622-08-19" to="1622-08-24">19–24 August 1622</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-41">
+      <date from="1622-08-26" to="1622-09-02">26 August–2 September 1622</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-42">
+      <date from="1622-09-06" to="1622-09-11">6–11 September 1622</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-43">
+      <date from="1622-09-20" to="1622-10-07">20 September–7 October 1622</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-44">
+      <date from="1622-10-08" to="1622-10-14">8–14 October 1622</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-45">
+      <date from="1622-10-15" to="1622-10-31">15–31 October 1622</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-46">
+      <date from="1622-10-31" to="1622-11-06">31 October–6 November 1622</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-47">
+      <date from="1622-11-08" to="1622-11-25">8–25 November 1622</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-48">
+      <date from="1022-11-27" to="1022-11-30">27–30 November 1022</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-49">
+      <date from="1622-12-02" to="1622-12-17">2–17 December 1622</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-50">
+      <date from="1622-12-18" to="1622-12-31">18–31 December 1622</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-51">
+      <date from="1623-01-04" to="1623-01-16">4–16 January 1623</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-52">
+      <date from="1623-01-20" to="1623-02-01">20 January–1 February 1623</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-53">
+      <date from="1623-02-05" to="1623-02-17">5–17 February 1623</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-54">
+      <date from="1623-02-17" to="1623-03-04">17 February–4 March 1623</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-55">
+      <date from="1623-03-10" to="1623-03-26">10–26 March 1623</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-56">
+      <date from="1623-03-28" to="1623-04-28">28 March–28 April 1623</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-57">
+      <date from="1623-04-28" to="1623-05-05">28 April–5 May 1623</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-58">
+      <date from="1623-05-06" to="1623-05-20">6–20 May 1623</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-59">
+      <date from="1623-05-21" to="1623-05-27">21–27 May 1623</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-60">
+      <date from="1623-05-27" to="1623-06-06">27 May–6 June 1623</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-61">
+      <date from="1623-06-12" to="1623-06-19">12–19 June 1623</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-62">
+      <date from="1623-06-19" to="1623-07-05">19June–5 July 1623</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-63">
+      <date from="1623-07-05" to="1623-07-18">5–18 July 1623</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-64">
+      <date from="1623-07-18" to="1623-08-26">18 July–26 August 1623</date>
+      <persName role="warden">
+         <forename>G.</forename>
+         <surname>Cole</surname>
+      </persName>
+      <persName role="warden">
+         <forename>J.</forename>
+         <surname>Bill</surname>
+      </persName>
+      <persName role="master">
+         <forename>G.</forename>
+         <surname>Swinhowe</surname>
+      </persName>
+   </item>
+   <item xml:id="arber4-65">
+      <date from="1623-08-28" to="1623-09-10">28 August–10 September 1623</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-66">
+      <date from="1623-09-11" to="1623-09-23">11–23 September 1623</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-67">
+      <date from="1623-09-27" to="1623-10-10">27 September– 10 October 1623</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-68">
+      <date from="1623-10-10" to="1623-11-04">10 October–4 November 1623</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-69">
+      <date from="1623-11-08" to="1623-11-14">8–14 November 1623</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-70">
+      <date from="1623-11-14" to="1623-12-01">14 November–1 December 1623</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-71">
+      <date from="1623-12-04" to="1623-12-26">4–26 December 1623</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-72">
+      <date from="1623-12-26" to="1624-01-14">26 December 1623–14 January 1624</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-73">
+      <date from="1624-01-18" to="1624-01-29">18–29 January 1624</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-74">
+      <date when="--02-05">5 February–l March 1624</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-75">
+      <date from="1624-03-05" to="1624-03-17">5–17 March 1624</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-76">
+      <date from="1624-03-17" to="1624-04-01">17 March–1 April 1624</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-77">
+      <date from="1624-04-07" to="1624-04-27">7–27 April 1624</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-78">
+      <date from="1624-04-28" to="1624-05-21">28 April–21 May 1624</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-79">
+      <date from="1624-05-03" to="1624-05-24">3–24 May 1624</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-80">
+      <date from="1624-06-01" to="1624-06-19">1–19 June 1624</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-81">
+      <date from="1624-06-21" to="1624-06-28">21–28 June 1624</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-82">
+      <date from="1624-06-29" to="1624-07-02">29 June–2 July 1624</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-83">
+      <date from="1624-07-12" to="1624-08-11">12 July–11 August 1624</date>
+      <persName role="warden">
+         <forename>H.</forename>
+         <surname>Cooke</surname>
+      </persName>
+      <persName role="warden">
+         <forename>M.</forename>
+         <surname>Lownes</surname>
+      </persName>
+      <persName role="master">
+         <forename>H.</forename>
+         <surname>Lownes</surname>
+      </persName>
+   </item>
+   <item xml:id="arber4-84">
+      <date from="1624-08-12" to="1624-09-11">12 August–11 September 1624</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-85">
+      <date from="1624-09-12" to="1624-09-20">12–20 September 1624</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-86">
+      <date from="1624-09-20" to="1624-10-07">20 September–7 October 1624</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-87">
+      <date from="1624-10-14" to="1624-10-22">14–22 October 1624</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-88">
+      <date from="1624-10-22" to="1624-11-03">22 October–3 November 1624</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-89">
+      <date from="1624-11-02" to="1624-11-09">2–9 November 1624</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-90">
+      <date from="1624-11-08" to="1624-11-22">8–22 November 1624</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-91">
+      <date from="1624-11-24" to="1624-12-01">24 November–1 December 1624</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-92">
+      <date from="1624-12-04" to="1624-12-15">4–15 December 1624</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-93">
+      <date when="1624-12-14">14 December 1624</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-94">
+      <date from="1624-12-14" to="1624-12-18">14–18 December 1624</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-95">
+      <date from="1624-12-22" to="1625-01-03">22 December 1624–3 January 1625</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-96">
+      <date from="1624-12-04" to="1625-01-12">4 December 1624–12 January 1625</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-97">
+      <date from="1625-01-15" to="1625-02-03">15 January–3 February 1625</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-98">
+      <date from="1625-02-08" to="1625-03-08">8 February–8 March 1625</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-99">
+      <date from="1625-03-13" to="1625-04-04">13 March–4 April 1625</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-100">
+      <date from="1625-04-22" to="1625-04-28">22–28 April 1625</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-101">
+      <date from="1625-05-02" to="1625-05-06">2–6 May 1625</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-102">
+      <date from="1625-05-06" to="1625-05-23">6–23 May 1625</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-103">
+      <date from="1625-05-15" to="1625-05-28">15–28 May 1625</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-104">
+      <date from="1625-05-03" to="1625-06-15">3 May–15 June 1625</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-105">
+      <date from="1625-06-25" to="1625-06-30">25–30 June 1625</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-106">
+      <date when="1625-06-19">19 June 1625</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-107">
+      <date from="1625-07-09" to="1625-11-08">9 July–8 November 1625</date>
+      <persName role="warden">
+         <forename>A.</forename>
+         <surname>Gilmyn</surname>
+      </persName>
+      <persName role="warden">
+         <forename>A.</forename>
+         <surname>Islip</surname>
+      </persName>
+      <persName role="master">
+         <forename>G.</forename>
+         <surname>Swinhowe</surname>
+      </persName>
+   </item>
+   <item xml:id="arber4-108">
+      <date from="1625-11-09" to="1625-12-02">9 November–2 December 1625</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-109">
+      <date from="1625-12-15" to="1626-01-17">15 December 1625–17 January 1626</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-110">
+      <date from="1626-01-19" to="1626-01-25">19–25 January 1626</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-111">
+      <date when="1626-01-16">16 January 1626</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-112">
+      <date from="1626-01-16" to="1626-02-06">16 January–6 February 1626</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-113">
+      <date from="1626-02-07" to="1626-03-03">7 February–3 March 1626</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-114">
+      <date when="1626-02-23">23 February 1626</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-115">
+      <date from="1626-02-23" to="1626-03-12">23 February–12 March 1626</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-116">
+      <date from="1626-03-14" to="1626-03-24">14–24 March 1626</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-117">
+      <date from="1626-03-25" to="1626-04-14">25 March–14 April 1626</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-118">
+      <date when="1626-04-03">3 April 1626</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-119">
+      <date from="1626-04-17" to="1626-05-02">17 April–2 May 1626</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-120">
+      <date from="1626-05-07" to="1626-06-12">7 May–12 June 1626</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-121">
+      <date from="1626-06-12" to="1626-06-22">12–22 June 1626</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-122">
+      <date from="1626-06-30" to="1626-07-04">30 June–4 July 1626</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-123">
+      <date when="--07-28">2 –28 JulyAnno 1626</date>
+      <persName role="warden">
+         <forename>C.</forename>
+         <surname>Knight</surname>
+      </persName>
+      <persName role="warden">
+         <forename>F.</forename>
+         <surname>Kingston</surname>
+      </persName>
+      <persName role="master">
+         <forename>B.</forename>
+         <surname>Norton</surname>
+      </persName>
+   </item>
+   <item xml:id="arber4-124">
+      <date from="1626-08-02" to="1626-08-04">2–4 August 1626</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-125">
+      <date when="1626-08-04">4 August 1626</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-126">
+      <date from="1626-08-04" to="1626-09-05">4 August–5 September] 1626</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-127">
+      <date from="1626-09-04" to="1626-09-18">4–18 September 1626</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-128">
+      <date from="1626-09-04" to="1626-10-18">4 September–18 October 1626</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-129">
+      <date from="1626-10-23" to="1626-11-04">23 October–4 November 1626</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-130">
+      <date from="1626-11-21" to="1626-12-09">21 November–9 December 1626</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-131">
+      <date from="1626-12-14" to="1627-01-10">14 December 1626–10 January 1627</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-132">
+      <date from="1627-01-18" to="1627-02-12">18 January–12 February 1627</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-133">
+      <date from="1627-02-13" to="1627-03-05">13 February–5 March 1627</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-134">
+      <date from="1627-03-06" to="1627-03-16">6–16 March 1627</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-135">
+      <date from="1627-03-21" to="1627-04-08">21 March–8 April 1627</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-136">
+      <date from="1627-04-10" to="1627-04-12">10–12 April 1627</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-137">
+      <date from="1627-04-10" to="1627-04-25">10–25 April 1627</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-138">
+      <date from="1627-04-26" to="1627-05-04">26 April–4 May 1627</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-139">
+      <date from="1627-05-05" to="1627-05-30">5–30 May 1627</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-140">
+      <date from="1627-05-19" to="1627-05-30">19–30 May 1627</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-141">
+      <date from="1627-05-30" to="1627-06-19">30 May–19 June 1627</date>
+      <persName role="warden">
+         <forename>B.</forename>
+         <surname>Norton</surname>
+      </persName>
+      <persName role="master">
+         <forename>C.</forename>
+         <surname>Knight</surname>
+      </persName>
+   </item>
+   <item xml:id="arber4-142">
+      <date when="1627-06-19">? 19 June 1627</date>
+      <persName role="warden">
+         <forename>C.</forename>
+         <surname>Knight</surname>
+      </persName>
+      <persName role="warden">
+         <forename>F.</forename>
+         <surname>Kingston</surname>
+      </persName>
+      <persName role="master">
+         <forename>B.</forename>
+         <surname>Norton</surname>
+      </persName>
+   </item>
+   <item xml:id="arber4-143">
+      <date from="1627-07-07" to="1627-08-01">7 July–1 August 1627</date>
+      <persName role="warden">
+         <forename>C.</forename>
+         <surname>Knight</surname>
+      </persName>
+      <persName role="warden">
+         <forename>E.</forename>
+         <surname>Weaver</surname>
+      </persName>
+      <persName role="master">
+         <forename>G.</forename>
+         <surname>Cole</surname>
+      </persName>
+   </item>
+   <item xml:id="arber4-144">
+      <date from="1627-08-07" to="1627-08-20">7–20 August 1627</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-145">
+      <date from="1627-08-25" to="1627-09-18">25 August–18 September 1627</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-146">
+      <date from="1627-09-22" to="1627-10-04">22 September–4 October 1627</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-147">
+      <date from="1627-10-03" to="1627-10-30">3–30 October 1627</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-148">
+      <date from="1627-10-30" to="1627-11-09">30 October–9 November 1627</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-149">
+      <date from="1627-11-13" to="1627-12-03">13 November–3 December 1627</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-150">
+      <date from="1627-12-03" to="1627-12-06">3–6 December 1627</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-151">
+      <date from="1627-12-08" to="1628-01-08">8 December 1627–8 January 1628</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-152">
+      <date from="1628-01-10" to="1628-01-20">10–20 January 1628</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-153">
+      <date when="--02-14">14 February–l March 1628</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-154">
+      <date from="1628-03-01" to="1628-03-11">1–11 March 1628</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-155">
+      <date from="1628-03-18" to="1628-03-31">18–31 March 1628</date>
+      <persName role="warden">
+         <forename>C.</forename>
+         <surname>Knight</surname>
+      </persName>
+      <persName role="warden">
+         <forename>E.</forename>
+         <surname>Weavers</surname>
+      </persName>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-156">
+      <date from="1628-04-08" to="1628-05-02">8 April–2 May 1628</date>
+      <persName role="warden">
+         <forename>C.</forename>
+         <surname>Knight</surname>
+      </persName>
+      <persName role="warden">
+         <forename>E.</forename>
+         <surname>Weaver</surname>
+      </persName>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-157">
+      <date from="1628-04-18" to="1628-05-21">18 April–21 May 1628</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-158">
+      <date from="1628-05-24" to="1628-06-17">24 May–17 June 1628</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-159">
+      <date from="1628-06-18" to="1628-06-30">18–30 June 1628</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-160">
+      <date from="1628-07-03" to="1628-07-09">3–9 July 1628</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-161">
+      <date from="1628-07-17" to="1628-09-12">17 July–12 September 1628</date>
+      <persName role="warden">
+         <forename>A.</forename>
+         <surname>Islip</surname>
+      </persName>
+      <persName role="warden">
+         <forename>E.</forename>
+         <surname>Weaver</surname>
+      </persName>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-162">
+      <date from="1628-09-10" to="1628-09-22">10–22 September 1628</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-163">
+      <date from="1628-10-01" to="1628-10-16">1–16 October 1628</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-164">
+      <date from="1628-10-21" to="1628-11-18">21 October–18 November 1628</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-165">
+      <date from="1628-11-06" to="1628-11-21">6–21 November 1628</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-166">
+      <date from="1628-11-24" to="1628-12-23">24 November–23 December 1628</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-167">
+      <date from="1628-12-22" to="1629-01-15">22 December 1628–15 January 1629</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-168">
+      <date from="1629-01-22" to="1629-03-04">22 January–4 March 1629</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-169">
+      <date from="1629-03-20" to="1629-04-01">20 March–1 April 1629</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-170">
+      <date from="1629-04-01" to="1629-05-02">1 April–2 May 1629</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-171">
+      <date from="1629-05-18" to="1629-05-27">18–27 May 1629</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-172">
+      <date from="1629-05-29" to="1629-06-01">29 May–1 June 1629</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-173">
+      <date from="1629-06-01" to="1629-06-02">1–2 June 1629</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-174">
+      <date from="1629-06-05" to="1629-06-26">5–26 June 1629</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-175">
+      <date from="1629-06-30" to="1629-07-06">30 June–6 July 1629</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-176">
+      <date from="1629-06-20" to="1629-07-06">20 June–6 July 1629</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-177">
+      <date from="1629-07-08" to="1629-07-29">8–29 July 1629</date>
+      <persName role="warden">
+         <forename>J.</forename>
+         <surname>Bill</surname>
+      </persName>
+      <persName role="warden">
+         <forename>T.</forename>
+         <surname>Purfoote</surname>
+      </persName>
+      <persName role="master">
+         <forename>B.</forename>
+         <surname>Norton</surname>
+      </persName>
+   </item>
+   <item xml:id="arber4-178">
+      <date from="1629-08-03" to="1629-09-07">3 August–7 September 1629</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-179">
+      <date from="1629-09-28" to="1629-10-13">28 September–13 October 1629</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-180">
+      <date from="1629-10-12" to="1629-10-22">12–22 October 1629</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-181">
+      <date from="1629-10-23" to="1629-11-09">23 October–9 November 1629</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-182">
+      <date from="1629-11-13" to="1629-11-26">13–26 November 1629</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-183">
+      <date from="1629-12-01" to="1629-12-20">1–20 December 1629</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-184">
+      <date from="1629-12-20" to="1630-01-10">20 December 1629–10 January 1630</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-185">
+      <date from="1630-01-12" to="1630-01-14">12–14 January 1630</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-186">
+      <date from="1630-01-13" to="1630-01-26">13–26 January 1630</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-187">
+      <date from="1630-06-29" to="1630-02-07">29 Junuary–7 February 1630</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-188">
+      <date from="1630-02-08" to="1630-02-22">8–22 February 1630</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-189">
+      <date from="1630-02-26" to="1630-03-03">26 February–3 March 1630</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-190">
+      <date from="1630-03-06" to="1630-03-12">6–12 March 1630</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-191">
+      <date from="1630-03-12" to="1630-03-26">12–26 March 1630</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-192">
+      <date from="1630-04-03" to="1630-04-09">3–9 April 1630</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-193">
+      <date from="1630-04-12" to="1630-04-24">12–24 April 1630</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-194">
+      <date from="1630-04-24" to="1630-05-12">24 April–12 May 1630</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-195">
+      <date from="1630-05-13" to="1630-06-04">13 May–4 June 1630</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-196">
+      <date from="1630-06-05" to="1630-06-24">5–24 June 1630</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-197">
+      <date when="1630-06-29">29 June 1630</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-198">
+      <date from="1630-06-29" to="1630-07-03">29 June–3 July 1630</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-199">
+      <date from="1630-07-08" to="1630-08-18">8 July–18 August 1630</date>
+      <persName role="warden">
+         <forename>F.</forename>
+         <surname>Kingston</surname>
+      </persName>
+      <persName role="warden">
+         <forename>J.</forename>
+         <surname>Harrison</surname>
+      </persName>
+      <persName role="master">
+         <forename>G.</forename>
+         <surname>Swinhowe</surname>
+      </persName>
+   </item>
+   <item xml:id="arber4-200">
+      <date from="1630-08-02" to="1630-10-08">2 August–8 October 1630</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-201">
+      <date from="1630-10-13" to="1630-11-06">13 October–6 November 1630</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-202">
+      <date from="1630-11-08" to="1630-11-16">8–16 November 1630</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-203">
+      <date from="1630-11-16" to="1630-11-23">16–23 November 1630</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-204">
+      <date from="1630-11-27" to="1630-12-08">27 November–8 December 1630</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-205">
+      <date from="1630-12-06" to="1630-12-11">6–11 December 1630</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-206">
+      <date from="1630-12-16" to="1631-01-24">16 December 1630–24 January 1631</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-207">
+      <date from="1631-01-27" to="1631-02-10">27 January–10 February 1631</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-208">
+      <date from="1631-02-09" to="1631-02-22">9–22 February 1631</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-209">
+      <date from="1631-02-25" to="1631-03-17">25 February–17 March 1631</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-210">
+      <date from="1631-03-22" to="1631-04-04">22 March–4 April 1631</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-211">
+      <date from="1631-04-17" to="1631-04-26">17–26 April 1631</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-212">
+      <date from="1631-04-27" to="1631-05-16">27 April–16 May 1631</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-213">
+      <date from="1631-05-16" to="1631-06-06">16 May–6 June 1631</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-214">
+      <date from="1631-06-13" to="1631-06-23">13–23 June 1631</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-215">
+      <date from="1631-06-22" to="1631-06-23">22–23 June 1631</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-216">
+      <date from="1631-06-22" to="1631-07-15">22 June–15 July 1631</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-217">
+      <date from="1631-07-11" to="1631-07-19">11–19 July 1631</date>
+      <persName role="warden">
+         <forename>A.</forename>
+         <surname>Islip</surname>
+      </persName>
+      <persName role="warden">
+         <forename>J.</forename>
+         <surname>Smethwicke</surname>
+      </persName>
+      <persName role="master">
+         <forename>G.</forename>
+         <surname>Cole</surname>
+      </persName>
+   </item>
+   <item xml:id="arber4-218">
+      <date from="1631-07-20" to="1631-08-01">20 July–1 August 1631</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-219">
+      <date from="1631-08-01" to="1631-08-29">1–29 August 1631</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-220">
+      <date from="1631-09-05" to="1631-09-07">5–7 September 1631</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-221">
+      <date from="1631-09-12" to="1631-09-30">12–30 September 1631</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-222">
+      <date from="1631-10-06" to="1631-10-15">6–15 October 1631</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-223">
+      <date from="1631-10-17" to="1631-11-10">17 October–10 November 1631</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-224">
+      <date from="1631-11-10" to="1631-11-12">10–12 November 1631</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-225">
+      <date from="1631-11-14" to="1631-11-19">14–19 November 1631</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-226">
+      <date from="1631-11-24" to="1631-11-30">24–30 November 1631</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-227">
+      <date from="1631-12-06" to="1631-12-15">6–15 December 1631</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-228">
+      <date from="1631-12-30" to="1632-01-09">30 December 1631–9 January 1632</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-229">
+      <date from="1632-01-11" to="1632-01-13">11–13 January 1632</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-230">
+      <date from="1632-01-16" to="1632-01-26">16–26 January 1632</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-231">
+      <date from="1632-01-27" to="1632-02-06">27 January–6 February 1632</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-232">
+      <date from="1632-02-07" to="1632-02-22">7–22 February 1632</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-233">
+      <date from="1632-02-22" to="1632-02-29">22–29 February 1632</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-234">
+      <date from="1632-03-01" to="1632-03-16">1–16 March 1632</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-235">
+      <date from="1632-03-22" to="1632-03-30">22–30 March 1632</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-236">
+      <date from="1632-03-31" to="1632-05-09">31 March–9 May 1632</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-237">
+      <date from="1632-05-09" to="1632-05-18">9–18 May 1632</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-238">
+      <date from="1632-05-24" to="1632-05-28">24–28 May 1632</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-239">
+      <date from="1632-06-01" to="1632-06-16">1–16 June 1632</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-240">
+      <date from="1632-06-22" to="1632-07-02">22 June–2 July 1632</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-241">
+      <date when="--07-19">5–19 JulyAnno Domini 1632</date>
+      <persName role="warden">
+         <forename>E.</forename>
+         <surname>Weaver</surname>
+      </persName>
+      <persName role="warden">
+         <forename>W.</forename>
+         <surname>Aspley</surname>
+      </persName>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-242">
+      <date from="1632-07-25" to="1632-09-03">25 July–3 September 1632</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-243">
+      <date when="1632-08-26">26 August 1632</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-244">
+      <date from="1632-08-26" to="1632-09-13">26 August–13 September 1632</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-245">
+      <date from="1632-09-21" to="1632-10-10">21 September–10 October 1632</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-246">
+      <date from="1632-10-20" to="1632-11-08">20 October–8 November 1632</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-247">
+      <date from="1632-11-09" to="1632-11-24">9–24 November 1632</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-248">
+      <date from="1632-11-27" to="1632-12-19">27 November–19 December 1632</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-249">
+      <date from="1632-12-19" to="1633-01-14">19 December 1632–14 January 1633</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-250">
+      <date from="1633-01-15" to="1633-01-30">15–30 January 1633</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-251">
+      <date from="1633-02-01" to="1633-02-28">1–29 February 1633</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-252">
+      <date from="1633-03-04" to="1633-03-23">4–23 March 1633</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-253">
+      <date from="1633-03-28" to="1633-04-10">28 March–10 April 1633</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-254">
+      <date from="1633-04-15" to="1633-05-10">15 April–10 May 1633</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-255">
+      <date from="1633-05-10" to="1633-05-29">10–29 May 1633</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-256">
+      <date from="1633-06-01" to="1633-06-18">1–18 June 1633</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-257">
+      <date from="1633-06-22" to="1633-07-05">22 June–5 July 1633</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-258">
+      <date when="1633-07-08">8 July 1633</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-259">
+      <date from="1633-07-09" to="1633-08-01">9 July–1 August 1633</date>
+      <ditto type="wardens"/>
+      <persName role="master">
+         <forename>A.</forename>
+         <surname>Islip</surname>
+      </persName>
+   </item>
+   <item xml:id="arber4-260">
+      <date from="1633-08-01" to="1633-08-12">1–12 August 1633</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-261">
+      <date from="1633-08-12" to="1633-08-27">12–27 August 1633</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-262">
+      <date from="1633-08-27" to="1633-08-29">27–29 August 1633</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-263">
+      <date from="1633-08-30" to="1633-09-04">30 August–4 September 1633</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-264">
+      <date from="1633-09-06" to="1633-10-01">6 September–1 October 1633</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-265">
+      <date from="1633-10-01" to="1633-10-19">1–19 October 1633</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-266">
+      <date from="1633-10-22" to="1633-11-08">22 October–8 November 1633</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-267">
+      <date from="1633-11-09" to="1633-11-12">9–12 November 1633</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-268">
+      <date from="1633-11-16" to="1633-12-06">16 November–6 December 1633</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-269">
+      <date from="1633-12-09" to="1633-12-19">9–19 December 1633</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-270">
+      <date from="1633-12-19" to="1634-01-11">19 December 1633–11 January 1634</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-271">
+      <date from="1634-01-16" to="1634-01-21">16–21 January 1634</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-272">
+      <date from="1634-01-22" to="1634-02-05">22 January–5 February 1634</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-273">
+      <date from="1634-02-23" to="1634-03-21">23 February–21 March 1634</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-274">
+      <date from="1634-03-22" to="1634-04-05">22 March–5 April 1634</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-275">
+      <date from="1634-04-05" to="1634-04-08">5–8 April 1634</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-276">
+      <date from="1634-04-08" to="1634-04-26">8–26 April 1634</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-277">
+      <date from="1634-04-29" to="1634-05-02">29 April–2 May 1634</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-278">
+      <date from="1634-05-08" to="1634-05-30">8–30 May 1634</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-279">
+      <date from="1634-05-31" to="1634-06-14">31 May–14 June 1634</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-280">
+      <date from="1634-06-14" to="1634-06-25">14–25 June 1634</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-281">
+      <date from="1634-06-27" to="1634-07-07">27 June–7 July 1634</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-282">
+      <date from="1634-07-13" to="1634-07-16">13–16 July 1634</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-283">
+      <date from="1634-07-17" to="1634-08-08">17 July–8 August 1634</date>
+      <persName role="warden">
+         <forename>J.</forename>
+         <surname>Rothwell</surname>
+      </persName>
+      <persName role="warden">
+         <forename>T.</forename>
+         <surname>Purfoote</surname>
+      </persName>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-284">
+      <date from="1634-08-11" to="1634-08-20">11–20 August 1634</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-285">
+      <date from="1634-08-22" to="1634-09-16">22 August–16 September 1634</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-286">
+      <date from="1634-09-15" to="1634-10-02">15 September–2 October 1634</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-287">
+      <date from="1634-10-03" to="1634-10-22">3–22 October 1634</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-288">
+      <date from="1634-10-23" to="1634-11-03">23 October–3 November 1634</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-289">
+      <date from="1634-11-03" to="1634-11-25">3–25 November 1634</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-290">
+      <date from="1634-12-13" to="1635-01-14">13 December 1634–14 January 1635</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-291">
+      <date from="1635-01-15" to="1635-02-09">15 January–9 February 1635</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-292">
+      <date from="1635-02-09" to="1635-03-04">9 February–4 March 1635</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-293">
+      <date from="1635-03-05" to="1635-03-17">5–17 March 1635</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-294">
+      <date from="1635-03-21" to="1635-04-06">21 March–6 April 1635</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-295">
+      <date from="1635-04-07" to="1635-04-15">7–15 April 1635</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-296">
+      <date from="1635-04-17" to="1635-04-22">17–22 April 1635</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-297">
+      <date from="1635-04-23" to="1635-05-09">23 April–9 May 1635</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-298">
+      <date from="1635-05-12" to="1635-05-29">12–29 May 1635</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-299">
+      <date from="1635-06-01" to="1635-06-06">1–6 June 1635</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-300">
+      <date from="1635-06-06" to="1635-07-02">6 June–2 July 1635</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-301">
+      <date from="1635-06-22" to="1635-07-04">22 June–4 July 1635</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-302">
+      <date when="--08-06">13 July–6 AugustAnno 1635</date>
+      <persName role="warden">
+         <forename>H.</forename>
+         <surname>Fetherston</surname>
+      </persName>
+      <persName role="warden">
+         <forename>J.</forename>
+         <surname>Smethwicke</surname>
+      </persName>
+      <persName role="master">
+         <forename>F.</forename>
+         <surname>Kingston</surname>
+      </persName>
+   </item>
+   <item xml:id="arber4-303">
+      <date from="1635-08-06" to="1635-08-12">6–12 August 1635</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-304">
+      <date when="1635-08-12">12 August 1635</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-305">
+      <date when="1635-08-19">19 August 1635</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-306">
+      <date from="1635-08-29" to="1635-09-12">29 Augast–12 September 1635</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-307">
+      <date from="1635-09-18" to="1635-10-10">18 September–10 October 1635</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-308">
+      <date from="1635-10-15" to="1635-11-04">15 October–4 November 1635</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-309">
+      <date from="1635-11-05" to="1635-11-18">5–18 November 1635</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-310">
+      <date from="1635-11-21" to="1635-12-07">21 November –7 December 1635</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-311">
+      <date from="1635-12-07" to="1635-12-14">7–14 December 1635</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-312">
+      <date from="1636-01" to="1636-01-25">30 Deccmber 1635–25 January 1636</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-313">
+      <date from="1636-01-26" to="1636-02-12">26 January–12 February 1636</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-314">
+      <date from="1636-02-15" to="1636-02-24">15–24 February 1636</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-315">
+      <date from="1636-02-27" to="1636-03-05">27 February–5 March 1636</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-316">
+      <date from="1636-03-06" to="1636-03-15">6–15 March 1636</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-317">
+      <date from="1636-03-19" to="1636-04-04">19 March–4 April 1636</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-318">
+      <date from="1636-04-06" to="1636-04-08">6–8 April 1636</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-319">
+      <date from="1636-04-09" to="1636-04-15">9–15 April 1636</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-320">
+      <date from="1636-04-26" to="1636-05-10">26 April–10 May 1636</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-321">
+      <date from="1636-05-10" to="1636-05-16">10–16 May 1636</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-322">
+      <date when="1636-05-18">18 May 1636</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-323">
+      <date from="1636-05-31" to="1636-06-08">31 May–8 June 1636</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-324">
+      <date from="1636-06-13" to="1636-06-18">13–18 June 1636</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-325">
+      <date from="1636-06" to="1636-06-28">July 1635–28 June 1636</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-326">
+      <date from="1636-07-06" to="1636-08-06">6 July–6 August 1636</date>
+      <persName role="warden">
+         <forename>J.</forename>
+         <surname>Harrison</surname>
+      </persName>
+      <persName role="warden">
+         <forename>T.</forename>
+         <surname>Downes</surname>
+      </persName>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-327">
+      <date from="1636-08-20" to="1636-10-03">20 August–3 October 1636</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-328">
+      <date from="1636-11-07" to="1636-12-23">7 November–23 December 1636</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-329">
+      <date from="1636-12-23" to="1637-01-24">23 December 1636–24 January 1637</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-330">
+      <date from="1637-01-24" to="1637-01-30">24–30 January 1637</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-331">
+      <date from="1637-02-01" to="1637-02-06">1–6 February 1637</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-332">
+      <date from="1637-02-08" to="1637-02-25">8–25 February 1637</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-333">
+      <date from="1637-02-28" to="1637-03-08">28 February–8 March 1637</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-334">
+      <date from="1637-03-09" to="1637-03-15">9–15 March 1637</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-335">
+      <date from="1637-03-21" to="1637-03-29">21–29 March 1637</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-336">
+      <date from="1637-03-25" to="1637-03-27">25–27 March 1637</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-337">
+      <date when="1637-03-27">27 March 1637</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-338">
+      <date from="1637-03-27" to="1637-04-08">27 March–8 April 1637</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-339">
+      <date from="1637-04-13" to="1637-04-21">13–21 April 1637</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-340">
+      <date from="1637-04-22" to="1637-04-26">22–26 April 1637</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-341">
+      <date from="1637-04-27" to="1637-05-06">27 April–6 May 1637</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-342">
+      <date from="1637-05-09" to="1637-05-16">9–16 May 1637</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-343">
+      <date from="1637-05-16" to="1637-06-12">16 May–12 June 1637</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-344">
+      <date from="1637-06-15" to="1637-06-24">15–24 June 1637</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-345">
+      <date when="1637-07-01">1 July 1637</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-346">
+      <date from="1637-07-04" to="1637-07-18">4–18 July 1637</date>
+      <persName role="warden">
+         <forename>N.</forename>
+         <surname>Bourne</surname>
+      </persName>
+      <persName role="warden">
+         <forename>W.</forename>
+         <surname>Aspley</surname>
+      </persName>
+      <persName role="master">
+         <forename>E.</forename>
+         <surname>Weaver</surname>
+      </persName>
+   </item>
+   <item xml:id="arber4-347">
+      <date from="1637-07-20" to="1637-07-26">20–26 July 1637</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-348">
+      <date from="1637-08-02" to="1637-09-01">2 August–1 September 1637</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-349">
+      <date from="1637-09-01" to="1637-09-12">1–12 September 1637</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-350">
+      <date from="1637-09-14" to="1637-09-19">14–19 September 1637</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-351">
+      <date from="1637-09-25" to="1637-10-09">25 September–9 October 1637</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-352">
+      <date from="1637-10-11" to="1637-10-18">11–18 October 1637</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-353">
+      <date from="1637-10-23" to="1637-11-06">23 October–6 November 1637</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-354">
+      <date from="1637-11-07" to="1637-11-10">7–10 November 1637</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-355">
+      <date from="1637-11-13" to="1637-11-14">13–14 November 1637</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-356">
+      <date from="1637-11-15" to="1637-11-23">15–23 November 1637</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-357">
+      <date from="1637-11-25" to="1637-12-05">25 November–5 December 1637</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-358">
+      <date from="1637-12-05" to="1637-12-14">5–14 December 1637</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-359">
+      <date from="1637-12-19" to="1638-01-01">19 December 1637–1 January 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-360">
+      <date from="1638-01-02" to="1638-01-08">2–8 January 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-361">
+      <date from="1638-01-10" to="1638-01-16">10–16 January 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-362">
+      <date from="1638-01-16" to="1638-01-22">16–22 January 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-363">
+      <date from="1638-01-25" to="1638-01-31">25–31 January 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-364">
+      <date from="1638-01-31" to="1638-02-03">31 January–3 February 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-365">
+      <date from="1638-02-07" to="1638-02-13">7–13 February 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-366">
+      <date from="1638-02-13" to="1638-02-19">13–19 February 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-367">
+      <date from="1638-02-20" to="1638-03-07">20 February–7 March 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-368">
+      <date from="1638-03-10" to="1638-03-13">10–13 March 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-369">
+      <date from="1638-03-13" to="1638-03-20">13–20 March 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-370">
+      <date from="1638-03-20" to="1638-03-29">20–29 March 1638</date>
+      <persName role="warden">
+         <forename>N.</forename>
+         <surname>Bourns</surname>
+      </persName>
+      <persName role="warden">
+         <forename>W.</forename>
+         <surname>Aspley</surname>
+      </persName>
+      <persName role="master">
+         <forename>R.</forename>
+         <surname>Weaver</surname>
+      </persName>
+   </item>
+   <item xml:id="arber4-371">
+      <date from="1638-03-30" to="1638-04-03">30 March–3 April 1638</date>
+      <persName role="warden">
+         <forename>N.</forename>
+         <surname>Bourne</surname>
+      </persName>
+      <persName role="warden">
+         <forename>W.</forename>
+         <surname>Aspley</surname>
+      </persName>
+      <persName role="master">
+         <forename>E.</forename>
+         <surname>Weaver</surname>
+      </persName>
+   </item>
+   <item xml:id="arber4-372">
+      <date from="1638-04-05" to="1638-04-09">5–9 April 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-373">
+      <date from="1638-04-12" to="1638-04-21">12–21 April 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-374">
+      <date from="1638-04-23" to="1638-04-28">23–28 April 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-375">
+      <date from="1638-05-05" to="1638-05-11">5–11 May 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-376">
+      <date from="1638-05-18" to="1638-05-28">18–28 May 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-377">
+      <date when="1638-05-29">29 May 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-378">
+      <date from="1638-06-01" to="1638-06-04">1–4 June 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-379">
+      <date from="1638-06-06" to="1638-06-15">6–15 June 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-380">
+      <date from="1638-06-23" to="1638-06-28">23–28 June 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-381">
+      <date from="1638-07-07" to="1638-07-17">7–17 July 1638</date>
+      <persName role="warden">
+         <forename>J.</forename>
+         <surname>Rothwell</surname>
+      </persName>
+      <persName role="warden">
+         <forename>R.</forename>
+         <surname>Mead</surname>
+      </persName>
+      <persName role="master">
+         <forename>J.</forename>
+         <surname>Harrison</surname>
+      </persName>
+   </item>
+   <item xml:id="arber4-382">
+      <date from="1638-07-17" to="1638-07-27">17–27 July 1638</date>
+      <persName role="warden">
+         <forename>E.</forename>
+         <surname>Mead</surname>
+      </persName>
+      <persName role="warden">
+         <forename>J.</forename>
+         <surname>Rothwell</surname>
+      </persName>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-383">
+      <date from="1638-07-31" to="1638-08-02">31 July–2 August 1638</date>
+      <persName role="warden">
+         <forename>J.</forename>
+         <surname>Rothwell</surname>
+      </persName>
+      <persName role="warden">
+         <forename>R.</forename>
+         <surname>Mead</surname>
+      </persName>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-384">
+      <date from="1638-08-02" to="1638-08-04">2–4 August 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-385">
+      <date from="1638-08-07" to="1638-08-21">7–21 August 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-386">
+      <date from="1638-08-21" to="1638-08-28">21–28 August 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-387">
+      <date from="1638-08-29" to="1638-09-01">29 August–1 September 1638]</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-388">
+      <date when="1638-09-04">4 September 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-389">
+      <date from="1638-09-04" to="1638-09-05">4–5 September 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-390">
+      <date from="1638-09-06" to="1638-09-07">6–7 September 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-391">
+      <date when="1638-09-07">7 September 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-392">
+      <date from="1638-09-07" to="1638-09-24">7–24 September 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-393">
+      <date from="1638-09-24" to="1638-10-05">24 September–5 October 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-394">
+      <date from="1638-10-06" to="1638-10-15">6–15 October 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-395">
+      <date from="1638-10-16" to="1638-10-17">16–17 October 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-396">
+      <date from="1638-10-18" to="1638-10-24">18–24 October 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-397">
+      <date from="1638-10-26" to="1638-11-08">26 October–8 November 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-398">
+      <date from="1638-11-09" to="1638-11-15">9–15 November 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-399">
+      <date from="1638-11-16" to="1638-11-21">16–21 November 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-400">
+      <date from="1638-11-26" to="1638-11-27">26–27 November 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-401">
+      <date from="1638-11-29" to="1638-12-06">29 November–6 December 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-402">
+      <date from="1638-12-07" to="1638-12-14">7–14 December 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-403">
+      <date from="1638-12-15" to="1638-12-19">15–19 December 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-404">
+      <date from="1638-12-19" to="1638-12-24">19–24 December 1638</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-405">
+      <date from="1639-01-11" to="1639-01-21">11–21 January 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-406">
+      <date from="1639-01-22" to="1639-01-23">22–23 January 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-407">
+      <date from="1639-01-24" to="1639-01-25">24–25 January 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-408">
+      <date from="1639-01-25" to="1639-01-28">25–28 January 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-409">
+      <date from="1639-01-28" to="1639-02-01">28 January–1 February 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-410">
+      <date from="1639-02-05" to="1639-02-22">5–22 February 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-411">
+      <date from="1639-02-22" to="1639-02-23">22–23 February 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-412">
+      <date from="1639-02-23" to="1639-03-01">23 February–1 March 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-413">
+      <date when="1639-03-04">4 March 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-414">
+      <date from="1639-03-04" to="1639-03-11">4–11 March 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-415">
+      <date from="1639-03-11" to="1639-03-23">11–23 March 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-416">
+      <date from="1639-03-23" to="1639-04-01">23 March–1 April 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-417">
+      <date from="1639-04-02" to="1639-04-12">2–12 April 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-418">
+      <date from="1639-04-12" to="1639-04-29">12–29 April 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-419">
+      <date from="1639-05-04" to="1639-05-18">4–18 May 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-420">
+      <date when="1639-05-21">21 May 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-421">
+      <date from="1639-05-21" to="1639-05-30">21–30 May 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-422">
+      <date from="1639-06-13" to="1639-06-18">13–18 June 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-423">
+      <date from="1639-06-18" to="1639-06-25">18–25 June 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-424">
+      <date from="1639-06-25" to="1639-06-28">25–28 June 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-425">
+      <date from="1639-06-28" to="1639-07-08">28 June–8 July 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-426">
+      <date from="1639-07-16" to="1639-07-27">16–27 July 1639</date>
+      <persName role="warden">
+         <forename>H.</forename>
+         <surname>Fatherston</surname>
+      </persName>
+      <persName role="warden">
+         <forename>N.</forename>
+         <surname>Bourne</surname>
+      </persName>
+      <persName role="master">
+         <forename>J.</forename>
+         <surname>Smethwicke</surname>
+      </persName>
+   </item>
+   <item xml:id="arber4-427">
+      <date from="1639-07-29" to="1639-08-23">29 July–23 August 1639</date>
+      <persName role="warden">
+         <forename>H.</forename>
+         <surname>Fetherston</surname>
+      </persName>
+      <persName role="warden">
+         <forename>N.</forename>
+         <surname>Bourne</surname>
+      </persName>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-428">
+      <date from="1639-08-26" to="1639-09-02">26 August–2 September 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-429">
+      <date from="1639-09-03" to="1639-09-04">3–4 September 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-430">
+      <date from="1639-09-06" to="1639-09-13">6–13 September 1639</date>
+      <persName role="warden">
+         <forename>H.</forename>
+         <surname>Fatherston</surname>
+      </persName>
+      <persName role="warden">
+         <forename>N.</forename>
+         <surname>Bourne</surname>
+      </persName>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-431">
+      <date from="1639-09-13" to="1639-09-14">13–14 September 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-432">
+      <date from="1639-09-14" to="1639-09-16">14–16 September 1639</date>
+      <persName role="warden">
+         <forename>H.</forename>
+         <surname>Fetherston</surname>
+      </persName>
+      <persName role="warden">
+         <forename>N.</forename>
+         <surname>Bourne</surname>
+      </persName>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-433">
+      <date when="1639-09-17">17 September 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-434">
+      <date from="1639-09-18" to="1639-09-23">18–23 September 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-435">
+      <date from="1639-09-23" to="1639-10-04">23 September–4 October 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-436">
+      <date from="1639-10-07" to="1639-10-08">7–8 October 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-437">
+      <date from="1639-10-09" to="1639-10-15">9–15 October 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-438">
+      <date from="1639-10-15" to="1639-10-18">15–18 October 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-439">
+      <date from="1639-10-19" to="1639-10-22">19–22 October 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-440">
+      <date from="1639-10-25" to="1639-11-01">25 October–1 November 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-441">
+      <date when="1639-11-04">4 November 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-442">
+      <date from="1639-11-09" to="1639-11-13">9–13 November 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-443">
+      <date from="1639-11-15" to="1639-11-20">15–20 November 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-444">
+      <date from="1639-11-21" to="1639-11-28">21–28 November 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-445">
+      <date from="1639-11-28" to="1639-11-29">28–29 November 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-446">
+      <date from="1639-12-04" to="1639-12-10">4–10 December 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-447">
+      <date from="1639-12-11" to="1639-12-20">11–20 December 1639</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-448">
+      <date from="1639-12-30" to="1640-01-03">30 December 1639–3 January 1640</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-449">
+      <date from="1640-01-11" to="1640-01-16">11–16 January 1640</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-450">
+      <date from="1640-01-20" to="1640-01-31">20–31 January 1640</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-451">
+      <date from="1640-01-31" to="1640-02-07">31 January–7 February 1640</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-452">
+      <date from="1640-02-08" to="1640-02-15">8–15 February 1640</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-453">
+      <date from="1640-02-17" to="1640-02-19">17–19 February 1640</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-454">
+      <date from="1640-02-19" to="1640-02-27">19–27 February 1640</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-455">
+      <date from="1640-03-02" to="1640-03-11">2–11 March 1640</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-456">
+      <date from="1640-03-13" to="1640-03-19">13–19 March 1640</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-457">
+      <date from="1640-03-19" to="1640-03-20">19–20 March 1640</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-458">
+      <date from="1640-03-23" to="1640-04-02">23 March–2 April 1640</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-459">
+      <date from="1640-04-03" to="1640-04-14">3–14 April 1640</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-460">
+      <date from="1640-04-11" to="1640-04-20">11–20 April 1640</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-461">
+      <date when="1640-04-22">22 April 1640</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-462">
+      <date from="1640-04-24" to="1640-04-28">24–28 April 1640</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-463">
+      <date from="1640-04-29" to="1640-05-07">29 April–7 May 1640</date>
+      <persName role="warden">
+         <forename>H.</forename>
+         <surname>Fetherstone</surname>
+      </persName>
+      <persName role="warden">
+         <forename>N.</forename>
+         <surname>Bourne</surname>
+      </persName>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-464">
+      <date from="1640-05-07" to="1640-05-08">7–8 May 1640</date>
+      <persName role="warden">
+         <forename>H.</forename>
+         <surname>Fetherston</surname>
+      </persName>
+      <persName role="warden">
+         <forename>N.</forename>
+         <surname>Bourne</surname>
+      </persName>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-465">
+      <date from="1640-05-12" to="1640-05-19">12–19 May 1640</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-466">
+      <date from="1640-05-21" to="1640-06-17">21 May–17 June 1640</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-467">
+      <date from="1640-06-17" to="1640-06-19">17–19 June 1640</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-468">
+      <date from="1640-06-20" to="1640-06-27">20–27 June 1640</date>
+      <persName role="warden">
+         <forename>H.</forename>
+         <surname>Fatherston</surname>
+      </persName>
+      <persName role="warden">
+         <forename>N.</forename>
+         <surname>Bourne</surname>
+      </persName>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-469">
+      <date from="1640-07-07" to="1640-07-13">7–13 July 1640</date>
+      <persName role="warden">
+         <forename>H.</forename>
+         <surname>Featherston</surname>
+      </persName>
+      <persName role="warden">
+         <forename>N.</forename>
+         <surname>Bourne</surname>
+      </persName>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-470">
+      <date from="1640-07-16" to="1640-07-26">16–26 July 1640</date>
+      <persName role="warden">
+         <forename>S.</forename>
+         <surname>Man</surname>
+      </persName>
+      <persName role="warden">
+         <forename>T.</forename>
+         <surname>Downes</surname>
+      </persName>
+      <persName role="master">
+         <forename>W.</forename>
+         <surname>Aspley</surname>
+      </persName>
+   </item>
+   <item xml:id="arber4-471">
+      <date from="1640-07-29" to="1640-08-14">29 July–14 August 1640</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-472">
+      <date from="1640-08-15" to="1640-08-24">15–24 August 1640</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-473">
+      <date from="1640-08-24" to="1640-09-03">24 August–3 September 1640</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-474">
+      <date from="1640-09-03" to="1640-09-09">3–9 September 1640</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-475">
+      <date from="1640-09-14" to="1640-10-01">14 September–1 October 1640</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-476">
+      <date from="1640-10-03" to="1640-10-05">3–5 October 1640</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-477">
+      <date from="1640-10-12" to="1640-10-15">12–15 October 1640</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber4-478">
+      <date from="1640-10-15" to="1640-11-03">15 October–3 November 1640</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+</list>

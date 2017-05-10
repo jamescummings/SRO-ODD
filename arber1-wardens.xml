@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns="http://www.tei-c.org/ns/1.0"
+      xmlns:jc="http://james.blushingbunny.net/ns.html">
+   <item xml:id="arber1-1">
+      <date from="1557-07-19" to="1558-07-09">19 July 1557–9 July 1558</date>
+      <persName role="warden">
+         <forename>J.</forename>
+         <surname>Cawood</surname>
+      </persName>
+      <persName role="warden">
+         <forename>J.</forename>
+         <surname>Walley</surname>
+      </persName>
+      <persName role="master">
+         <forename>T.</forename>
+         <surname>Dockwray</surname>
+      </persName>
+   </item>
+   <item xml:id="arber1-2">
+      <date from="1557-07-19" to="1558-07-09">19 July 1557–9 July 1558</date>
+      <persName role="warden">
+         <forename>T.</forename>
+         <surname>Dockwray</surname>
+      </persName>
+      <persName role="master">
+         <forename>J.</forename>
+         <surname>Cawood</surname>
+      </persName>
+   </item>
+   <item xml:id="arber1-3">
+      <date from="1557-07-19" to="1558-07-09">19 July 1557–9 July 1558</date>
+      <persName role="warden">
+         <forename>J.</forename>
+         <surname>Cawood</surname>
+      </persName>
+      <persName role="warden">
+         <forename>J.</forename>
+         <surname>Walley</surname>
+      </persName>
+      <persName role="master">
+         <forename>T.</forename>
+         <surname>Dockwray</surname>
+      </persName>
+   </item>
+   <item xml:id="arber1-4">
+      <date from="1558-07-10" to="1559-07-10">10 July 1558–10 July 1559</date>
+      <persName role="warden">
+         <forename>J.</forename>
+         <surname>Jaques</surname>
+      </persName>
+      <persName role="warden">
+         <forename>J.</forename>
+         <surname>Turke</surname>
+      </persName>
+      <persName role="master">
+         <forename>R.</forename>
+         <surname>Waye</surname>
+      </persName>
+   </item>
+   <item xml:id="arber1-5">
+      <date from="1559-07-14" to="1560-07-05">14 July 1559–5 July 1560</date>
+      <persName role="warden">
+         <forename>M.</forename>
+         <surname>Loble</surname>
+      </persName>
+      <persName role="warden">
+         <forename>T.</forename>
+         <surname>Duxwell</surname>
+      </persName>
+      <persName role="master">
+         <forename>R.</forename>
+         <surname>Wolfe</surname>
+      </persName>
+   </item>
+   <item xml:id="arber1-6">
+      <date from="1560-07-07" to="1561-07-08">7 July 1560–8 July 1561</date>
+      <persName role="warden">
+         <forename>J.</forename>
+         <surname>Judson</surname>
+      </persName>
+      <persName role="warden">
+         <forename>R.</forename>
+         <surname>Jugge</surname>
+      </persName>
+      <persName role="master">
+         <forename>S.</forename>
+         <surname>Kevall</surname>
+      </persName>
+   </item>
+   <item xml:id="arber1-7">
+      <date from="1561-07-22" to="1562-07-24">22 July 1561–24 July 1562</date>
+      <persName role="warden">
+         <forename>R.</forename>
+         <surname>Tottle</surname>
+      </persName>
+      <persName role="warden">
+         <forename>W.</forename>
+         <surname>Seres</surname>
+      </persName>
+      <persName role="master">
+         <forename>J.</forename>
+         <surname>Cawood</surname>
+      </persName>
+   </item>
+   <item xml:id="arber1-8">
+      <date from="1562-07-22" to="1563-07-22">22 July 1562–22 July 1563</date>
+      <persName role="warden">
+         <forename>J.</forename>
+         <surname>Judson</surname>
+      </persName>
+      <persName role="warden">
+         <forename>R.</forename>
+         <surname>Harison</surname>
+      </persName>
+      <persName role="master">
+         <forename>J.</forename>
+         <surname>Cawood</surname>
+      </persName>
+      <persName role="master">
+         <forename>M.</forename>
+         <surname>Loble</surname>
+      </persName>
+   </item>
+   <item xml:id="arber1-9">
+      <date from="1563-07-22" to="1564-07-22">22 July 1563–22 July 1564</date>
+      <persName role="warden">
+         <forename>R.</forename>
+         <surname>Irelond</surname>
+      </persName>
+      <persName role="warden">
+         <forename>R.</forename>
+         <surname>Jugge</surname>
+      </persName>
+      <persName role="master">
+         <forename>R.</forename>
+         <surname>Way</surname>
+      </persName>
+   </item>
+   <item xml:id="arber1-10">
+      <date from="1564-07-22" to="1565-07-22">22 July 1564–22 July 1565</date>
+      <persName role="warden">
+         <forename>J.</forename>
+         <surname>Day</surname>
+      </persName>
+      <persName role="warden">
+         <forename>J.</forename>
+         <surname>Walley</surname>
+      </persName>
+      <persName role="master">
+         <forename>R.</forename>
+         <surname>Wolf</surname>
+      </persName>
+   </item>
+   <item xml:id="arber1-11">
+      <date from="1565-07-22" to="1566-07-22">22 July 1565–22 July 1566</date>
+      <persName role="warden">
+         <forename>J.</forename>
+         <surname>Gonneld</surname>
+      </persName>
+      <persName role="warden">
+         <forename>W.</forename>
+         <surname>Seres</surname>
+      </persName>
+      <persName role="master">
+         <forename>S.</forename>
+         <surname>Kevall</surname>
+      </persName>
+   </item>
+   <item xml:id="arber1-12">
+      <date from="1565-07-22" to="1566-07-22">22 July 1565–22 July 1566</date>
+      <ditto type="wardens"/>
+      <persName role="master">
+         <forename>S.</forename>
+         <surname>Kavall</surname>
+      </persName>
+   </item>
+   <item xml:id="arber1-13">
+      <date from="1565-07-22" to="1566-07-22">22 July 1565–22 July 1566</date>
+      <ditto type="wardens"/>
+      <persName role="master">
+         <forename>S.</forename>
+         <surname>Kevall</surname>
+      </persName>
+   </item>
+   <item xml:id="arber1-14">
+      <date from="1566-07-22" to="1567-07-22">22 July 1566–22 July 1567</date>
+      <persName role="warden">
+         <forename>J.</forename>
+         <surname>Day</surname>
+      </persName>
+      <persName role="warden">
+         <forename>R.</forename>
+         <surname>Jugge</surname>
+      </persName>
+      <persName role="master">
+         <forename>J.</forename>
+         <surname>Cawood</surname>
+      </persName>
+   </item>
+   <item xml:id="arber1-15">
+      <date from="1567-07-22" to="1568-07-22">22 July 1567–22 July 1568</date>
+      <persName role="warden">
+         <forename>J.</forename>
+         <surname>Goneld</surname>
+      </persName>
+      <persName role="warden">
+         <forename>R.</forename>
+         <surname>Tottle</surname>
+      </persName>
+      <persName role="master">
+         <forename>R.</forename>
+         <surname>Wolfe</surname>
+      </persName>
+   </item>
+   <item xml:id="arber1-16">
+      <date from="1566-07-22" to="1568-07-22">22 July 1566–22 July 1568</date>
+      <persName role="warden">
+         <forename>J.</forename>
+         <surname>Gonled</surname>
+      </persName>
+      <persName role="warden">
+         <forename>R.</forename>
+         <surname>Tottle</surname>
+      </persName>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber1-17">
+      <date from="1567-07-22" to="1568-07-22">22 July 1567–22 July 1568</date>
+      <persName role="warden">
+         <forename>J.</forename>
+         <surname>Goneld</surname>
+      </persName>
+      <persName role="warden">
+         <forename>R.</forename>
+         <surname>Tottle</surname>
+      </persName>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber1-18">
+      <date from="1566-07-22" to="1568-07-22">22 July 1566–22 July 1568</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber1-19">
+      <date from="1567-07-22" to="1568-07-22">22 July 1567–22 July 1568</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber1-20">
+      <date from="1566-07-22" to="1568-07-22">22 July 1566–22 July 1568</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber1-21">
+      <date from="1567-07-22" to="1568-07-22">22 July 1567–22 July 1568</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber1-22">
+      <date from="1566-07-22" to="1568-07-22">22 July 1566–22 July 1568</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber1-23">
+      <date from="1567-07-22" to="1568-07-22">22 July 1567–22 July 1568</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber1-24">
+      <date from="1566-07-22" to="1568-07-22">22 July 1566–22 July 1568</date>
+      <ditto type="wardens"/>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber1-25">
+      <date from="1568-07-22" to="1569-07-22">22 July 1568–22 July 1569</date>
+      <persName role="warden">
+         <forename>R.</forename>
+         <surname>Irelond</surname>
+      </persName>
+      <persName role="warden">
+         <forename>R.</forename>
+         <surname>Tottle</surname>
+      </persName>
+      <persName role="master">
+         <forename>R.</forename>
+         <surname>Jugge</surname>
+      </persName>
+   </item>
+   <item xml:id="arber1-26">
+      <date from="1569-07-22" to="1570-07-22">22 July 1569–22 July 1570</date>
+      <persName role="warden">
+         <forename>J.</forename>
+         <surname>Walley</surname>
+      </persName>
+      <persName role="warden">
+         <forename>W.</forename>
+         <surname>Norten</surname>
+      </persName>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber1-27">
+      <date from="1569-07-22" to="1570-07-22">22 July 1569–22 July 1570</date>
+      <persName role="warden">
+         <forename>J.</forename>
+         <surname>Walley</surname>
+      </persName>
+      <persName role="warden">
+         <forename>W.</forename>
+         <surname>Norton</surname>
+      </persName>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber1-28">
+      <date from="1569-07-22" to="1570-07-22">22 July 1569–22 July 1570</date>
+      <persName role="warden">
+         <forename>J.</forename>
+         <surname>Walley</surname>
+      </persName>
+      <persName role="warden">
+         <forename>W.</forename>
+         <surname>Norten</surname>
+      </persName>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber1-29">
+      <date from="1569-07-22" to="1570-07-22">22 July 1569–22 July 1570</date>
+      <persName role="warden">
+         <forename>J.</forename>
+         <surname>Walley</surname>
+      </persName>
+      <persName role="warden">
+         <forename>W.</forename>
+         <surname>Norton</surname>
+      </persName>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber1-30">
+      <date from="1569-07-22" to="1570-07-22">22 July 1569–22 July 1570</date>
+      <persName role="warden">
+         <forename>J.</forename>
+         <surname>Walley</surname>
+      </persName>
+      <persName role="warden">
+         <forename>W.</forename>
+         <surname>Norten</surname>
+      </persName>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber1-31">
+      <date from="1569-07-22" to="1570-07-22">22 July 1569–22 July 1570</date>
+      <persName role="warden">
+         <forename>J.</forename>
+         <surname>Walley</surname>
+      </persName>
+      <persName role="warden">
+         <forename>W.</forename>
+         <surname>Norton</surname>
+      </persName>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber1-32">
+      <date from="1569-07-22" to="1570-07-22">22 July 1569–22 July 1570</date>
+      <persName role="warden">
+         <forename>J.</forename>
+         <surname>Walley</surname>
+      </persName>
+      <persName role="warden">
+         <forename>W.</forename>
+         <surname>Norten</surname>
+      </persName>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber1-33">
+      <date from="1569-07-22" to="1570-07-22">22 July 1569–22 July 1570</date>
+      <persName role="warden">
+         <forename>J.</forename>
+         <surname>Walley</surname>
+      </persName>
+      <persName role="warden">
+         <forename>W.</forename>
+         <surname>Norton</surname>
+      </persName>
+      <ditto type="master"/>
+   </item>
+   <item xml:id="arber1-34">
+      <date from="1570-07-22" to="1571-07-22">22 July 1570–22 July 1571</date>
+      <persName role="warden">
+         <forename>J.</forename>
+         <surname>Judson</surname>
+      </persName>
+      <persName role="warden">
+         <forename>W.</forename>
+         <surname>Norton</surname>
+      </persName>
+      <persName role="master">
+         <forename>W.</forename>
+         <surname>Seres</surname>
+      </persName>
+   </item>
+</list>
