@@ -8,16 +8,12 @@
   version="2.0">
   
   <!-- 
-  File to output information about references in SRO Entries, for each SRO Entry it creates output only if 
-any of: 
-<idno type="RegisterRef">Register B, f.130r</idno>
-<idno type="ArberRef">II. 293</idno>
-<idno type="RegisterID">TSC-1-F-02-01_1576-1595_0304_f130r</idno>
-haven't changed rom the preceding ab/@type='metadata'block
-
+  File to output information about titles in SRO Entries, for each SRO Entry it creates output only if 
+  the number of titles and the number in the metadata do *not* match
+  
   This is best run on the commandline with something like:
   
-  saxon -o:OutputFileName.csv -s:Arber1.xml -xsl:find-metadataErrors.xsl
+  saxon -o:OutputFileName.csv -s:Arber1.xml -xsl:find-titleErrors.xsl
   
   Then import the CSV into something like libreoffice or excel
   -->
@@ -28,26 +24,16 @@ haven't changed rom the preceding ab/@type='metadata'block
   <!-- We are matching the top-level document node since we're ignoring most of it. -->
   <xsl:template match="/">
     <!-- We output the column headings with a linebreak by having xsl:text end on next line -->  
-    <!--<xsl:text>"SRO ID", "Number of Titles", "Number of Works"
-</xsl:text>-->
+    <xsl:text>"SRO ID", "Number of Titles", "Number of Works"
+</xsl:text>
     <!-- For each title inside an entry... -->
-<xsl:for-each select="//div[@type='entry']">
+<xsl:for-each select="//div[@type='entry'][count(.//title) ne number(.//ab[@type='metadata']/num[@type='works']/@value)]">
   <!-- We make a variable named 'output' which has all the columns we want. It is fine to 
   have them on separate lines and such because we will normalize-space it afterwards. -->
   <xsl:variable name="output">
-    <xsl:variable name="RegisterRef" select=".//ab[@type='metadata']/idno[@type='RegisterRef']"/>
-    <xsl:variable name="ArberRef" select=".//ab[@type='metadata']/idno[@type='ArberRef']"/>
-    <xsl:variable name="RegisterID" select=".//ab[@type='metadata']/idno[@type='RegisterID']"/>
-    <xsl:variable name="pRegisterRef" select="preceding-sibling::div[@type='entry']//ab[@type='metadata']/idno[@type='RegisterRef']"/>
-    <xsl:variable name="pArberRef" select="preceding-sibling::div[@type='entry']//ab[@type='metadata']/idno[@type='ArberRef']"/>
-    <xsl:variable name="pRegisterID" select="preceding-sibling::div[@type='entry']//ab[@type='metadata']/idno[@type='RegisterID']"/>
-    <xsl:if test="($RegisterRef = $pRegisterRef) or ($ArberRef = $pArberRef) or ($RegisterID = $pRegisterID)">
-    "<xsl:value-of select="ancestor-or-self::div[@type='entry']/@xml:id"/>",
-      <xsl:choose>
-        <xsl:when test="($RegisterRef = $pRegisterRef)"></xsl:when>
-      </xsl:choose>
-      
-    </xsl:if>
+    "<xsl:value-of select="ancestor-or-self::div[@type='entry']/@xml:id"/>", 
+    "<xsl:value-of select="count(.//title)"/>",
+    "<xsl:value-of select=".//ab[@type='metadata']/num[@type='works']/@value"/>"
  </xsl:variable>
 <xsl:value-of select="normalize-space($output)"/><xsl:text>
 </xsl:text>
