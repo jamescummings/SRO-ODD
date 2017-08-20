@@ -51,20 +51,29 @@
             <xsl:otherwise><xsl:message>Error getting fromDate at <xsl:value-of select="$id"/></xsl:message></xsl:otherwise>
         </xsl:choose>
         </xsl:variable>
-        <xsl:variable name="wardenEntry" select="$wardens//item[xs:date(date/@from) le xs:date($fromDate) and xs:date($toDate) le xs:date(date/@to)]"/>
+        
+        <xsl:variable name="wardenEntry" select="$wardens//item[xs:date(date/@from) le xs:date($fromDate)and xs:date($toDate) le xs:date(date/@to)][1]"/>
         
         <xsl:variable name="wardenNames">
             <xsl:choose>
-                <xsl:when test="$wardenEntry/ditto[@type='wardens']"><xsl:copy-of select="$wardenEntry/preceding::item[persName/@type='wardens'][1]/persName[@type='wardens']"/></xsl:when>
-                <xsl:when test="$wardenEntry/persName[@type='wardens']"><xsl:copy-of select="$wardenEntry/persName[@type='wardens']"/></xsl:when>
-                <xsl:otherwise><xsl:message>Error at <xsl:value-of select="$id"/> (<xsl:value-of select="$fromDate"/>) (<xsl:value-of select="$toDate"/>)</xsl:message></xsl:otherwise>
+                <xsl:when test="$wardenEntry//ditto[@type='wardens']"><xsl:copy-of select="$wardenEntry/preceding::tei:item[tei:persName/@role='warden'][1]/tei:persName[@role='warden']"/></xsl:when>
+                <xsl:when test="$wardenEntry//persName[@role='warden']"><xsl:copy-of select="$wardenEntry//tei:persName[@role='warden']"/></xsl:when>
+                <xsl:otherwise>
+                    
+                    <xsl:copy-of select="preceding::fw[.//persName/@role='warden'][1]//persName[@role='warden']"/>
+                    
+                    <!--<xsl:message>Error for warden name at <xsl:value-of select="$id"/> (<xsl:value-of select="$fromDate"/> [<xsl:value-of select="$wardenEntry/date/@from"/>]) (<xsl:value-of select="$toDate"/>) [<xsl:value-of select="$wardenEntry/date/@to"/>]                
+            <xsl:copy-of select="$wardenEntry"/></xsl:message>--></xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
         <xsl:variable name="masterName">
             <xsl:choose>
-                <xsl:when test="$wardenEntry/ditto[@type='master']"><xsl:copy-of select="$wardenEntry/preceding::item[persName/@type='master'][1]/persName[@type='master']"/></xsl:when>
-                <xsl:when test="$wardenEntry/persName[@type='master']"><xsl:copy-of select="$wardenEntry/persName[@type='master']"/></xsl:when>
-                <xsl:otherwise><xsl:message>Error at <xsl:value-of select="$id"/> (<xsl:value-of select="$fromDate"/>) (<xsl:value-of select="$toDate"/>)</xsl:message></xsl:otherwise>
+                <xsl:when test="$wardenEntry//ditto[@type='master']"><xsl:copy-of select="$wardenEntry/preceding::tei:item[tei:persName/@role='master'][1]/tei:persName[@role='master']"/></xsl:when>
+                <xsl:when test="$wardenEntry//persName[@role='master']"><xsl:copy-of select="$wardenEntry//tei:persName[@role='master']"/></xsl:when>
+                <xsl:otherwise>
+                    <xsl:copy-of select="preceding::fw[.//persName/@role='master'][1]//persName[@role='master']"/>
+                    <!--<xsl:message>Error for master name at <xsl:value-of select="$id"/> (<xsl:value-of select="$fromDate"/> [<xsl:value-of select="$wardenEntry/tei:date/@from"/>]) (<xsl:value-of select="$toDate"/>) [<xsl:value-of select="$wardenEntry/date/@to"/>]                
+                   <xsl:copy-of select="$wardenEntry"/></xsl:message>--></xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
         <xsl:copy>
