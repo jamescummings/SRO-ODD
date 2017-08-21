@@ -42,7 +42,7 @@ DONE except for square brackets 5. <note type=editorial>s inside <note resp=Arbe
   
   <!-- Make sure the resp has #Arber and ignore any other attributes and add 'Arber:' in front-->
   <xsl:template match="note[@resp='#arber']">
-    <note resp="#Arber">Arber: <xsl:apply-templates/></note>
+    <note resp="#arber">Arber: <xsl:apply-templates/></note>
   </xsl:template>
   
   <xsl:template match="note[@resp='#arber']//note[@type='editorial']" priority="10">

@@ -16,13 +16,13 @@
    <text>
       <body>
          <table>
-          <!--  <row>
+            <row>
                <cell n="1">SRO ID</cell>
                <cell n="2">@when</cell>
                <cell n="3">@notBefore</cell>
                <cell n="4">@notAfter</cell>
                <cell n="5">Date&#xD;</cell>
-            </row>-->
+            </row>
             <row>
                <cell n="1">SRO1</cell>
                <cell n="2"/>
@@ -593,44 +593,44 @@
             <row>
                <cell n="1">SRO40b</cell>
                <cell n="2"/>
-               <cell n="3">1559-03-04</cell>
+               <cell n="3">1560-03-04</cell>
                <cell n="4">1560-05-04</cell>
-               <cell n="5">4 March 1559–4 May 1560.&#xD;</cell>
+               <cell n="5">4 March 1560–4 May 1560.&#xD;</cell>
             </row>
             <row>
                <cell n="1">SRO40c</cell>
                <cell n="2"/>
-               <cell n="3">1559-03-04</cell>
+               <cell n="3">1560-03-04</cell>
                <cell n="4">1560-05-04</cell>
-               <cell n="5">4 March 1559–4 May 1560.&#xD;</cell>
+               <cell n="5">4 March 1560–4 May 1560.&#xD;</cell>
             </row>
             <row>
                <cell n="1">SRO40d</cell>
                <cell n="2"/>
-               <cell n="3">1559-03-04</cell>
+               <cell n="3">1560-03-04</cell>
                <cell n="4">1560-05-04</cell>
-               <cell n="5">4 March 1559–4 May 1560.&#xD;</cell>
+               <cell n="5">4 March 1560–4 May 1560.&#xD;</cell>
             </row>
             <row>
                <cell n="1">SRO40e</cell>
                <cell n="2"/>
-               <cell n="3">1559-03-04</cell>
+               <cell n="3">1560-03-04</cell>
                <cell n="4">1560-05-04</cell>
-               <cell n="5">4 March 1559–4 May 1560.&#xD;</cell>
+               <cell n="5">4 March 1560–4 May 1560.&#xD;</cell>
             </row>
             <row>
                <cell n="1">SRO40f</cell>
                <cell n="2"/>
-               <cell n="3">1559-03-04</cell>
+               <cell n="3">1560-03-04</cell>
                <cell n="4">1560-05-04</cell>
-               <cell n="5">4 March 1559–4 May 1560.&#xD;</cell>
+               <cell n="5">4 March 1560–4 May 1560.&#xD;</cell>
             </row>
             <row>
                <cell n="1">SRO40g</cell>
                <cell n="2"/>
-               <cell n="3">1559-03-04</cell>
+               <cell n="3">1560-03-04</cell>
                <cell n="4">1560-05-04</cell>
-               <cell n="5">4 March 1559–4 May 1560.&#xD;</cell>
+               <cell n="5">4 March 1560–4 May 1560.&#xD;</cell>
             </row>
             <row>
                <cell n="1">SRO41</cell>
@@ -818,42 +818,42 @@
                <cell n="1">SRO42t</cell>
                <cell n="2"/>
                <cell n="3">1560-09-26</cell>
-               <cell n="4">1561-11-04</cell>
+               <cell n="4">1560-11-04</cell>
                <cell n="5">26 September 1560–4 November 1560.&#xD;</cell>
             </row>
             <row>
                <cell n="1">SRO42u</cell>
                <cell n="2"/>
                <cell n="3">1560-09-26</cell>
-               <cell n="4">1561-11-04</cell>
+               <cell n="4">1560-11-04</cell>
                <cell n="5">26 September 1560–4 November 1560.&#xD;</cell>
             </row>
             <row>
                <cell n="1">SRO42v</cell>
                <cell n="2"/>
                <cell n="3">1560-09-26</cell>
-               <cell n="4">1561-11-04</cell>
+               <cell n="4">1560-11-04</cell>
                <cell n="5">26 September 1560–4 November 1560.&#xD;</cell>
             </row>
             <row>
                <cell n="1">SRO42w</cell>
                <cell n="2"/>
                <cell n="3">1560-09-26</cell>
-               <cell n="4">1561-11-04</cell>
+               <cell n="4">1560-11-04</cell>
                <cell n="5">26 September 1560–4 November 1560.&#xD;</cell>
             </row>
             <row>
                <cell n="1">SRO42x</cell>
                <cell n="2"/>
                <cell n="3">1560-09-26</cell>
-               <cell n="4">1561-11-04</cell>
+               <cell n="4">1560-11-04</cell>
                <cell n="5">26 September 1560–4 November 1560.&#xD;</cell>
             </row>
             <row>
                <cell n="1">SRO42y</cell>
                <cell n="2"/>
                <cell n="3">1560-09-26</cell>
-               <cell n="4">1561-11-04</cell>
+               <cell n="4">1560-11-04</cell>
                <cell n="5">26 September 1560–4 November 1560.&#xD;</cell>
             </row>
             <row>
@@ -867,7 +867,7 @@
                <cell n="1">SRO42aa</cell>
                <cell n="2"/>
                <cell n="3">1560-11-04</cell>
-               <cell n="4">1561-11-30</cell>
+               <cell n="4">1560-11-30</cell>
                <cell n="5">4 November 1560–30 November 1560.&#xD;</cell>
             </row>
             <row>
@@ -3240,161 +3240,161 @@
                <cell n="1">SRO332</cell>
                <cell n="2"/>
                <cell n="3">1564-09-04</cell>
-               <cell n="4">1565-10-27</cell>
+               <cell n="4">1564-10-27</cell>
                <cell n="5">04 September 1564–27 October 1564.&#xD;</cell>
             </row>
             <row>
                <cell n="1">SRO333</cell>
                <cell n="2"/>
                <cell n="3">1564-09-04</cell>
-               <cell n="4">1565-10-27</cell>
+               <cell n="4">1564-10-27</cell>
                <cell n="5">04 September 1564–27 October 1564.&#xD;</cell>
             </row>
             <row>
                <cell n="1">SRO334</cell>
                <cell n="2"/>
                <cell n="3">1564-09-04</cell>
-               <cell n="4">1565-10-27</cell>
+               <cell n="4">1564-10-27</cell>
                <cell n="5">04 September 1564–27 October 1564.&#xD;</cell>
             </row>
             <row>
                <cell n="1">SRO335</cell>
                <cell n="2"/>
                <cell n="3">1564-09-04</cell>
-               <cell n="4">1565-10-27</cell>
+               <cell n="4">1564-10-27</cell>
                <cell n="5">04 September 1564–27 October 1564.&#xD;</cell>
             </row>
             <row>
                <cell n="1">SRO336</cell>
                <cell n="2"/>
                <cell n="3">1564-09-04</cell>
-               <cell n="4">1565-10-27</cell>
+               <cell n="4">1564-10-27</cell>
                <cell n="5">04 September 1564–27 October 1564.&#xD;</cell>
             </row>
             <row>
                <cell n="1">SRO337</cell>
                <cell n="2"/>
                <cell n="3">1564-09-04</cell>
-               <cell n="4">1565-10-27</cell>
+               <cell n="4">1564-10-27</cell>
                <cell n="5">04 September 1564–27 October 1564.&#xD;</cell>
             </row>
             <row>
                <cell n="1">SRO338</cell>
                <cell n="2"/>
                <cell n="3">1564-09-04</cell>
-               <cell n="4">1565-10-27</cell>
+               <cell n="4">1564-10-27</cell>
                <cell n="5">04 September 1564–27 October 1564.&#xD;</cell>
             </row>
             <row>
                <cell n="1">SRO339</cell>
                <cell n="2"/>
                <cell n="3">1564-09-04</cell>
-               <cell n="4">1565-10-27</cell>
+               <cell n="4">1564-10-27</cell>
                <cell n="5">04 September 1564–27 October 1564.&#xD;</cell>
             </row>
             <row>
                <cell n="1">SRO340</cell>
                <cell n="2"/>
                <cell n="3">1564-09-04</cell>
-               <cell n="4">1565-10-27</cell>
+               <cell n="4">1564-10-27</cell>
                <cell n="5">04 September 1564–27 October 1564.&#xD;</cell>
             </row>
             <row>
                <cell n="1">SRO341</cell>
                <cell n="2"/>
                <cell n="3">1564-09-04</cell>
-               <cell n="4">1565-10-27</cell>
+               <cell n="4">1564-10-27</cell>
                <cell n="5">04 September 1564–27 October 1564.&#xD;</cell>
             </row>
             <row>
                <cell n="1">SRO342</cell>
                <cell n="2"/>
                <cell n="3">1564-09-04</cell>
-               <cell n="4">1565-10-27</cell>
+               <cell n="4">1564-10-27</cell>
                <cell n="5">04 September 1564–27 October 1564.&#xD;</cell>
             </row>
             <row>
                <cell n="1">SRO343</cell>
                <cell n="2"/>
                <cell n="3">1564-09-04</cell>
-               <cell n="4">1565-10-27</cell>
+               <cell n="4">1564-10-27</cell>
                <cell n="5">04 September 1564–27 October 1564.&#xD;</cell>
             </row>
             <row>
                <cell n="1">SRO344</cell>
                <cell n="2"/>
                <cell n="3">1564-09-04</cell>
-               <cell n="4">1565-10-27</cell>
+               <cell n="4">1564-10-27</cell>
                <cell n="5">04 September 1564–27 October 1564.&#xD;</cell>
             </row>
             <row>
                <cell n="1">SRO345</cell>
                <cell n="2"/>
                <cell n="3">1564-09-04</cell>
-               <cell n="4">1565-10-27</cell>
+               <cell n="4">1564-10-27</cell>
                <cell n="5">04 September 1564–27 October 1564.&#xD;</cell>
             </row>
             <row>
                <cell n="1">SRO346</cell>
                <cell n="2"/>
                <cell n="3">1564-09-04</cell>
-               <cell n="4">1565-10-27</cell>
+               <cell n="4">1564-10-27</cell>
                <cell n="5">04 September 1564–27 October 1564.&#xD;</cell>
             </row>
             <row>
                <cell n="1">SRO347</cell>
                <cell n="2"/>
                <cell n="3">1564-09-04</cell>
-               <cell n="4">1565-10-27</cell>
+               <cell n="4">1564-10-27</cell>
                <cell n="5">04 September 1564–27 October 1564.&#xD;</cell>
             </row>
             <row>
                <cell n="1">SRO348</cell>
                <cell n="2"/>
                <cell n="3">1564-09-04</cell>
-               <cell n="4">1565-10-27</cell>
+               <cell n="4">1564-10-27</cell>
                <cell n="5">04 September 1564–27 October 1564.&#xD;</cell>
             </row>
             <row>
                <cell n="1">SRO349</cell>
                <cell n="2"/>
                <cell n="3">1564-09-04</cell>
-               <cell n="4">1565-10-27</cell>
+               <cell n="4">1564-10-27</cell>
                <cell n="5">04 September 1564–27 October 1564.&#xD;</cell>
             </row>
             <row>
                <cell n="1">SRO350</cell>
                <cell n="2"/>
                <cell n="3">1564-09-04</cell>
-               <cell n="4">1565-10-27</cell>
+               <cell n="4">1564-10-27</cell>
                <cell n="5">04 September 1564–27 October 1564.&#xD;</cell>
             </row>
             <row>
                <cell n="1">SRO351</cell>
                <cell n="2"/>
                <cell n="3">1564-09-04</cell>
-               <cell n="4">1565-10-27</cell>
+               <cell n="4">1564-10-27</cell>
                <cell n="5">04 September 1564–27 October 1564.&#xD;</cell>
             </row>
             <row>
                <cell n="1">SRO352</cell>
                <cell n="2"/>
                <cell n="3">1564-09-04</cell>
-               <cell n="4">1565-10-27</cell>
+               <cell n="4">1564-10-27</cell>
                <cell n="5">04 September 1564–27 October 1564.&#xD;</cell>
             </row>
             <row>
                <cell n="1">SRO353</cell>
                <cell n="2"/>
                <cell n="3">1564-09-04</cell>
-               <cell n="4">1565-10-27</cell>
+               <cell n="4">1564-10-27</cell>
                <cell n="5">04 September 1564–27 October 1564.&#xD;</cell>
             </row>
             <row>
                <cell n="1">SRO354</cell>
                <cell n="2"/>
                <cell n="3">1564-09-04</cell>
-               <cell n="4">1565-10-27</cell>
+               <cell n="4">1564-10-27</cell>
                <cell n="5">04 September 1564–27 October 1564.&#xD;</cell>
             </row>
             <row>
@@ -9872,13 +9872,13 @@
                <cell n="4"/>
                <cell n="5">Secundo die Aprilis&#xD;</cell>
             </row>
-            <!--<row>
+            <row>
                <cell n="1">SRO1280</cell>
                <cell n="2">1600-06-03</cell>
                <cell n="3"/>
                <cell n="4"/>
                <cell n="5">3rd June 1600&#xD;</cell>
-            </row>-->
+            </row>
             <row>
                <cell n="1">SRO1280</cell>
                <cell n="2">1595-04-02</cell>
@@ -11888,7 +11888,7 @@
                <cell n="4"/>
                <cell n="5">Tercio die Decembris&#xD;</cell>
             </row>
-           <!-- <row>
+            <row>
                <cell n="1">SRO1571</cell>
                <cell n="2">1574-07-20</cell>
                <cell n="3"/>
@@ -11902,7 +11902,7 @@
                <cell n="4"/>
                <cell n="5">20th July 1575&#xD;</cell>
             </row>
-           --> <row>
+            <row>
                <cell n="1">SRO1571</cell>
                <cell n="2">1578-12-03</cell>
                <cell n="3"/>
@@ -13078,14 +13078,14 @@
                <cell n="4"/>
                <cell n="5">Sexto die Januarij&#xD;</cell>
             </row>
-            <!--<row>
+            <row>
                <cell n="1">SRO1748</cell>
                <cell n="2">1582</cell>
                <cell n="3"/>
                <cell n="4"/>
                <cell n="5">1582&#xD;</cell>
             </row>
-            --><row>
+            <row>
                <cell n="1">SRO1748</cell>
                <cell n="2">1580-01-11</cell>
                <cell n="3"/>
@@ -15108,13 +15108,13 @@
                <cell n="4"/>
                <cell n="5">primo die Julij&#xD;</cell>
             </row>
-            <!--<row>
+            <row>
                <cell n="1">SRO2035</cell>
                <cell n="2">1581-07-03</cell>
                <cell n="3"/>
                <cell n="4"/>
                <cell n="5">3rd of July 1581&#xD;</cell>
-            </row>-->
+            </row>
             <row>
                <cell n="1">SRO2035</cell>
                <cell n="2">1581-07-04</cell>
@@ -15122,14 +15122,14 @@
                <cell n="4"/>
                <cell n="5">iiijto die Julij&#xD;</cell>
             </row>
-            <!--<row>
+            <row>
                <cell n="1">SRO2036</cell>
                <cell n="2">1581-07-03</cell>
                <cell n="3"/>
                <cell n="4"/>
                <cell n="5">3rd of July 1581&#xD;</cell>
             </row>
-            --><row>
+            <row>
                <cell n="1">SRO2036</cell>
                <cell n="2">1581-07-04</cell>
                <cell n="3"/>
@@ -28179,7 +28179,7 @@
             </row>
             <row>
                <cell n="1">SRO3903</cell>
-               <cell n="2">1697-10-20</cell>
+               <cell n="2">1597-10-20</cell>
                <cell n="3"/>
                <cell n="4"/>
                <cell n="5">20 Octobris&#xD;</cell>
@@ -36383,7 +36383,7 @@
             </row>
             <row>
                <cell n="1">SRO5095</cell>
-               <cell n="2">1606-06-01</cell>
+               <cell n="2">1606-07-01</cell>
                <cell n="3"/>
                <cell n="4"/>
                <cell n="5">primo Julij&#xD;</cell>
@@ -50972,7 +50972,7 @@
             </row>
             <row>
                <cell n="1">SRO7199</cell>
-               <cell n="2">1620-05-01</cell>
+               <cell n="2">1620-05</cell>
                <cell n="3"/>
                <cell n="4"/>
                <cell n="5">jmo Maij 1620&#xD;</cell>

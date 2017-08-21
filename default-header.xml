@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="sro-transcription.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="sro-transcription.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type='text/xsl' href='sro-proofing-view.xsl'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Volume A of the copy entries in the Stationers' Register [1557 - 1570]</title>
+            <title>Volume B of the copy entries in the Stationers' Register [1577 - 1595]</title>
+            <title>Volume C of the copy entries in the Stationers' Register [1595 - 1620]</title>
+            <principal>
+               <persName xml:id="GB">Giles Bergel</persName>
+               <orgName>University of Oxford</orgName>
+            </principal>
+            <principal> 
+               <persName xml:id="IG">Ian Gadd</persName>
+               <orgName>Bath Spa University </orgName>
+            </principal>
+            <editor>Giles Bergel</editor>
+            <editor>Ian Gadd</editor>
+            <respStmt>
+               <resp>Schema Design, Text Processing, Up-Conversion (Phase 1 and Phase 2)</resp>
+               <persName xml:id="JC">James Cummings</persName>
+               <orgName notAfter="2017-08">University of Oxford</orgName>
+               <orgName notBefore="2017-09">Newcastle University</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Volume Editor (Volumes A and C)</resp>
+               <persName xml:id="EM">Eleanor Warmington</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Volume Editor (Volume B)</resp>
+               <persName xml:id="EB">Emma Bashforth</persName>
+            </respStmt>
+            <respStmt>
+               <resp>Proofreading and Transcription Guidelines (Phase 1)</resp>
+               <persName>Pip Willcox</persName>
+               <orgName>Bodleian Library, University of Oxford</orgName>
+            </respStmt>
+            <respStmt>
+               <resp>Transcript of Arber (Phase One)</resp>
+               <orgName>Invida Solutions Pvt. Ltd.</orgName>
+            </respStmt>
+            <funder> Phase One (Arber) - University of Oxford JPR Lyell Fund</funder>
+            <funder> Phase Two (Correction and enrichment) CREATe, University of Glasgow (create.ac.uk); the Bibliographical Society; Bath Spa University</funder>
+          </titleStmt>
+          <publicationStmt>
+            <publisher>Stationers' Register Online <ref target="http://www.stationersregister.online">http://www.stationersregister.online</ref></publisher>
+            <publisher>The Bibliographic Society <ref target="http://www.bibsoc.org.uk/">http://www.bibsoc.org.uk/</ref></publisher>
+            <distributor>CREATe, University of Glasgow <ref target="http://www.create.ac.uk/">http://www.create.ac.uk</ref></distributor>
+            <date when="2017-09-01">1 September 2017</date>
+            <availability>
+               <licence target="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution</licence>
+            </availability>
+             <idno type="DataSourceURI">https://github.com/gbergel/SRO_data/</idno>
+            <idno type="Register">A</idno>
+            <idno type="Arber">1</idno>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl><title>The Stationers' Register A</title></bibl>
+            <bibl>
+               Transcriptions and encodings made from an electronic facsmile of
+               Arber, <editor>Edward, A</editor> <title>Transcript of the Registers of the Company of Stationers 1554-1640
+               AD</title>, 5 vols, (London: Priv. Print,; <date>1875-77</date>, &amp; Birmingham, <date>1875-94</date>), Butler
+               Library, Columbia University in the City of New York, R015.42 L8a
+               <ref target="http://clio.cul.columbia.edu:7018/vwebv/holdingsInfo?bibId=6177070">http://clio.cul.columbia.edu:7018/vwebv/holdingsInfo?bibId=6177070</ref>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Created by the Stationers' Register Online project (www.stationersregister.online)
+               Phase One: http://http://digital.humanities.ox.ac.uk/ProjectProfile/Project_page.aspx?pid=307; 
+               Phase Two: http://www.create.ac.uk/blog/2017/02/24/create-support-stationers-register-online-project/
+            </p>
+         </projectDesc>
+      </encodingDesc>
+      
+      
+   </teiHeader>
+
+   <text>
+      <body>
+
+         <p/>
+      </body>
+   </text>
+</TEI>

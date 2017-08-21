@@ -24,20 +24,6 @@
         </div>
       
       
-      <!-- 
-    JC: ToDo
-   
-   - add <ref> elementdone
-   - constrained values for all editors etc.done
-   - persname @role schematron 
-   - orgName @role = enterer
-   - add <del>done
-   - all entries to have an iddone
-   - all entries to have an ab/@type='metadata'done
-  
-      -->
-      
-      
         <div>
           <head>Formal Schema Declarations</head>
             <schemaSpec ident="SRO-transcription" start="TEI ">
@@ -59,6 +45,7 @@
                       <valItem ident="authoriser"><desc>The name is the person authorising the entering a copy</desc></valItem>
                       <valItem ident="warden"><desc>The name is a non-stationer</desc></valItem>
                       <valItem ident="master"><desc>The name is a master</desc></valItem>
+                      <valItem ident="unknown"><desc>The name is a role that is unknown</desc></valItem> 
                       <valItem ident="other"><desc>The name is a role you wish to record but not catered for</desc></valItem> 
                     </valList>
                   </content>
@@ -98,7 +85,7 @@
             
             <!--Core-->
             <moduleRef key="core"
-                       include="p foreign hi desc gap unclear num date list item head note pb lb respStmt resp title choice abbr expan corr sic orig reg add ref del"/>
+                       include="p bibl foreign hi desc gap unclear num date list item head note pb lb respStmt resp title choice abbr expan corr sic orig reg add ref del editor publisher"/>
             
             <!-- provide valList for num/@type -->
             <elementSpec ident="num" mode="change">
@@ -110,6 +97,7 @@
                         <valItem ident="poundsAsPence"><desc>The number is pounds represented in a 'value' attribute as pence</desc></valItem>
                         <valItem ident="shillingsAsPence"><desc>The number is shillings represented in a 'value' attribute as pence </desc></valItem>
                         <valItem ident="totalPence"><desc>The number provides in a 'value' attribute the total number of pence of its children</desc></valItem>
+                        <valItem ident="totalEntryPence"><desc>The total number of pence in the entry as a whole</desc></valItem>
                         <valItem ident="matchedNumber"><desc>The number has been matched in conversion</desc></valItem>
                         <valItem ident="notMatched"><desc>The number was not matched for automatic conversion</desc></valItem>
                        <valItem ident="works"><desc>The number is a count of the number of works mentioned in an entry</desc></valItem>
