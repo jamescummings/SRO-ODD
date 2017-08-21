@@ -285,8 +285,14 @@
     </xsl:template>
     
     
-    
-    
+    <xsl:template match="ab[@type='metadata']/persName[@role='warden']">
+        <li class="{name()}"><xsl:if test="@*"><xsl:attribute name="title"><xsl:for-each select="@*"><xsl:value-of select="concat(name(),': ', ., '; ')"/></xsl:for-each></xsl:attribute></xsl:if><span class="label">Warden: </span> <xsl:apply-templates/></li>
+    </xsl:template>
+
+    <xsl:template match="ab[@type='metadata']/persName[@role='master']">
+        <li class="{name()}"><xsl:if test="@*"><xsl:attribute name="title"><xsl:for-each select="@*"><xsl:value-of select="concat(name(),': ', ., '; ')"/></xsl:for-each></xsl:attribute></xsl:if><span class="label">Master: </span> <xsl:apply-templates/></li>
+    </xsl:template>
+  
 
 <!-- @rend -->
     <xsl:template match="@rend">
