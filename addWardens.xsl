@@ -62,8 +62,8 @@
                     
                     <xsl:copy-of select="preceding::fw[.//persName/@role='warden'][1]//persName[@role='warden']"/>
                     
-                    <!--<xsl:message>Error for warden name at <xsl:value-of select="$id"/> (<xsl:value-of select="$fromDate"/> [<xsl:value-of select="$wardenEntry/date/@from"/>]) (<xsl:value-of select="$toDate"/>) [<xsl:value-of select="$wardenEntry/date/@to"/>]                
-            <xsl:copy-of select="$wardenEntry"/></xsl:message>--></xsl:otherwise>
+                    <xsl:message>Error for warden name at <xsl:value-of select="$id"/> (<xsl:value-of select="$fromDate"/> [<xsl:value-of select="$wardenEntry/date/@from"/>]) (<xsl:value-of select="$toDate"/>) [<xsl:value-of select="$wardenEntry/date/@to"/>]                
+            <!--<xsl:copy-of select="$wardenEntry"/>--></xsl:message></xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
         <xsl:variable name="masterName">
@@ -72,8 +72,8 @@
                 <xsl:when test="$wardenEntry//persName[@role='master']"><xsl:copy-of select="$wardenEntry//tei:persName[@role='master']"/></xsl:when>
                 <xsl:otherwise>
                     <xsl:copy-of select="preceding::fw[.//persName/@role='master'][1]//persName[@role='master']"/>
-                    <!--<xsl:message>Error for master name at <xsl:value-of select="$id"/> (<xsl:value-of select="$fromDate"/> [<xsl:value-of select="$wardenEntry/tei:date/@from"/>]) (<xsl:value-of select="$toDate"/>) [<xsl:value-of select="$wardenEntry/date/@to"/>]                
-                   <xsl:copy-of select="$wardenEntry"/></xsl:message>--></xsl:otherwise>
+                    <xsl:message>Error for master name at <xsl:value-of select="$id"/> (<xsl:value-of select="$fromDate"/> [<xsl:value-of select="$wardenEntry/tei:date/@from"/>]) (<xsl:value-of select="$toDate"/>) [<xsl:value-of select="$wardenEntry/date/@to"/>]                
+                   <!--<xsl:copy-of select="$wardenEntry"/>--></xsl:message></xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
         <xsl:copy>

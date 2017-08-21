@@ -27,9 +27,14 @@ saxon -o:reg1d.xml -s:reg1c.xml -xsl:addWardens.xsl
 echo "Converting <add> to <supplied> with relevant @resp"
 saxon -o:reg1e.xml -s:reg1d.xml -xsl:addToSupplied.xsl
 
+# Additional Regularise @role on persName
+echo "Regularising @role on persName"
+saxon -o:reg1f.xml -s:reg1e.xml -xsl:updatePersNameRoles.xsl
+
+
 #8. Delete all non <div type="entry"> content (ie. <entryGrp>, <fw> etc.
 echo "Removing all non-Entry material"
-saxon -o:reg1-EntriesOnly.xml -s:reg1e.xml -xsl:removeNonEntryContent.xsl
+saxon -o:reg1-EntriesOnly.xml -s:reg1f.xml -xsl:removeNonEntryContent.xsl
 echo "Done Register 1"
 
 
@@ -57,9 +62,13 @@ saxon -o:reg2d.xml -s:reg2c.xml -xsl:addWardens.xsl
 echo "Converting <add> to <supplied> with relevant @resp"
 saxon -o:reg2e.xml -s:reg2d.xml -xsl:addToSupplied.xsl
 
+# Additional Regularise @role on persName
+echo "Regularising @role on persName"
+saxon -o:reg2f.xml -s:reg2e.xml -xsl:updatePersNameRoles.xsl
+
 #8. Delete all non <div type="entry"> content (ie. <entryGrp>, <fw> etc.
 echo "Removing all non-Entry material"
-saxon -o:reg2-EntriesOnly.xml -s:reg2e.xml -xsl:removeNonEntryContent.xsl
+saxon -o:reg2-EntriesOnly.xml -s:reg2f.xml -xsl:removeNonEntryContent.xsl
 echo "Done Register 2"
 
 
@@ -88,8 +97,12 @@ saxon -o:reg3d.xml -s:reg3c.xml -xsl:addWardens.xsl
 echo "Converting <add> to <supplied> with relevant @resp"
 saxon -o:reg3e.xml -s:reg3d.xml -xsl:addToSupplied.xsl
 
+# Additional Regularise @role on persName
+echo "Regularising @role on persName"
+saxon -o:reg3f.xml -s:reg3e.xml -xsl:updatePersNameRoles.xsl
+
 #8. Delete all non <div type="entry"> content (ie. <entryGrp>, <fw> etc.
 echo "Removing all non-Entry material"
-saxon -o:reg3-EntriesOnly.xml -s:reg3e.xml -xsl:removeNonEntryContent.xsl
+saxon -o:reg3-EntriesOnly.xml -s:reg3f.xml -xsl:removeNonEntryContent.xsl
 echo "Done Register 3"
 
