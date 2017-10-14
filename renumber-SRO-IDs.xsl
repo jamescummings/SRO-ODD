@@ -11,7 +11,7 @@
     <!-- 
     This is best run on the commandline with something like:
   
-  saxon -o:OutputFileName.xml -s:reg1.xml -xsl:renumber-SRO-IDs.xsl star
+  saxon -o:OutputFileName.xml -s:reg1.xml -xsl:renumber-SRO-IDs.xsl startingNumber=12345
   
   repeat for each file name
   
@@ -50,7 +50,16 @@
              <xsl:comment>Warning: This up-converted SRO XML has removed all non-entry markup and data.</xsl:comment>
      </xsl:copy>
      
- </xsl:template>
-    
-    
+     <xsl:result-document href="old2newID-{$startingNumber}.csv" method="text">
+<xsl:text>"OldID", "NewID"
+</xsl:text>         
+<xsl:for-each select=".//div[@type='entry']">   
+<xsl:variable name="num"><xsl:number count="div[@type='entry']" level="any" from="body"/></xsl:variable>
+<xsl:variable name="ID" select="concat('SRO', string(number($num) + number($startingNumber)))"/>
+<xsl:variable name="oldID" select="@xml:id"/>
+<xsl:text>"</xsl:text><xsl:value-of select="normalize-space($oldID)"/><xsl:text>", "</xsl:text><xsl:value-of select="$ID"/><xsl:text>"
+</xsl:text>    
+</xsl:for-each>
+</xsl:result-document>
+</xsl:template>    
 </xsl:stylesheet>
