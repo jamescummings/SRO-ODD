@@ -62,8 +62,8 @@
     
     
     <!--
-        https://github.com/jamescummings/SRO-ODD/issues/10 CHECK B 1490
-    https://github.com/jamescummings/SRO-ODD/issues/11 CHECK Alse B 1490
+        https://github.com/jamescummings/SRO-ODD/issues/10 
+    https://github.com/jamescummings/SRO-ODD/issues/11 
     
     -->
         <xsl:template match="ab[@type='metadata']"><xsl:copy><xsl:apply-templates select="@*"/>
@@ -77,7 +77,7 @@
         </xsl:copy>
         </xsl:template>
     
-    <!-- https://github.com/jamescummings/SRO-ODD/issues/15 CHECK A3-->
+    <!-- https://github.com/jamescummings/SRO-ODD/issues/15 -->
     <xsl:template match="persName/@rend"/>
         
    
