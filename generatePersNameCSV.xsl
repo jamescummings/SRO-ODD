@@ -8,7 +8,7 @@
   <xd:doc>
     <xd:desc>
       <xd:p>Create persName Tables</xd:p>
-      <xd:p>Version Date: 2017-06-04</xd:p>
+      <xd:p>Version Date: 2018-03-14</xd:p>
     </xd:desc>
   </xd:doc>
 
@@ -16,7 +16,7 @@
 
   <!-- Set up the collection of files to be converted -->
   <!-- files and recurse parameters defaulting to '*.xml' and 'no' respectively -->
-  <xsl:param name="files" select="'arber*.xml'"/>
+  <xsl:param name="files" select="'*.xml'"/>
   <xsl:param name="recurse" select="'yes'"/>
   <!-- path hard-coded to location on my desktop -->
   <xsl:variable name="path">
@@ -36,11 +36,12 @@
         'SROID+nameNum', 'ID Number for Person e.g. ADA001',
         'Standardised Name Title', 'Standardised Forename(s)',
         'Standardised Surname(s)', 'Standardised Roles', 'Original Full Name',
-        'Original Forename(s)', 'Original Surname(s)', 'Original Roles', 'Notes'
+        'Original Forename(s)', 'Original Surname(s)', 'Original Roles', 'Corrected Roles', 'Original Sort Key', 'Corrected Sort Key','Notes'
         ))"/>
     <xsl:text>
 </xsl:text>
     <xsl:for-each select="$doc//div[@type = 'entry'][@xml:id]//persName" >
+      <xsl:sort select="@n" order="ascending"/>
       <xsl:sort select="normalize-space(lower-case(surname[1]))" order="ascending"/>
       <xsl:sort select="normalize-space(lower-case(forename[1]))" order="ascending"/>
       <xsl:sort select="normalize-space(lower-case(.))" order="ascending"/>
@@ -68,6 +69,12 @@
       <xsl:variable name="OriginalRoles">
         <xsl:value-of select="@role"/>
       </xsl:variable>
+      <xsl:variable name="CorrectedRoles"> </xsl:variable>
+      <xsl:variable name="OriginalSortKey">
+        <xsl:value-of select="@n"/>
+      </xsl:variable>
+      <xsl:variable name="CorrectedSortKey"> </xsl:variable>
+      
       <xsl:variable name="Notes"> </xsl:variable>
 
         <xsl:value-of
@@ -83,6 +90,9 @@
             $OriginalForenames,
             $OriginalSurnames,
             $OriginalRoles,
+            $CorrectedRoles,
+            $OriginalSortKey,
+            $CorrectedSortKey,
             $Notes
             )
             )"/>

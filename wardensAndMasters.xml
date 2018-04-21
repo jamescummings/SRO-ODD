@@ -3381,21 +3381,51 @@
    </item>
    <item xml:id="arber4-45">
       <date from="1622-10-15" to="1622-10-31">15–31 October 1622</date>
-      <ditto type="wardens"/>
-      <ditto type="master"/>
+      <persName role="warden">
+         <forename>A.</forename>
+         <surname>Gilmyn</surname>
+      </persName>
+      <persName role="warden">
+         <forename>T.</forename>
+         <surname>Pavier</surname>
+      </persName>
+      <persName role="master">
+         <forename>R.</forename>
+         <surname>Field</surname>
+      </persName>
    </item>
    <item xml:id="arber4-46">
       <date from="1622-10-31" to="1622-11-06">31 October–6 November 1622</date>
-      <ditto type="wardens"/>
-      <ditto type="master"/>
+      <persName role="warden">
+         <forename>A.</forename>
+         <surname>Gilmyn</surname>
+      </persName>
+      <persName role="warden">
+         <forename>T.</forename>
+         <surname>Pavier</surname>
+      </persName>
+      <persName role="master">
+         <forename>R.</forename>
+         <surname>Field</surname>
+      </persName>
    </item>
    <item xml:id="arber4-47">
-      <date from="1622-11-08" to="1622-11-25">8–25 November 1622</date>
-      <ditto type="wardens"/>
-      <ditto type="master"/>
+      <date from="1622-11-08" to="1622-11-27">8–27 November 1622</date>
+      <persName role="warden">
+         <forename>A.</forename>
+         <surname>Gilmyn</surname>
+      </persName>
+      <persName role="warden">
+         <forename>T.</forename>
+         <surname>Pavier</surname>
+      </persName>
+      <persName role="master">
+         <forename>R.</forename>
+         <surname>Field</surname>
+      </persName>
    </item>
    <item xml:id="arber4-48">
-      <date from="1022-11-27" to="1022-11-30">27–30 November 1022</date>
+      <date from="1622-11-27" to="1622-11-30">27–30 November 1022</date>
       <ditto type="wardens"/>
       <ditto type="master"/>
    </item>
@@ -3465,14 +3495,34 @@
       <ditto type="master"/>
    </item>
    <item xml:id="arber4-62">
-      <date from="1623-06-19" to="1623-07-05">19June–5 July 1623</date>
-      <ditto type="wardens"/>
-      <ditto type="master"/>
+      <date from="1623-06-19" to="1623-07-05">19 June–5 July 1623</date>
+      <persName role="warden">
+         <forename>G.</forename>
+         <surname>Cole</surname>
+      </persName>
+      <persName role="warden">
+         <forename>J.</forename>
+         <surname>Bill</surname>
+      </persName>
+      <persName role="master">
+         <forename>G.</forename>
+         <surname>Swinhowe</surname>
+      </persName>
    </item>
    <item xml:id="arber4-63">
       <date from="1623-07-05" to="1623-07-18">5–18 July 1623</date>
-      <ditto type="wardens"/>
-      <ditto type="master"/>
+      <persName role="warden">
+         <forename>G.</forename>
+         <surname>Cole</surname>
+      </persName>
+      <persName role="warden">
+         <forename>J.</forename>
+         <surname>Bill</surname>
+      </persName>
+      <persName role="master">
+         <forename>G.</forename>
+         <surname>Swinhowe</surname>
+      </persName>
    </item>
    <item xml:id="arber4-64">
       <date from="1623-07-18" to="1623-08-26">18 July–26 August 1623</date>

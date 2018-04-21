@@ -38,6 +38,7 @@
         <xsl:when test="//teiHeader//idno[@type='Register']='A'">#EW</xsl:when>
         <xsl:when test="//teiHeader//idno[@type='Register']='B'">#EB</xsl:when>
         <xsl:when test="//teiHeader//idno[@type='Register']='C'">#EW</xsl:when>
+        <xsl:when test="//teiHeader//idno[@type='Register']='D'">#BH</xsl:when>
         <xsl:otherwise><xsl:message>ERROR: IDNO not found</xsl:message></xsl:otherwise>
     </xsl:choose></xsl:variable>
     
